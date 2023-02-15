@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+@@include('html/head.html', {
+"title": "Компания"
+})
+
+<body class="d-flex flex-column h-100">
+
+   @@include('html/topbar.html', {})
+   @@include('html/navbar.html', {})
+   @@include('html/offcanvas.html', {})
+
+   <main role="main" class="flex-shrink-0">
+      <div class="container pt-6 pb-7">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active">Компания</li>
+         </ol>
+
+         <h1 class="page-title mb-6">Компания</h1>
+
+         <ul class="list-unstyled">
+            <li><a href="content.html" class="d-inline-block link-dark py-1">О нас</a></li>
+            <li><a href="news.html" class="d-inline-block link-dark py-1">Новости</a></li>
+            <li><a href="docs.html" class="d-inline-block link-dark py-1">Документация</a></li>
+            <li><a href="vacancies.html" class="d-inline-block link-dark py-1">Вакансии</a></li>
+            <li><a href="faq.html" class="d-inline-block link-dark py-1">Вопрос-ответ</a></li>
+         </ul>
+
+      </div>
+   </main>
+
+   @@include('html/footer.html', {})
+   @@include('html/scroll-to-top.html', {})
+   @@include('html/modal.html', {})
+
+   <script src="js/bootstrap.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+@@include('html/head.html', {
+"title": "Кабинет дилера"
+})
+
+<body class="d-flex flex-column h-100">
+
+   @@include('html/topbar.html', {})
+   @@include('html/navbar.html', {})
+   @@include('html/offcanvas.html', {})
+
+   <main role="main" class="flex-shrink-0">
+      <div class="overflow-hidden">
+         <div class="container pt-6 pb-7">
+
+            <div class="row g-0 justify-content-between align-items-center mb-6">
+               <div class="col-4">
+
+                  <div class="anim slide-up">
+                     <div class="px-5">
+                        <ul class="nav nav-tabs mb-0" id="pills-tab" role="tablist">
+                           <li class="nav-item">
+                              <button class="nav-link active" id="pills-reg-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-reg" role="tab" aria-controls="pills-reg"
+                                 aria-selected="true">Регистрация</button>
+                           </li>
+                           <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-login-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-login" role="tab" aria-controls="pills-login"
+                                 aria-selected="false">Вход</button>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="tab-content border border-dark p-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-reg" role="tabpanel"
+                           aria-labelledby="pills-reg-tab" tabindex="0">
+
+                           <h3 class="mb-4">Регистрация</h3>
+                           <form action="thanks.html" class="mb-4">
+                              <div class="mb-4">
+                                 <label class="mb-2" for="#regName">Организация</label>
+                                 <input type="text" class="form-control" placeholder="Например, ИП Иванов В. А."
+                                    id="regName" required>
+                              </div>
+
+                              <div class="mb-4">
+                                 <label class="mb-2" for="#regPhone">Контактный телефон</label>
+                                 <input type="tel" class="form-control input-phone" placeholder="Номер телефона"
+                                    pattern=".{16}" id="regPhone" required>
+                              </div>
+
+                              <div class="mb-4">
+                                 <label class="mb-2" for="#regMail">Электронная почта</label>
+                                 <input type="mail" class="form-control" placeholder="E-mail для входа" id="regMail"
+                                    required>
+                              </div>
+
+                              <div class="mb-5">
+                                 <label class="mb-2" for="#regPass">Пароль для входа</label>
+                                 <input type="password" class="form-control" placeholder="Придумайте пароль"
+                                    id="regPass" required>
+                              </div>
+
+                              <button type="submit" class="btn btn-dark w-100 py-3">Зарегистрироваться</button>
+                           </form>
+
+                           <p class="fs-10 text-muted lh-sm mb-0">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь
+                              на
+                              <a target="_blank" href="content.html">обработку персональных данных</a>
+                           </p>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab"
+                           tabindex="0">
+
+                           <h3 class="mb-4">Вход</h3>
+                           <form action="thanks.html">
+                              <div class="mb-4">
+                                 <label class="mb-2" for="#regName">Электронная почта</label>
+                                 <input type="mail" class="form-control" placeholder="Электронная почта" id="regName"
+                                    required>
+                              </div>
+
+                              <div class="mb-5">
+                                 <label class="mb-2" for="#regName">Пароль</label>
+                                 <input type="password" class="form-control" placeholder="Пароль" id="regName" required>
+                              </div>
+
+                              <button type="submit" class="btn btn-dark w-100 py-3">Войти</button>
+                           </form>
+
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="col-7 position-relative">
+                  <div class="mb-6">
+                     <h1 class="page-title anim slide-left mb-4">Кабинет дилера</h1>
+
+                     <p class="anim slide-left mb-0">В кабинете дилера вы получите доступ к библиотеке BIM-проектов
+                        компании «Горница».
+                        Существующие модели
+                        совместимы с Autodesk. Начните работу с BIM-моделями и оцените простоту их использования.</p>
+                  </div>
+
+                  <img src="@img/login-img.svg" alt="" height="128px" width="auto" class="anim slide-left">
+
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </main>
+
+   @@include('html/footer.html', {})
+   @@include('html/scroll-to-top.html', {})
+   @@include('html/modal.html', {})
+
+   <script src="js/bootstrap.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>

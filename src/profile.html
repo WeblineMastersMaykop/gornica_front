@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+@@include('html/head.html', {
+"title": "Кабинет дилера"
+})
+
+<body class="d-flex flex-column h-100">
+
+   @@include('html/topbar.html', {})
+   @@include('html/navbar.html', {})
+   @@include('html/offcanvas.html', {})
+
+   <main role="main" class="flex-shrink-0">
+      <div class="container pt-6 pb-7">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item active">Кабинет дилера</li>
+         </ol>
+
+         <div class="dashed-header mb-6">
+            <h1 class="ps-3 mb-3">Кабинет дилера</h1>
+            <div class="d-inline-flex bg-dark fs-7 text-white">
+               <div class="fw-medium px-4 py-2">ИП Иванов В. А.</div>
+
+               <a href="profile-settings.html"
+                  class="d-flex align-items-center justify-content-center profile-edit-link">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512">
+                     <path
+                        d="M397.99,19.84L137.9,279.94c-20.07,19.96-31.31,47.11-31.23,75.41v28.65c0,11.78,9.55,21.33,21.33,21.33h28.65c28.3,.08,55.46-11.17,75.41-31.23L492.16,114.01c25.96-26.02,25.96-68.14,0-94.17-26.34-25.18-67.83-25.18-94.17,0Zm64,64L201.9,343.94c-12.03,11.96-28.29,18.69-45.25,18.73h-7.32v-7.32c.04-16.96,6.77-33.22,18.73-45.25L428.16,50.01c9.47-9.04,24.37-9.04,33.83,0,9.33,9.35,9.33,24.48,0,33.83Z" />
+                     <path
+                        d="M490.67,191.55c-11.78,0-21.33,9.55-21.33,21.33v107.11h-85.33c-35.35,0-64,28.65-64,64v85.33H106.67c-35.35,0-64-28.65-64-64V106.67c0-35.35,28.65-64,64-64h192.9c11.78,0,21.33-9.55,21.33-21.33S311.34,0,299.56,0H106.67C47.79,.07,.07,47.79,0,106.67V405.33c.07,58.88,47.79,106.6,106.67,106.67h241.98c28.31,.08,55.47-11.17,75.43-31.23l56.66-56.7c20.07-19.96,31.32-47.11,31.25-75.41V212.89c0-11.78-9.55-21.33-21.33-21.33Zm-96.75,259.05c-8.58,8.55-19.42,14.48-31.25,17.07v-83.67c0-11.78,9.55-21.33,21.33-21.33h83.73c-2.64,11.81-8.55,22.63-17.07,31.23l-56.75,56.7Z" />
+                  </svg>
+               </a>
+
+            </div>
+         </div>
+
+         <div class="row g-6">
+            <div class="col-3">
+               <div class="border border-dark p-4">
+                  <h5 class="mb-3">BIM-проекты</h5>
+
+                  <ul class="side-menu list-unstyled mb-0">
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Раздвижные и подъемно-раздвижные
+                           системы</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2 active" href="profile.html">Окна и двери</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Фасадные системы остекления</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Системы солнцезащиты, перголы</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Складывающаяся дверь-гармошка</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Системы ограждений, перила</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Офисные перегородки</a>
+                     </li>
+                     <li>
+                        <a class="d-block link-dark py-2" href="profile.html">Входные двери</a>
+                     </li>
+                  </ul>
+
+               </div>
+            </div>
+
+            <div class="col-9">
+               <div class="fs-9 text-muted">BIM-проекты</div>
+               <h2 class="fs-3 mb-5">Окна и двери</h2>
+
+               <div class="row g-6">
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-1.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно трехстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-2.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-3.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое с
+                           верхним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-4.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно
+                           двухстворчатое с
+                           нижним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-1.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно трехстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-2.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-3.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое с
+                           верхним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-4.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно
+                           двухстворчатое с
+                           нижним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-1.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно трехстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-2.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое
+                           PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-3.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно двухстворчатое с
+                           верхним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+
+                  <div class="col-3">
+                     <div class="bim-item position-relative">
+                        <div class="bim-item__img-container ratio ratio-1x1 overflow-hidden mb-3">
+                           <div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-4.jpg');">
+                           </div>
+                        </div>
+
+                        <a href="bim.html" class="d-inline-block stretched-link link-dark fw-medium fs-8">Раздвижное
+                           окно
+                           двухстворчатое с
+                           нижним
+                           светом PremiSlide 76</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="pt-6">
+                  <ul class="pagination justify-content-end">
+                     <!-- <li class="page-item"><a class="page-link" href="#">Назад</a></li> -->
+                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                     <li class="page-item"><a class="page-link" href="#">2</a></li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                     <li class="page-item"><a class="page-link" href="#">99</a></li>
+                     <li class="page-item"><a class="page-link" href="#">Далее</a></li>
+                  </ul>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </main>
+
+   @@include('html/footer.html', {})
+   @@include('html/scroll-to-top.html', {})
+   @@include('html/modal.html', {})
+
+   <script src="js/bootstrap.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
