@@ -137,30 +137,59 @@ ul {
 // МОБИЛЬНОЕ МЕНЮ
 
 .offcanvas {
-   .navbar-nav {
-      .nav-item {
-         .nav-link {
-            padding: 10px 0;
-         }
+   &-logo {
+      height: 32px;
+   }
+}
+
+.vertical-nav {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+
+   ul {
+      list-style: none;
+      padding: 0 0 0 .5rem;
+   }
+
+   &__item {
+      a {
+         display: inline-block;
+         padding: .35rem 0;
+         color: $white;
 
          &.active {
-            .nav-link {
-               font-weight: 700;
+            color: $primary  !important;
+         }
+      }
+   }
+
+   &__dropdown {
+      svg {
+         path {
+            fill: $white;
+            transition: fill 0.15s ease-in-out;
+         }
+      }
+
+      &.active {
+         color: $primary;
+
+         svg {
+            path {
+               fill: $primary;
             }
          }
       }
    }
 
-   .dropdown-menu {
-      box-shadow: none;
-      border: none;
-      padding: 0;
-      width: 100%;
-      background-color: transparent;
+   &__dropdown-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.15s ease-in-out;
 
-      .dropdown-item {
-         white-space: normal !important;
-         padding: 0.5rem 0 0.5rem 0.75rem;
+      a {
+         color: $gray-500  !important;
       }
    }
 }
@@ -215,6 +244,19 @@ ul {
    }
 }
 
+.navbar-toggler {
+   height: 48px;
+   width: 48px;
+   background-color: lighten($dark, 5%);
+
+   svg {
+      height: 16px;
+
+      path {
+         fill: $white
+      }
+   }
+}
 
 .dropdown-menu {
    animation-duration: 0.3s;
@@ -484,6 +526,10 @@ a[data-fancybox] {
       border-color: $white;
    }
 
+   &__input-raw {
+      border-color: $dark;
+   }
+
    &__btn {
       flex-shrink: 0;
       flex-grow: 0;
@@ -550,8 +596,8 @@ a[data-fancybox] {
 }
 
 .main-slider-decor-2 {
-   right: -13rem;
-   top: -5rem;
+   right: -10rem;
+   top: 0;
    height: 300px;
    width: 100px;
    background-color: $primary;
@@ -806,10 +852,6 @@ a[data-fancybox] {
 }
 
 .stats {
-   >div {
-      border-left: 1px solid $gray-100;
-   }
-
    &_product {
       >div {
          border-left: 1px solid $primary;
@@ -826,7 +868,7 @@ a[data-fancybox] {
 
 .about {
    &__decor-1 {
-      right: -13rem;
+      right: -10rem;
       top: -7rem;
       height: 300px;
       width: 100px;
@@ -879,8 +921,8 @@ a[data-fancybox] {
 
 .news {
    &__decor {
-      right: -13rem;
-      top: -9rem;
+      right: -10rem;
+      top: -7rem;
       height: 300px;
       width: 100px;
    }
@@ -931,11 +973,14 @@ a[data-fancybox] {
       top: 0;
       bottom: 0;
       pointer-events: none;
+      position: absolute;
+      z-index: 2;
    }
 }
 
 .map {
    height: 600px;
+   z-index: 1;
 }
 
 .contacts-island {
@@ -1200,7 +1245,7 @@ a[data-fancybox] {
    margin: 0 -4px;
 
    .page-item {
-      margin: 0 4px;
+      margin: 0 3px;
    }
 
 }
@@ -1233,10 +1278,10 @@ a[data-fancybox] {
 }
 
 .product-features-decor {
-   right: -5rem;
-   top: -5rem;
-   height: 20rem;
-   width: 5rem;
+   right: -10rem;
+   top: -7rem;
+   height: 300px;
+   width: 100px;
    background-color: $primary;
 }
 
@@ -1246,6 +1291,14 @@ a[data-fancybox] {
    background-size: contain;
    width: 80px;
    height: 80px;
+}
+
+.login-img {
+   height: 128px;
+}
+
+.search-link {
+   font-size: 1.125rem;
 }
 
 .anim {
@@ -1518,14 +1571,108 @@ a[data-fancybox] {
    }
 }
 
+@include media-breakpoint-down(xl) {
+   .section-catalogue {
+      &__header {
+         margin-left: 0;
+      }
+   }
+
+   .login-img {
+      height: auto;
+      width: 100%;
+   }
+}
+
+@include media-breakpoint-up(lg) {
+   .offcanvas-start {
+      border: 1px solid $dark;
+   }
+}
+
+@include media-breakpoint-down(lg) {
+   .main-slide {
+      min-height: auto;
+
+      &__img {
+         position: relative;
+         width: 100%;
+         height: auto;
+         padding-top: 56.25%;
+      }
+
+      &__caption {
+         width: 100%;
+         margin: -5rem auto 0 auto;
+      }
+
+      &__frame {
+         top: 1rem;
+         right: 1rem;
+         bottom: 1rem;
+         left: 1rem;
+         border: 8px solid $primary;
+      }
+   }
+
+   .map-section {
+      &__wrapper {
+         position: relative;
+      }
+   }
+}
+
 @include media-breakpoint-down(md) {
    .scroll-to-top {
       display: none !important;
+   }
+
+   .catalogue-slider,
+   .product-slider {
+      overflow: visible;
+   }
+
+   .partner-logo {
+      width: 100%;
+      max-width: 150px;
+      max-height: 64px;
+   }
+
+   .footer-nav {
+      column-count: 2;
+   }
+}
+
+@include media-breakpoint-up(md) {
+   .main-slide {
+      &__text {
+         font-size: 1.125rem;
+      }
    }
 }
 
 @include media-breakpoint-down(sm) {
    .article {
       @include font-size(1rem);
+   }
+
+   .offcanvas,
+   .offcanvas-start {
+      width: 100% !important;
+   }
+
+   .header-logo {
+      width: 200px;
+   }
+
+   .news-card {
+      &__img-container {
+         width: 100%;
+         max-width: 100%;
+      }
+   }
+
+   .footer-nav {
+      column-count: 1;
    }
 }

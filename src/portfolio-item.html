@@ -11,15 +11,15 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
-      <div class="container pt-6 pb-7">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
+      <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
          <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumb-item"><a href="portfolio.html">Объекты</a></li>
             <li class="breadcrumb-item active">Частный дом в стиле хай-тек</li>
          </ol>
 
-         <div class="dashed-header anim slide-left mb-6">
+         <div class="dashed-header anim slide-left mb-5 mb-lg-6">
             <h1 class="ps-3 mb-3">Частный дом в стиле хай-тек</h1>
             <div class="d-inline-flex align-items-center bg-dark fs-7 text-white px-4 py-2">
                <img src="@img/map-marker-white-icon.svg" alt="" height="16px" class="me-2">
@@ -27,8 +27,8 @@
             </div>
          </div>
 
-         <div class="position-relative mb-6">
-            <div class="main-slider-decor-1 position-absolute anim anim-1-1"></div>
+         <div class="position-relative mb-5 mb-sm-6">
+            <div class="main-slider-decor-1 position-absolute d-none d-sm-block anim anim-1-1"></div>
             <div class="main-slider-decor-2 position-absolute anim anim-1-2"></div>
 
             <div class="position-relative anim anim-1-4">
@@ -98,7 +98,7 @@
                   </div>
                </div>
 
-               <div class="d-flex justify-content-end align-items-center pt-4 anim slide-left">
+               <div class="d-flex justify-content-end align-items-center pt-3 pt-sm-4 anim slide-left">
                   <div class="swiper-pagination me-4"></div>
 
                   <div class="swiper-button-prev sbp-1 me-2">
@@ -139,21 +139,22 @@
 
       </div>
 
-      <section class="bg-light py-7">
+      <section class="bg-light py-5 py-md-6 py-lg-7">
          <div class="container">
 
             <h1 class="page-title anim slide-left mb-3">Другие объекты</h1>
             <div class="row anim slide-up">
-               <div class="col-6">
-                  <p class="text-muted mb-6">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил,
+               <div class="col-lg-8 col-xl-6">
+                  <p class="text-muted mb-5 mb-lg-6">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                     обнаружил,
                      что он у
                      себя в постели
                      превратился в страшное насекомое.</p>
                </div>
             </div>
 
-            <div class="row g-6">
-               <div class="col-6">
+            <div class="row gy-5 g-lg-6">
+               <div class="col-sm-6">
                   <div class="portfolio-card position-relative anim slide-up">
 
                      <div class="portfolio-card__decor position-absolute bg-primary"></div>
@@ -163,7 +164,7 @@
                            style="background-image: url('@img/temp-img/portfolio-card-1.jpg');"></div>
                      </div>
 
-                     <div class="portfolio-card__caption position-relative pt-3">
+                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
                         <h6 class="mb-0 fw-semibold portfolio-card__title">Бизнес центр «Марьино»</h6>
                      </div>
 
@@ -171,7 +172,7 @@
                   </div>
                </div>
 
-               <div class="col-6">
+               <div class="col-sm-6">
                   <div class="portfolio-card position-relative anim slide-up">
 
                      <div class="portfolio-card__decor position-absolute bg-primary"></div>
@@ -181,7 +182,7 @@
                            style="background-image: url('@img/temp-img/portfolio-card-2.jpg');"></div>
                      </div>
 
-                     <div class="portfolio-card__caption position-relative pt-3">
+                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
                         <h6 class="mb-0 fw-semibold portfolio-card__title">Лофт-коворкинг «Vmeste»</h6>
                      </div>
 
@@ -189,7 +190,7 @@
                   </div>
                </div>
 
-               <div class="col-6">
+               <div class="col-sm-6">
                   <div class="portfolio-card position-relative anim slide-up">
 
                      <div class="portfolio-card__decor position-absolute bg-primary"></div>
@@ -199,7 +200,7 @@
                            style="background-image: url('@img/temp-img/portfolio-card-3.jpg');"></div>
                      </div>
 
-                     <div class="portfolio-card__caption position-relative pt-3">
+                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
                         <h6 class="mb-0 fw-semibold portfolio-card__title">Офисы IT-компании «101»</h6>
                      </div>
 
@@ -207,7 +208,7 @@
                   </div>
                </div>
 
-               <div class="col-6">
+               <div class="col-sm-6">
                   <div class="portfolio-card position-relative anim slide-up">
 
                      <div class="portfolio-card__decor position-absolute bg-primary"></div>
@@ -217,7 +218,7 @@
                            style="background-image: url('@img/temp-img/portfolio-card-4.jpg');"></div>
                      </div>
 
-                     <div class="portfolio-card__caption position-relative pt-3">
+                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
                         <h6 class="mb-0 fw-semibold portfolio-card__title">Головной офис «Сбербанк» в Краснодаре</h6>
                      </div>
 

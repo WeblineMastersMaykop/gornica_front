@@ -11,15 +11,15 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
       <div class="overflow-hidden">
-         <div class="container pt-6 pb-7">
+         <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
 
-            <div class="row g-0 justify-content-between align-items-center mb-6">
-               <div class="col-4">
+            <div class="row gy-6 g-lg-6 g-xxl-0 justify-content-between align-items-center">
+               <div class="col-lg-6 col-xl-5 col-xxl-4">
 
                   <div class="anim slide-up">
-                     <div class="px-5">
+                     <div class="px-3 px-sm-5">
                         <ul class="nav nav-tabs mb-0" id="pills-tab" role="tablist">
                            <li class="nav-item">
                               <button class="nav-link active" id="pills-reg-tab" data-bs-toggle="pill"
@@ -34,25 +34,25 @@
                         </ul>
                      </div>
 
-                     <div class="tab-content border border-dark p-5" id="pills-tabContent">
+                     <div class="tab-content border border-dark p-3 p-sm-5" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-reg" role="tabpanel"
                            aria-labelledby="pills-reg-tab" tabindex="0">
 
-                           <h3 class="mb-4">Регистрация</h3>
+                           <h3 class="mb-3 mb-sm-4">Регистрация</h3>
                            <form action="thanks.html" class="mb-4">
-                              <div class="mb-4">
+                              <div class="mb-3 mb-sm-4">
                                  <label class="mb-2" for="#regName">Организация</label>
                                  <input type="text" class="form-control" placeholder="Например, ИП Иванов В. А."
                                     id="regName" required>
                               </div>
 
-                              <div class="mb-4">
+                              <div class="mb-3 mb-sm-4">
                                  <label class="mb-2" for="#regPhone">Контактный телефон</label>
                                  <input type="tel" class="form-control input-phone" placeholder="Номер телефона"
                                     pattern=".{16}" id="regPhone" required>
                               </div>
 
-                              <div class="mb-4">
+                              <div class="mb-3 mb-sm-4">
                                  <label class="mb-2" for="#regMail">Электронная почта</label>
                                  <input type="mail" class="form-control" placeholder="E-mail для входа" id="regMail"
                                     required>
@@ -77,9 +77,9 @@
                         <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab"
                            tabindex="0">
 
-                           <h3 class="mb-4">Вход</h3>
+                           <h3 class="mb-3 mb-sm-4">Вход</h3>
                            <form action="thanks.html">
-                              <div class="mb-4">
+                              <div class="mb-3 mb-sm-4">
                                  <label class="mb-2" for="#regName">Электронная почта</label>
                                  <input type="mail" class="form-control" placeholder="Электронная почта" id="regName"
                                     required>
@@ -99,9 +99,9 @@
 
                </div>
 
-               <div class="col-7 position-relative">
-                  <div class="mb-6">
-                     <h1 class="page-title anim slide-left mb-4">Кабинет дилера</h1>
+               <div class="col-lg-6 col-xl-7 position-relative">
+                  <div class="mb-5 mb-lg-6">
+                     <h1 class="page-title anim slide-left mb-3 mb-lg-4">Кабинет дилера</h1>
 
                      <p class="anim slide-left mb-0">В кабинете дилера вы получите доступ к библиотеке BIM-проектов
                         компании «Горница».
@@ -109,7 +109,7 @@
                         совместимы с Autodesk. Начните работу с BIM-моделями и оцените простоту их использования.</p>
                   </div>
 
-                  <img src="@img/login-img.svg" alt="" height="128px" width="auto" class="anim slide-left">
+                  <img src="@img/login-img.svg" alt="" class="login-img mb-5 mb-lg-0 anim slide-left">
 
                </div>
             </div>

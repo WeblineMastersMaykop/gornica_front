@@ -11,8 +11,8 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
-      <div class="container pt-6">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
+      <div class="container pt-5 pt-lg-6">
          <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumb-item active">Наши дилеры</li>
@@ -29,7 +29,7 @@
 
       </div>
 
-      <div class="dealers-map" id="dealersMap"></div>
+      <div class="dealers-map px-3 px-lg-0 pb-5 pb-lg-0" id="dealersMap"></div>
    </main>
 
    @@include('html/footer.html', {})

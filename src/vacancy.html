@@ -11,8 +11,8 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
-      <div class="container pt-6 pb-7">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
+      <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
          <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
@@ -20,13 +20,13 @@
             <li class="breadcrumb-item active">Контролер ОТК на производство окон ПВХ</li>
          </ol>
 
-         <div class="row gx-7">
-            <div class="col-8">
-               <h1 class="page-title anim slide-left mb-6">Контролер ОТК на производство окон ПВХ</h1>
+         <div class="row justify-content-center gy-5 gx-7">
+            <div class="col-lg-7 col-xl-8">
+               <h1 class="page-title anim slide-left mb-5 mb-lg-6">Контролер ОТК на производство окон ПВХ</h1>
 
-               <div class="d-flex flex-column align-items-start anim slide-up">
+               <div class="d-flex flex-column align-items-start mb-5 mb-lg-6 anim slide-up">
                   <div class="bg-primary text-white fs-7 fw-medium px-3 py-1">Заработная плата:</div>
-                  <div class="d-inline-block bg-dark px-3 py-2 mb-6">
+                  <div class="d-inline-block bg-dark px-3 py-2">
                      <div class="fs-4 fw-bold text-white">от <span class="number me-2">40000</span>₽/мес</div>
                   </div>
                </div>
@@ -79,10 +79,11 @@
                </div>
             </div>
 
-            <div class="col-4">
-               <div class="border border-dark anim slide-down p-5">
+            <div class="col-md-8 col-lg-5 col-xl-4">
+               <div class="border border-dark text-center text-lg-start anim slide-down p-3 p-sm-5">
                   <h3 class="mb-4">Заинтересовала вакансия?</h3>
-                  <a class="btn btn-primary w-100 mb-5" data-bs-toggle="modal" href="#VacancyModal">Откликнуться</a>
+                  <a class="btn btn-primary w-100 mb-4 mb-sm-5" data-bs-toggle="modal"
+                     href="#VacancyModal">Откликнуться</a>
 
                   <p class="mb-1">Или свяжитесь с нами по номeру:</p>
 
@@ -100,12 +101,12 @@
    <div class="modal fade" id="VacancyModal" tabindex="-1" aria-labelledby="VacancyModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
          <div class="modal-content">
-            <div class="modal-header border-0 pb-0 pt-5 px-5">
+            <div class="modal-header border-0 pb-0 pt-3 pt-sm-5 px-3 px-sm-5">
                <h5 class="fw-medium mb-0">Откликнуться</h5>
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <div class="modal-body px-5 pb-5">
+            <div class="modal-body px-3 px-sm-5 pb-3 pb-sm-5">
 
                <p class="fs-7 mb-4">на вакнсию <span class="fw-medium">«Контролер ОТК на производство окон ПВХ»</span>
                </p>

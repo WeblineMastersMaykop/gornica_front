@@ -11,9 +11,9 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
 
-      <section class="bg-dark pb-7 pt-4">
+      <section class="bg-dark pb-5 pb-md-6 pb-lg-7 pt-sm-3 pt-md-4">
          <div class="container position-relative">
             <div class="main-slider-decor-1 position-absolute anim anim-1-1"></div>
             <div class="main-slider-decor-2 position-absolute anim anim-1-2"></div>
@@ -23,18 +23,20 @@
                   <div class="swiper-wrapper">
 
                      <div class="swiper-slide">
-                        <div class="main-slide d-flex align-items-center justify-content-end">
+                        <div class="main-slide d-lg-flex align-items-center justify-content-end">
 
                            <div class="main-slide__img bg-img anim anim-1-4"
                               style="background-image: url('@img/temp-img/main-slide-1.jpg');">
                            </div>
 
-                           <div class="main-slide__caption p-4">
-                              <div class="main-slide__body bg-white shadow anim anim-1-5 p-5">
+                           <div class="main-slide__caption px-3 px-sm-4 px-md-5 p-lg-4">
+                              <div class="main-slide__body bg-white shadow anim anim-1-5 p-3 p-sm-4 p-md-5">
 
-                                 <h2 class="h1 main-slide__title anim anim-1-6 mb-4">Лидер рынка Краснодарского края
+                                 <h2 class="h1 main-slide__title anim anim-1-6 mb-3 mb-lg-4">Лидер рынка Краснодарского
+                                    края
                                  </h2>
-                                 <p class="main-slide__text fs-5 anim anim-1-7 mb-6">Уже <b>более 20 лет</b> согреваем
+                                 <p class="main-slide__text anim anim-1-7 mb-5 mb-lg-6">Уже <b>более 20 лет</b>
+                                    согреваем
                                     дома
                                     теплыми
                                     окнами
@@ -44,59 +46,7 @@
 
                               </div>
 
-                              <div class="main-slide__frame anim anim-1-9"></div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div class="swiper-slide">
-                        <div class="main-slide d-flex align-items-center justify-content-end">
-
-                           <div class="main-slide__img bg-img sa-1"
-                              style="background-image: url('@img/temp-img/main-slide-1.jpg');">
-                           </div>
-
-                           <div class="main-slide__caption p-4">
-                              <div class="main-slide__body bg-white shadow sa-2 p-5">
-
-                                 <h2 class="h1 main-slide__title sa-3 mb-4">Лидер рынка Краснодарского края</h2>
-                                 <p class="main-slide__text fs-5 sa-4 mb-6">Уже <b>более 20 лет</b> согреваем дома
-                                    теплыми
-                                    окнами
-                                    собственного производства</p>
-
-                                 <a href="" class="btn btn-dark sa-5">Каталог продукции</a>
-
-                              </div>
-
-                              <div class="main-slide__frame sa-6"></div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div class="swiper-slide">
-                        <div class="main-slide d-flex align-items-center justify-content-end">
-
-                           <div class="main-slide__img bg-img sa-1"
-                              style="background-image: url('@img/temp-img/main-slide-1.jpg');">
-                           </div>
-
-                           <div class="main-slide__caption p-4">
-                              <div class="main-slide__body bg-white shadow sa-2 p-5">
-
-                                 <h2 class="h1 main-slide__title sa-3 mb-4">Лидер рынка Краснодарского края</h2>
-                                 <p class="main-slide__text fs-5 sa-4 mb-6">Уже <b>более 20 лет</b> согреваем дома
-                                    теплыми
-                                    окнами
-                                    собственного производства</p>
-
-                                 <a href="" class="btn btn-dark sa-5">Каталог продукции</a>
-
-                              </div>
-
-                              <div class="main-slide__frame sa-6"></div>
+                              <div class="main-slide__frame d-none d-lg-block anim anim-1-9"></div>
                            </div>
 
                         </div>
@@ -128,10 +78,10 @@
          </div>
       </section>
 
-      <section class="bg-dark py-7">
+      <section class="bg-dark py-5 pb-md-6 py-lg-7">
          <div class="container">
-            <div class="row gx-6">
-               <div class="col-4">
+            <div class="row gx-6 gy-6">
+               <div class="col-lg-4 col-md-6">
                   <div class="position-relative feature">
 
                      <div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
@@ -141,8 +91,9 @@
                         </div>
                      </div>
 
-                     <div class="feature__caption position-relative bg-dark pt-3 pe-4 mt-n5 me-5 anim anim-2-2">
-                        <h5 class="feature__title mb-3">Алюминиевые конструкции</h5>
+                     <div
+                        class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
+                        <h5 class="feature__title mb-2 mb-sm-3">Алюминиевые конструкции</h5>
                         <p class="text-muted fs-8 mb-0">Выбор различных материалов для производства окон и дверей более
                            чем
                            достаточен.
@@ -153,7 +104,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-lg-4 col-md-6">
                   <div class="position-relative feature">
 
                      <div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
@@ -163,8 +114,9 @@
                         </div>
                      </div>
 
-                     <div class="feature__caption position-relative bg-dark pt-3 pe-4 mt-n5 me-5 anim anim-2-2">
-                        <h5 class="feature__title mb-3">Варианты покрытий</h5>
+                     <div
+                        class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
+                        <h5 class="feature__title mb-2 mb-sm-3">Варианты покрытий</h5>
                         <p class="text-muted fs-8 mb-0">Алюминиевый профиль дает широкие возможности архитекторам
                            благодаря
                            безграничным
@@ -175,7 +127,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-lg-4 col-md-6">
                   <div class="position-relative feature">
 
                      <div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
@@ -185,8 +137,9 @@
                         </div>
                      </div>
 
-                     <div class="feature__caption position-relative bg-dark pt-3 pe-4 mt-n5 me-5 anim anim-2-2">
-                        <h5 class="feature__title mb-3">База знаний</h5>
+                     <div
+                        class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
+                        <h5 class="feature__title mb-2 mb-sm-3">База знаний</h5>
                         <p class="text-muted fs-8 mb-0">Скачайте информационный буклет или каталог по интересующей вас
                            системе
                         </p>
@@ -200,20 +153,21 @@
          </div>
       </section>
 
-      <section class="bg-dark py-7">
+      <section class="bg-dark py-5 py-md-6 py-lg-7">
          <div class="container">
             <div class="row gx-6">
-               <div class="col-3 position-relative">
+               <div class="col-xl-3 position-relative">
                   <div class="section-catalogue__side-img position-absolute pe-4 anim anim-3-1">
                      <img src="@img/side-img-1.jpg" alt="" height="100%" width="auto">
                   </div>
                </div>
 
-               <div class="col-9 pt-6">
+               <div class="col-xl-9 pt-lg-6">
 
-                  <div class="row align-items-end mb-6">
-                     <div class="col-7">
-                        <div class="section-catalogue__header position-relative bg-white shadow p-5 anim anim-3-2">
+                  <div class="row gx-6 align-items-end mb-5">
+                     <div class="col-md col-xl-7">
+                        <div
+                           class="section-catalogue__header position-relative bg-white shadow px-3 pb-3 pt-4 p-sm-5 anim anim-3-2">
                            <div class="section-catalogue__header-decor position-absolute bg-primary anim anim-3-5">
                            </div>
 
@@ -227,8 +181,8 @@
                         </div>
                      </div>
 
-                     <div class="col">
-                        <div class="d-flex justify-content-end anim anim-3-7">
+                     <div class="col-md-auto col-xl">
+                        <div class="d-none d-md-flex justify-content-end anim anim-3-7">
                            <div class="swiper-button-prev sbp-2 me-2">
                               <?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 153.03 298.7">
@@ -386,7 +340,8 @@
                            <div class="swiper-slide">
                               <div class="catalogue-card position-relative">
                                  <div class="ratio ratio-11x16">
-                                    <div class="frame d-flex flex-column align-items-center justify-content-center p-5">
+                                    <div
+                                       class="frame d-flex flex-column align-items-center justify-content-center p-3 p-md-4 p-lg-5">
                                        <h5 class="text-white text-center mb-5">Больше категорий в нашем каталоге</h5>
                                        <a href="catalogue.html" class="btn btn-outline-light">Перейти в каталог</a>
                                     </div>
@@ -403,83 +358,91 @@
          </div>
       </section>
 
-      <section class="bg-dark py-7">
+      <section class="bg-dark py-5 py-md-6 py-lg-7">
          <div class="container">
-            <div class="row gx-6 stats">
-               <div class="col-3">
-                  <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">25</div>
-                  <p class="text-white mb-0 anim anim-4-2">Лет на рынке</p>
+            <div class="row gx-6 gy-sm-7 gy-6 stats">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="h-100 border-start border-white ps-4">
+                     <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">25</div>
+                     <p class="text-white mb-0 anim anim-4-2">Лет на рынке</p>
+                  </div>
                </div>
 
-               <div class="col-3">
-                  <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">1 000</div>
-                  <p class="text-white mb-0 anim anim-4-2">Сотрудников</p>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="h-100 border-start border-white ps-4">
+                     <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">1 000</div>
+                     <p class="text-white mb-0 anim anim-4-2">Сотрудников</p>
+                  </div>
                </div>
 
-               <div class="col-3">
-                  <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">5</div>
-                  <p class="text-white mb-0 anim anim-4-2">Собсвенных заводов</p>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="h-100 border-start border-white ps-4">
+                     <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">5</div>
+                     <p class="text-white mb-0 anim anim-4-2">Собсвенных заводов</p>
+                  </div>
                </div>
 
-               <div class="col-3">
-                  <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">8</div>
-                  <p class="text-white mb-0 anim anim-4-2">Производственных линий</p>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="h-100 border-start border-white ps-4">
+                     <div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">8</div>
+                     <p class="text-white mb-0 anim anim-4-2">Производственных линий</p>
+                  </div>
                </div>
             </div>
          </div>
       </section>
 
-      <section class="bg-dark py-7">
-         <div class="container pb-7">
+      <section class="bg-dark py-5 py-md-6 py-lg-7">
+         <div class="container pb-5 pb-md-6 pb-lg-7">
             <div class="text-center mb-2 anim anim-5-1">
                <img src="@img/partner-check-icon.svg" alt="" height="24px">
                <h2 class="text-white fs-4 mb-6">Только проверенные партнёры</h2>
             </div>
 
-            <div class="row gx-7 justify-content-center align-items-center">
-               <div class="col-2 text-center">
+            <div class="row gx-6 gx-sm-7 gy-md-6 gy-7 justify-content-center align-items-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-1.svg" alt="" class="partner-logo anim anim-5-2">
                </div>
 
-               <div class="col-2 text-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-2.png" alt="" class="partner-logo anim anim-5-2">
                </div>
 
-               <div class="col-2 text-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-3.png" alt="" class="partner-logo anim anim-5-2">
                </div>
 
-               <div class="col-2 text-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-4.gif" alt="" class="partner-logo anim anim-5-2">
                </div>
 
-               <div class="col-2 text-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-5.svg" alt="" class="partner-logo anim anim-5-2">
                </div>
 
-               <div class="col-2 text-center">
+               <div class="col-6 col-md-3 col-lg-2 text-center">
                   <img src="@img/temp-img/partner-logo-6.svg" alt="" class="partner-logo anim anim-5-2">
                </div>
             </div>
          </div>
       </section>
 
-      <section class="bg-gray-dark py-7">
-         <div class="container position-relative py-7">
+      <section class="bg-gray-dark py-5 py-md-6 py-lg-7">
+         <div class="container position-relative py-5 py-md-6 py-lg-7">
 
             <div class="about__decor-1 bg-primary position-absolute anim anim-6-1"></div>
 
-            <div class="row gx-7 align-items-center">
-               <div class="col-6">
+            <div class="row gx-7 gy-5 gy-md-6 align-items-xxl-center">
+               <div class="col-lg-6">
                   <div class="ratio ratio-4x3 position-relative bg-img anim anim-6-2"
                      style="background-image: url('@img/about-img.jpg');">
                      <div class="about__decor-2 bg-primary position-absolute anim anim-6-4"></div>
                   </div>
                </div>
 
-               <div class="col-6 anim anim-6-3">
+               <div class="col-lg-6 anim anim-6-3">
                   <h1 class="text-white mb-3">Компания «Горница»</h1>
-                  <div class="text-light mb-6">
+                  <div class="text-light mb-md-6 mb-5">
                      <p>Завод «Горница» известен на рынке уже более 25 лет. На сегодняшний день это самый крупнейший
                         производитель пластиковых конструкций в Юге России. На заводе установлены автоматические
                         сборочные
@@ -497,12 +460,13 @@
          </div>
       </section>
 
-      <section class="bg-dark py-7">
-         <div class="container py-7">
-            <div class="row align-items-center mb-6">
-               <div class="col-6">
+      <section class="bg-dark py-5 py-md-6 py-lg-7">
+         <div class="container py-5 py-md-6 py-lg-7">
+            <div class="row gy-4 align-items-center mb-6">
+               <div class="col-lg-6">
                   <div class="d-flex">
-                     <img src="@img/portfolio-section-icon.svg" alt="" height="60px" class="me-4 anim anim-7-1">
+                     <img src="@img/portfolio-section-icon.svg" alt="" height="60px"
+                        class="d-none d-lg-block me-4 anim anim-7-1">
 
                      <div>
                         <h2 class="text-white mb-3 anim anim-7-2">Завершённые объекты</h2>
@@ -516,13 +480,13 @@
                   </div>
                </div>
 
-               <div class="col text-end">
+               <div class="col text-lg-end">
                   <a href="portfolio.html" class="btn btn-outline-light anim anim-7-4">Все объекты</a>
                </div>
             </div>
 
             <div class="row g-6">
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -540,7 +504,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -558,7 +522,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -576,7 +540,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -594,7 +558,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -612,7 +576,7 @@
                   </div>
                </div>
 
-               <div class="col-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="portfolio-card position-relative anim anim-7-5">
 
                      <div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
@@ -634,30 +598,30 @@
          </div>
       </section>
 
-      <section class="bg-gray-dark py-7">
-         <div class="container position-relative py-7">
+      <section class="bg-gray-dark py-5 py-md-6 py-lg-7">
+         <div class="container position-relative py-5 py-md-6 py-lg-7">
             <div class="news__decor bg-primary position-absolute anim anim-8-1"></div>
 
-            <div class="row align-items-center mb-6">
-               <div class="col-6">
+            <div class="row gy-4 align-items-center mb-6">
+               <div class="col-md-6">
                   <h2 class="text-white mb-0 anim anim-8-2">Новости компании</h2>
                </div>
 
-               <div class="col text-end">
+               <div class="col text-md-end">
                   <a href="news.html" class="btn btn-outline-light anim anim-8-3">Все новости</a>
                </div>
             </div>
 
-            <div class="row gx-7">
-               <div class="col-6">
-                  <div class="news-card d-flex align-items-center position-relative">
+            <div class="row gx-7 gy-6">
+               <div class="col-xl-6">
+                  <div class="news-card d-sm-flex align-items-center position-relative">
                      <div class="news-card__img-container ratio ratio-1x1 overflow-hidden me-4 anim anim-8-4">
                         <div class="news-card__img bg-img"
                            style="background-image: url('@img/temp-img/news-item-1.jpg');"></div>
                      </div>
 
                      <div class="news-card__caption position-relative">
-                        <div class="news-card__decor bg-primary mb-3 anim anim-8-7"></div>
+                        <div class="news-card__decor bg-primary mb-2 mb-sm-3 anim anim-8-7"></div>
                         <div class="text-muted fs-8 mb-2 anim anim-8-5">24 декабря 2022</div>
                         <h5 class="mb-0 fw-semibold news-card__title anim anim-8-6">SUPREME S700: подъемно-раздвижная
                            система,
@@ -668,15 +632,15 @@
                   </div>
                </div>
 
-               <div class="col-6">
-                  <div class="news-card d-flex align-items-center position-relative">
+               <div class="col-xl-6">
+                  <div class="news-card d-sm-flex align-items-center position-relative">
                      <div class="news-card__img-container ratio ratio-1x1 overflow-hidden me-4 anim anim-8-4">
                         <div class="news-card__img bg-img"
                            style="background-image: url('@img/temp-img/news-item-2.jpg');"></div>
                      </div>
 
                      <div class="news-card__caption position-relative">
-                        <div class="news-card__decor bg-primary mb-3 anim anim-8-7"></div>
+                        <div class="news-card__decor bg-primary mb-2 mb-sm-3 anim anim-8-7"></div>
                         <div class="text-muted fs-8 mb-2 anim anim-8-5">20 декабря 2022</div>
                         <h5 class="mb-0 fw-semibold news-card__title anim anim-8-6">SMARTIA S67 URBAN: Индустриальный
                            стиль лофт и
@@ -692,15 +656,13 @@
          </div>
       </section>
 
-      <div class="section map-section position-relative">
+      <div class="section map-section bg-dark position-relative">
 
-         <div class="map" id="Map1"></div>
-
-         <div class="map-section__wrapper position-absolute d-flex align-items-center">
+         <div class="map-section__wrapper d-flex align-items-center">
             <div class="container">
                <div class="row">
-                  <div class="col-4">
-                     <div class="contacts-island bg-dark shadow position-relative p-5 anim anim-9-1">
+                  <div class="col-lg-5 col-xl-4">
+                     <div class="contacts-island bg-dark position-relative pt-7 pb-5 p-lg-5 anim anim-9-1">
 
                         <div class="contacts-island__decor position-absolute bg-primary anim anim-9-2"></div>
 
@@ -734,6 +696,8 @@
                </div>
             </div>
          </div>
+
+         <div class="map px-3 px-lg-0" id="Map1"></div>
       </div>
 
    </main>

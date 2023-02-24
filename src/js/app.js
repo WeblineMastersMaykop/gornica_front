@@ -1,11 +1,32 @@
 //СМАХИВАТЕЛЬ МОБИЛЬНОГО МЕНЮ
 
 import Xwiper from 'xwiper';
-let menuOffcanvas = new bootstrap.Offcanvas(document.getElementById('Offcanvas'));
-const xwiper = new Xwiper('#Offcanvas');
-xwiper.onSwipeRight(() => {
-   menuOffcanvas.hide();
-});
+
+let menuOffcanvasEl = document.getElementById('Offcanvas')
+if (menuOffcanvasEl) {
+   let menuOffcanvas = new bootstrap.Offcanvas(menuOffcanvasEl);
+   const xwiper = new Xwiper('#Offcanvas');
+   xwiper.onSwipeRight(() => {
+      menuOffcanvas.hide();
+   });
+}
+
+let bimOffcanvasEl = document.getElementById('offcanvasBIMmenu')
+if (bimOffcanvasEl) {
+   let bimOffcanvas = new bootstrap.Offcanvas(bimOffcanvasEl);
+   const xwiper2 = new Xwiper('#offcanvasBIMmenu');
+   xwiper2.onSwipeLeft(() => {
+      bimOffcanvas.hide();
+   });
+}
+
+// let bimOffcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasBIMmenu'));
+// if (bimOffcanvas) {
+//    const xwiper2 = new Xwiper('#offcanvasBIMmenu');
+//    xwiper2.onSwipeLeft(() => {
+//       bimOffcanvas.hide();
+//    });
+// }
 
 
 //ПЛАГИН МАСОК ИНПУТОВ
@@ -58,7 +79,7 @@ if (mainSlider) {
       loopFillGroupWithBlank: true,
       loop: true,
       autoplay: {
-         delay: 5000,
+         delay: 50000,
          pauseOnMouseEnter: true,
          disableOnInteraction: false,
       },
@@ -84,9 +105,9 @@ const catalogueSlider = document.querySelector('.catalogue-slider');
 if (catalogueSlider) {
    const swiper2 = new Swiper(catalogueSlider, {
       modules: [Navigation, Autoplay],
-      slidesPerView: 3,
+      slidesPerView: 1.2,
       slidesPerGroup: 1,
-      spaceBetween: 32,
+      spaceBetween: 16,
       speed: 500,
       loop: true,
       loopFillGroupWithBlank: true,
@@ -99,6 +120,16 @@ if (catalogueSlider) {
          nextEl: ".sbn-2",
          prevEl: ".sbp-2",
       },
+      breakpoints: {
+         576: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+         },
+
+         992: {
+            slidesPerView: 3,
+         },
+      }
    });
 }
 
@@ -109,15 +140,30 @@ const productSlider = document.querySelector('.product-slider');
 if (productSlider) {
    const swiper2 = new Swiper(productSlider, {
       modules: [Navigation],
-      slidesPerView: 4,
+      slidesPerView: 1.2,
       slidesPerGroup: 1,
-      spaceBetween: 32,
+      spaceBetween: 16,
       speed: 500,
       loopFillGroupWithBlank: true,
       navigation: {
          nextEl: ".sbn-3",
          prevEl: ".sbp-3",
       },
+      breakpoints: {
+         576: {
+            slidesPerView: 2,
+
+         },
+
+         992: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+         },
+
+         1200: {
+            slidesPerView: 4,
+         },
+      }
    });
 }
 
@@ -129,3 +175,4 @@ flsFunctions.ScrollToTop();
 flsFunctions.FormatNumber();
 flsFunctions.searchToggle();
 flsFunctions.animationPlay();
+flsFunctions.slidedownDropdown();

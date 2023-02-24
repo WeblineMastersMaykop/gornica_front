@@ -109,3 +109,30 @@ export function animationPlay() {
    window.addEventListener("scroll", reveal);
    window.addEventListener("load", reveal);
 }
+
+
+export function slidedownDropdown() {
+   var acc = document.getElementsByClassName("vertical-nav__dropdown");
+   var i;
+
+   document.addEventListener('DOMContentLoaded', function () {
+      for (i = 0; i < acc.length; i++) {
+         if (acc[i].classList.contains("active")) {
+            acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + "px";
+         }
+      }
+   });
+
+   for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+         this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+         if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+         } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+         }
+      });
+   }
+}
+

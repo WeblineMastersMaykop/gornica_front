@@ -11,26 +11,26 @@
    @@include('html/navbar.html', {})
    @@include('html/offcanvas.html', {})
 
-   <main role="main" class="flex-shrink-0">
-      <div class="container pt-6 pb-7">
+   <main role="main" class="flex-shrink-0 overflow-hidden">
+      <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
          <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
             <li class="breadcrumb-item active">Контакты</li>
          </ol>
 
-         <h1 class="page-title anim slide-left mb-6">Контакты</h1>
+         <h1 class="page-title anim slide-left mb-5 mb-lg-6">Контакты</h1>
 
-         <div class="row align-items-center">
-            <div class="col-8">
-               <div class="row g-6">
-                  <div class="col-6">
+         <div class="row gy-6 align-items-center">
+            <div class="col-lg-6 col-xl-7 col-xxl-8">
+               <div class="row gy-3 g-sm-6">
+                  <div class="col-sm-6">
                      <div class="d-flex flex-column align-items-start anim slide-up">
                         <div class="fs-8 text-muted mb-1">Адрес</div>
                         <div class="mb-1">350001, г. Краснодар, ул. Фурманова, 1/9</div>
                      </div>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-sm-6">
                      <div class="d-flex flex-column align-items-start anim slide-up">
                         <div class="fs-8 text-muted mb-1">Телефоны</div>
                         <a href="tel:+78612100212" class="link-dark mb-1">+7 (861) 210-02-12</a>
@@ -38,14 +38,14 @@
                      </div>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-sm-6">
                      <div class="d-flex flex-column align-items-start anim slide-up">
                         <div class="fs-8 text-muted mb-1">Электронная почта</div>
                         <a href="mailto:info@gornica.ru" class="link-dark mb-1">info@gornica.ru</a>
                      </div>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-sm-6">
                      <div class="d-flex flex-column anim slide-up">
                         <div class="fs-8 text-muted mb-1">Социальные сети</div>
                         <div class="d-flex mx-n1">
@@ -59,9 +59,9 @@
                </div>
             </div>
 
-            <div class="col-4">
-               <div class="border-dark border anim slide-right p-5">
-                  <h3 class="mb-5">У вас есть вопросы?</h3>
+            <div class="col-lg-6 col-xl-5 col-xxl-4">
+               <div class="border-dark border anim slide-right p-3 p-sm-5 mb-3 mb-lg-0">
+                  <h3 class="mb-4 mb-sm-5">У вас есть вопросы?</h3>
 
                   <form action="thanks.html" class="mb-4">
                      <div class="mb-3">
@@ -87,7 +87,7 @@
 
       </div>
 
-      <div class="map" id="Map1"></div>
+      <div class="map px-3 px-lg-0 pb-5 pb-lg-0" id="Map1"></div>
    </main>
 
    @@include('html/footer.html', {})
