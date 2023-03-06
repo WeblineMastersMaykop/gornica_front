@@ -238,6 +238,7 @@ ul {
 
          &:hover,
          .active {
+            background-color: transparent;
             color: $link-color;
          }
       }
@@ -1136,6 +1137,25 @@ a[data-fancybox] {
 
 .profile-edit-link {
    background-color: $primary;
+   padding: 0 .75rem;
+   line-height: 0;
+   transition: background-color .15s ease-in-out;
+
+   svg {
+      height: 16px;
+
+      path {
+         fill: $white;
+      }
+   }
+
+   &:hover {
+      background-color: darken($primary, 10%);
+   }
+}
+
+.profile-logout-link {
+   background-color: lighten($primary, 5%);
    padding: 0 .75rem;
    line-height: 0;
    transition: background-color .15s ease-in-out;

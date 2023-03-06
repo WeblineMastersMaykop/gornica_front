@@ -322,6 +322,17 @@
                   </svg>
                </a>
 
+               <a href="profile-settings.html"
+                  class="d-flex align-items-center justify-content-center profile-logout-link">
+                  <?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 511.92 512">
+                     <path
+                        d="M487.02,195.67l-82.75-82.75c-8.47-8.19-21.98-7.95-30.17,.52-7.98,8.27-7.98,21.37,0,29.64l82.75,82.75c2.46,2.51,4.61,5.3,6.4,8.32-.32,0-.58-.17-.9-.17h0l-334.59,.68c-11.78,0-21.33,9.55-21.33,21.33s9.55,21.33,21.33,21.33h0l334.46-.68c.6,0,1.09-.3,1.66-.34-1.89,3.61-4.29,6.93-7.13,9.86l-82.75,82.75c-8.47,8.18-8.71,21.69-.52,30.17,8.18,8.47,21.69,8.71,30.17,.52,.18-.17,.35-.35,.52-.52l82.75-82.75c33.31-33.32,33.31-87.34,0-120.66h.09Z" />
+                     <path
+                        d="M149.33,469.33h-42.67c-35.35,0-64-28.65-64-64V106.67c0-35.35,28.65-64,64-64h42.67c11.78,0,21.33-9.55,21.33-21.33S161.12,0,149.33,0h-42.67C47.79,.07,.07,47.79,0,106.67V405.33c.07,58.88,47.79,106.6,106.67,106.67h42.67c11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33Z" />
+                  </svg>
+               </a>
+
             </div>
          </div>
 
@@ -668,7 +679,7 @@
 
             <p class="fs-7 mb-4">Мы перезвоним, и ответим на все ваши вопросы</p>
 
-            <form action="thanks.html" class="mb-4">
+            <form class="mb-4">
                <div class="mb-3">
                   <input type="text" class="form-control" placeholder="Ваше имя" required>
                </div>
@@ -682,6 +693,40 @@
 
             <p class="fs-10 text-muted lh-sm mb-0">Нажимая кнопку «Заказть звонок», вы соглашаетесь на <a
                   target="_blank" href="content.html">обработку персональных данных</a></p>
+
+            <div class="alert alert-danger alert-dismissible fade fs-9 mt-4 show" role="alert">
+               <strong>Ошибка!</strong> Текст ошибки.
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="FormSuccessModal" tabindex="-1" aria-labelledby="FormSuccessModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header border-0 pb-0 pt-3 pt-sm-5 px-3 px-sm-5">
+            <div class="d-flex">
+               <div class="me-3">
+                  <img src="img/thanks-check.svg" alt="" width="24px">
+               </div>
+
+               <h5 class="fw-medium mb-0">Ваше обращение принято</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+
+         <div class="modal-body pt-4 px-3 px-sm-5 pb-3 pb-sm-5">
+
+            <div class="fw-semibold mb-1">Спасибо за ваше обращение!</div>
+
+            <p class="mb-2"><span class="fw-medium">Елена</span>, мы скоро перезвоним вам по номеру:</p>
+            <div class="fs-5 mb-5">+7 (918) 442-12-28</div>
+
+            <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-dark py-2">Вернуться на
+               сайт</button>
+
          </div>
       </div>
    </div>

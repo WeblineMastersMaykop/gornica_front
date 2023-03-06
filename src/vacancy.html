@@ -111,7 +111,7 @@
                <p class="fs-7 mb-4">на вакнсию <span class="fw-medium">«Контролер ОТК на производство окон ПВХ»</span>
                </p>
 
-               <form action="thanks.html" class="mb-4">
+               <form class="mb-4">
                   <div class="mb-3">
                      <input type="text" class="form-control" placeholder="Ваше имя" required>
                   </div>
@@ -121,11 +121,18 @@
                         required>
                   </div>
 
-                  <button type="submit" class="btn btn-dark w-100">Откликнуться</button>
+                  <!-- DATA-АТТРИБУТЫ С КНОПКИ НУЖНО УБРАТЬ, ТУТ ОНИ ВЫЗЫВАЮТ МОДАЛКУ УСПЕХА ТОЛЬКО ДЛЯ ПРИМЕРА -->
+                  <button type="submit" class="btn btn-dark w-100" data-bs-toggle="modal"
+                     data-bs-target="#FormSuccessModal">Откликнуться</button>
                </form>
 
                <p class="fs-10 text-muted lh-sm mb-0">Нажимая кнопку «Откликнуться», вы соглашаетесь на <a
                      target="_blank" href="content.html">обработку персональных данных</a></p>
+
+               <div class="alert alert-danger alert-dismissible fade fs-9 mt-4 show" role="alert">
+                  <strong>Ошибка!</strong> Текст ошибки.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+               </div>
             </div>
          </div>
       </div>

@@ -10,7 +10,7 @@
 
             <p class="fs-7 mb-4">Мы перезвоним, и ответим на все ваши вопросы</p>
 
-            <form action="thanks.html" class="mb-4">
+            <form class="mb-4">
                <div class="mb-3">
                   <input type="text" class="form-control" placeholder="Ваше имя" required>
                </div>
@@ -24,6 +24,40 @@
 
             <p class="fs-10 text-muted lh-sm mb-0">Нажимая кнопку «Заказть звонок», вы соглашаетесь на <a
                   target="_blank" href="content.html">обработку персональных данных</a></p>
+
+            <div class="alert alert-danger alert-dismissible fade fs-9 mt-4 show" role="alert">
+               <strong>Ошибка!</strong> Текст ошибки.
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="FormSuccessModal" tabindex="-1" aria-labelledby="FormSuccessModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header border-0 pb-0 pt-3 pt-sm-5 px-3 px-sm-5">
+            <div class="d-flex">
+               <div class="me-3">
+                  <img src="@img/thanks-check.svg" alt="" width="24px">
+               </div>
+
+               <h5 class="fw-medium mb-0">Ваше обращение принято</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+
+         <div class="modal-body pt-4 px-3 px-sm-5 pb-3 pb-sm-5">
+
+            <div class="fw-semibold mb-1">Спасибо за ваше обращение!</div>
+
+            <p class="mb-2"><span class="fw-medium">Елена</span>, мы скоро перезвоним вам по номеру:</p>
+            <div class="fs-5 mb-5">+7 (918) 442-12-28</div>
+
+            <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-dark py-2">Вернуться на
+               сайт</button>
+
          </div>
       </div>
    </div>
