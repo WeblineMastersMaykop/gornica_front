@@ -111,6 +111,8 @@ export function animationPlay() {
 }
 
 
+// ПЛАВНЫЙ ДРОПДАУН
+
 export function slidedownDropdown() {
    var acc = document.getElementsByClassName("vertical-nav__dropdown");
    var i;
@@ -135,4 +137,3 @@ export function slidedownDropdown() {
       });
    }
 }
-

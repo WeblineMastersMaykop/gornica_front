@@ -91,7 +91,7 @@ body:not(.user-is-tabbing) textarea:focus {
 // ТИПОГРАФИКА И ШИРОКИЕ ЭЛЕМЕНТЫ ДЛЯ ТЕКСТОВЫХ СТРАНИЦ
 
 .article {
-   line-height: 1.7em;
+   line-height: 1.6em;
 
    .fit-to-text {
       max-width: 700px;
@@ -101,11 +101,20 @@ body:not(.user-is-tabbing) textarea:focus {
       margin-bottom: 1.5rem;
    }
 
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      margin-bottom: 1rem;
+      padding-top: .5rem;
+   }
+
    p,
    ul,
    ol {
       max-width: 700px;
-      margin-bottom: 1.7em;
+      margin-bottom: 1.6em;
    }
 
    ul,
