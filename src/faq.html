@@ -1,205 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru" class="h-100">
+	@@include('html/head.html', { "title": "Вопрос-ответ" })
 
-@@include('html/head.html', {
-"title": "Вопрос-ответ"
-})
+	<body class="d-flex flex-column h-100">
+		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
 
-<body class="d-flex flex-column h-100">
+		<main role="main" class="flex-shrink-0 overflow-hidden">
+			<div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
+					<li class="breadcrumb-item active">Вопрос-ответ</li>
+				</ol>
 
-   @@include('html/topbar.html', {})
-   @@include('html/navbar.html', {})
-   @@include('html/offcanvas.html', {})
+				<h1 class="page-title anim slide-left mb-5 mb-md-6">Вопрос-ответ</h1>
 
-   <main role="main" class="flex-shrink-0 overflow-hidden">
-      <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
-            <li class="breadcrumb-item active">Вопрос-ответ</li>
-         </ol>
+				<div class="accordion accordion-flush mb-5 mb-md-6 mb-lg-7 mt-n3" id="accordionFlushExample">
+					<div class="accordion-item anim slide-up">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button fs-5 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								Какие системы применяются для остекления балконов и лоджий с металлическим парапетом?
+							</button>
+						</h2>
+						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body pt-0">
+								<p>
+									Действительно, работы по остеклению балконов и лоджий с металлическим парапетом осложнены тем, что на него невозможно монтировать тяжелые
+									пластиковые конструкций. Вот почему для этих целей мы обычно применяем остекление PROVEDAL из легкого алюминия.
+								</p>
+								<p>
+									Кроме того, нами используется специальная система SLIDORS (Слайдорс). Несмотря на то, что она сделана из поливинилхлорида, ее можно
+									применить для остекления балконов и лоджий. Это достигается за счет инновационных технологий и оригинальности конструкции. В результате,
+									значительно снижается вес системы и возможна установка даже на металлический парапет. Приятным достоинством системы является наличие
+									раздвижного механизма открывания створок.
+								</p>
+							</div>
+						</div>
+					</div>
 
-         <h1 class="page-title anim slide-left mb-5 mb-md-6">Вопрос-ответ</h1>
+					<div class="accordion-item anim slide-up">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button fs-5 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+							>
+								Если возникло желание сделать заказ пластиковых окон по телефону, что для этого требуется?
+							</button>
+						</h2>
+						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body pt-0">
+								<p>
+									Мы можем обозначить приблизительную стоимость пластиковых окон по телефону. Для этого от заказчика потребуется замерить габаритные
+									размеры конструкций и высказать пожелания относительно интересующей вариации. Наш специалист проконсультирует по этому поводу, окажет
+									помощь в выборе разновидности конструкции и профиля. Он быстро рассчитает примерную стоимость, в том числе на несколько типовых решений.
+								</p>
+							</div>
+						</div>
+					</div>
 
-         <div class="accordion accordion-flush mb-5 mb-md-6 mb-lg-7 mt-n3" id="accordionFlushExample">
-            <div class="accordion-item anim slide-up">
-               <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                     Какие системы применяются для остекления балконов и лоджий с металлическим парапетом?
-                  </button>
-               </h2>
-               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body pt-0">
-                     <p>Действительно, работы по остеклению балконов и лоджий с металлическим парапетом осложнены тем,
-                        что на него невозможно монтировать тяжелые пластиковые конструкций. Вот почему для этих целей мы
-                        обычно применяем остекление PROVEDAL из легкого алюминия.</p>
-                     <p>Кроме того, нами используется специальная система SLIDORS (Слайдорс). Несмотря на то, что она
-                        сделана из поливинилхлорида, ее можно применить для остекления балконов и лоджий. Это
-                        достигается за счет инновационных технологий и оригинальности конструкции. В результате,
-                        значительно снижается вес системы и возможна установка даже на металлический парапет. Приятным
-                        достоинством системы является наличие раздвижного механизма открывания створок.</p>
-                  </div>
-               </div>
-            </div>
+					<div class="accordion-item anim slide-up">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button fs-5 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								Что понимается под термином «стеклопакет»?
+							</button>
+						</h2>
+						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body pt-0">
+								<p>
+									Особая конструкция, состоящая из нескольких стекол (минимум двух) называется стеклопакетом. За счет их герметичного соединения между
+									собой посредством рамки образуются замкнутые внутренние пространства. Их называют воздушными камерами. Количество воздушных камер
+									напрямую влияет на увеличение звуковых и тепловых изоляционных свойств пластикового окна. Для остекления оконных проемов зданий в
+									европейской части нашей страны достаточно использовать однокамерные или двухкамерные стеклопакеты.
+								</p>
+								<p>
+									Существует путаница, так как некоторые люди называют стеклопакеты пластиковыми окнами. Это в корне неверно, потому что стеклопакет
+									является лишь составной частью пластикового окна.
+								</p>
+							</div>
+						</div>
+					</div>
 
-            <div class="accordion-item anim slide-up">
-               <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                     Если возникло желание сделать заказ пластиковых окон по телефону, что для этого требуется?
-                  </button>
-               </h2>
-               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body pt-0">
-                     <p>Мы можем обозначить приблизительную стоимость пластиковых окон по телефону. Для этого от
-                        заказчика потребуется замерить габаритные размеры конструкций и высказать пожелания относительно
-                        интересующей вариации. Наш специалист проконсультирует по этому поводу, окажет помощь в выборе
-                        разновидности конструкции и профиля. Он быстро рассчитает примерную стоимость, в том числе на
-                        несколько типовых решений.</p>
-                  </div>
-               </div>
-            </div>
+					<div class="accordion-item anim slide-up">
+						<h2 class="accordion-header" id="flush-headingFour">
+							<button
+								class="accordion-button fs-5 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+								aria-expanded="false"
+								aria-controls="flush-collapseFour"
+							>
+								Какую фурнитуру вы применяете в своих пластиковых окнах?
+							</button>
+						</h2>
+						<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body pt-0">
+								<p>
+									Нами производятся пластиковые окна, снабженные немецкой фурнитурой Siegenia Aubi. На рынке предложений нашей страны она является одной из
+									самых популярных и востребованных. Siegenia Aubi – это фурнитура элит-класса, ей стоит полностью доверять. Это подтверждает большой опыт
+									в ее использовании. Многие потребители и специалисты оценили такие достоинства этой фурнитуры, как надежность, долговечность и
+									функциональность.
+								</p>
+								<p>
+									На фурнитуре не стоит экономить, так как от ее качества и прочности зависит правильное и долговременное функционирование створок и
+									дверей. С помощью фурнитуры создается достаточное усилие прижима створок для обеспечения влагонепроницаемости и звукоизоляции окон. Она
+									защищает дом от злоумышленников, желающих проникнуть в помещение посредством окна.
+								</p>
+							</div>
+						</div>
+					</div>
 
-            <div class="accordion-item anim slide-up">
-               <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                     Что понимается под термином «стеклопакет»?
-                  </button>
-               </h2>
-               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body pt-0">
-                     <p>Особая конструкция, состоящая из нескольких стекол (минимум двух) называется стеклопакетом. За
-                        счет их герметичного соединения между собой посредством рамки образуются замкнутые внутренние
-                        пространства. Их называют воздушными камерами. Количество воздушных камер напрямую влияет на
-                        увеличение звуковых и тепловых изоляционных свойств пластикового окна. Для остекления оконных
-                        проемов зданий в европейской части нашей страны достаточно использовать однокамерные или
-                        двухкамерные стеклопакеты.</p>
-                     <p>Существует путаница, так как некоторые люди называют стеклопакеты пластиковыми окнами. Это в
-                        корне неверно, потому что стеклопакет является лишь составной частью пластикового окна.</p>
-                  </div>
-               </div>
-            </div>
+					<div class="accordion-item anim slide-up">
+						<h2 class="accordion-header" id="flush-headingFive">
+							<button
+								class="accordion-button fs-5 collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive"
+								aria-expanded="false"
+								aria-controls="flush-collapseFive"
+							>
+								Как выбрать управление для рольставен?
+							</button>
+						</h2>
+						<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body pt-0">
+								<p>
+									Автоматические (как с клавиши на стене, так и с дистанционного пульта управления). При выборе электроуправления обратите внимание на
+									возможность отсутствия электричества у Вас на даче. Если возможны перебои, то рекомендуем заказывать аварийную систему подъема (вручную).
+									Важно! - при использовании автоматических рольставен на окнах или дверях - необходимо требовать от продавца установку БЛОКИРОВКИ подъема
+									(ригель). Без этого механизма электрические ролеты в закрытом положении можно легко вскрыть! Поскольку данный механизм стоит денег, то
+									некоторые недобросовестные продавцы для удешевления конструкции могут просто его не установить. А без этого механизма функция ЗАЩИТЫ
+									фактически не будет выполняться!!!
+								</p>
+								<p>
+									Карданное управление. Для установки кардана в доме просверливается сквозное отверстие и изнутри присоединяется кардан. Вспомните машины
+									60-х годов, которые можно было завести от ручки - механизм примерно тот же самый. Крутите ручку и опускаете или поднимаете ролл ставни
+									вручную. Данный механизм требует Очень качественного монтажа, очень прихотлив при эксплуатации, а самое главное, что сегодня он дороже
+									чем ролставни с электроприводом. Почему некоторые клиенты выбирают этот механизм управления ? - вопрос сложный. Возможно по старой
+									привычке или "доброй"рекомендации от соседа....
+								</p>
+								<p>
+									Пружинный механизм (ПИМ - пружинно инерционный механизм) - самый дешевый вариант управления. Если Вы редко используете ролл ставни
+									(например, на летней даче), то Вам для их подъема или опускания достаточно открыть окно изнутри дома и рукой поднять или опустить жалюзи
+									за ручку. В качестве блокирующего устройства используют либо замок с оригинальным ключом, либо щеколды (изнутри).
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-            <div class="accordion-item anim slide-up">
-               <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                     Какую фурнитуру вы применяете в своих пластиковых окнах?
-                  </button>
-               </h2>
-               <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body pt-0">
-                     <p>Нами производятся пластиковые окна, снабженные немецкой фурнитурой Siegenia Aubi. На рынке
-                        предложений нашей страны она является одной из самых популярных и востребованных. Siegenia Aubi
-                        – это фурнитура элит-класса, ей стоит полностью доверять. Это подтверждает большой опыт в ее
-                        использовании. Многие потребители и специалисты оценили такие достоинства этой фурнитуры, как
-                        надежность, долговечность и функциональность.</p>
-                     <p>На фурнитуре не стоит экономить, так как от ее качества и прочности зависит правильное и
-                        долговременное функционирование створок и дверей. С помощью фурнитуры создается достаточное
-                        усилие прижима створок для обеспечения влагонепроницаемости и звукоизоляции окон. Она защищает
-                        дом от злоумышленников, желающих проникнуть в помещение посредством окна.</p>
-                  </div>
-               </div>
-            </div>
+				<section class="py-5 py-lg-6">
+					<div class="ask-form position-relative border border-dark anim slide-up px-3 pt-5 pb-3 p-sm-6">
+						<div class="ask-form__decor-1 position-absolute bg-primary"></div>
 
-            <div class="accordion-item anim slide-up">
-               <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                     Как выбрать управление для рольставен?
-                  </button>
-               </h2>
-               <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body pt-0">
-                     <p>Автоматические (как с клавиши на стене, так и с дистанционного пульта управления). При выборе
-                        электроуправления обратите внимание на возможность отсутствия электричества у Вас на даче. Если
-                        возможны перебои, то рекомендуем заказывать аварийную систему подъема (вручную).
-                        Важно! - при использовании автоматических рольставен на окнах или дверях - необходимо требовать
-                        от продавца установку БЛОКИРОВКИ подъема (ригель). Без этого механизма электрические ролеты в
-                        закрытом положении можно легко вскрыть! Поскольку данный механизм стоит денег, то некоторые
-                        недобросовестные продавцы для удешевления конструкции могут просто его не установить. А без
-                        этого механизма функция ЗАЩИТЫ фактически не будет выполняться!!!</p>
-                     <p>Карданное управление. Для установки кардана в доме просверливается сквозное отверстие и изнутри
-                        присоединяется кардан. Вспомните машины 60-х годов, которые можно было завести от ручки -
-                        механизм примерно тот же самый. Крутите ручку и опускаете или поднимаете ролл ставни вручную.
-                        Данный механизм требует Очень качественного монтажа, очень прихотлив при эксплуатации, а самое
-                        главное, что сегодня он дороже чем ролставни с электроприводом. Почему некоторые клиенты
-                        выбирают этот механизм управления ? - вопрос сложный. Возможно по старой привычке или
-                        "доброй"рекомендации от соседа....</p>
-                     <p>Пружинный механизм (ПИМ - пружинно инерционный механизм) - самый дешевый вариант управления.
-                        Если Вы редко используете ролл ставни (например, на летней даче), то Вам для их подъема или
-                        опускания достаточно открыть окно изнутри дома и рукой поднять или опустить жалюзи за ручку. В
-                        качестве блокирующего устройства используют либо замок с оригинальным ключом, либо щеколды
-                        (изнутри). </p>
-                  </div>
-               </div>
-            </div>
-         </div>
+						<div class="row gy-5 align-items-start">
+							<div class="col-lg-6">
+								<img src="@img/ask-icon.svg" alt="" height="64px" class="mb-3 mb-sm-4" />
+								<h2 class="mb-2 mb-md-3">Не нашли нужный ответ?</h2>
+								<p class="mb-0">Задайте вопрос напрямую менеджеру</p>
+							</div>
 
-         <section class="py-5 py-lg-6">
-            <div class="ask-form position-relative border border-dark anim slide-up px-3 pt-5 pb-3 p-sm-6">
+							<div class="col-lg-6">
+								<form action="thanks.html">
+									<div class="row g-sm-4">
+										<div class="col-sm-6">
+											<div class="mb-4">
+												<input type="text" class="form-control" placeholder="Ваше имя" required />
+											</div>
+										</div>
 
-               <div class="ask-form__decor-1 position-absolute bg-primary"></div>
+										<div class="col-sm-6">
+											<div class="mb-4">
+												<input type="email" class="form-control" placeholder="Электронная почта" required />
+											</div>
+										</div>
+									</div>
 
-               <div class="row gy-5 align-items-start">
-                  <div class="col-lg-6">
-                     <img src="@img/ask-icon.svg" alt="" height="64px" class="mb-3 mb-sm-4">
-                     <h2 class="mb-2 mb-md-3">Не нашли нужный ответ?</h2>
-                     <p class="mb-0">Задайте вопрос напрямую менеджеру</p>
-                  </div>
+									<div class="mb-4">
+										<textarea class="form-control" placeholder="Ваш вопрос" rows="3" required></textarea>
+									</div>
 
-                  <div class="col-lg-6">
-                     <form action="thanks.html">
+									<div class="d-sm-flex align-items-center">
+										<button type="submit" class="btn btn-dark px-5 mb-4 mb-sm-0">Отправить</button>
 
-                        <div class="row g-sm-4">
-                           <div class="col-sm-6">
-                              <div class="mb-4">
-                                 <input type="text" class="form-control" placeholder="Ваше имя" required>
-                              </div>
-                           </div>
+										<p class="fs-10 text-muted lh-sm mb-0 ms-sm-5 ms-md-6">
+											Нажимая кнопку «Отправить», вы соглашаетесь на
+											<a target="_blank" href="content.html">обработку персональных данных</a>
+										</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
 
-                           <div class="col-sm-6">
-                              <div class="mb-4">
-                                 <input type="email" class="form-control" placeholder="Электронная почта" required>
-                              </div>
-                           </div>
-                        </div>
+		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
 
-                        <div class="mb-4">
-                           <textarea class="form-control" placeholder="Ваш вопрос" rows="3" required></textarea>
-                        </div>
-
-                        <div class="d-sm-flex align-items-center">
-                           <button type="submit" class="btn btn-dark px-5 mb-4 mb-sm-0">Отправить</button>
-
-                           <p class="fs-10 text-muted lh-sm mb-0 ms-sm-5 ms-md-6">Нажимая кнопку «Отправить», вы
-                              соглашаетесь на
-                              <a target="_blank" href="content.html">обработку персональных данных</a>
-                           </p>
-                        </div>
-                     </form>
-
-                  </div>
-               </div>
-            </div>
-         </section>
-
-      </div>
-   </main>
-
-   @@include('html/footer.html', {})
-   @@include('html/scroll-to-top.html', {})
-   @@include('html/modal.html', {})
-
-   <script src="js/bootstrap.js"></script>
-   <script src="js/app.js"></script>
-</body>
-
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>

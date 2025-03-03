@@ -1,242 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru" class="h-100">
+	@@include('html/head.html', { "title": "Частный дом в стиле хай-тек" })
 
-@@include('html/head.html', {
-"title": "Частный дом в стиле хай-тек"
-})
+	<body class="d-flex flex-column h-100">
+		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
 
-<body class="d-flex flex-column h-100">
+		<main role="main" class="flex-shrink-0 overflow-hidden">
+			<div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumb-item"><a href="portfolio.html">Объекты</a></li>
+					<li class="breadcrumb-item active">Частный дом в стиле хай-тек</li>
+				</ol>
 
-   @@include('html/topbar.html', {})
-   @@include('html/navbar.html', {})
-   @@include('html/offcanvas.html', {})
+				<div class="dashed-header anim slide-left mb-5 mb-lg-6">
+					<h1 class="ps-3 mb-3">Частный дом в стиле хай-тек</h1>
+					<div class="d-inline-flex align-items-center bg-dark fs-7 text-white px-4 py-2">
+						<img src="@img/map-marker-white-icon.svg" alt="" height="16px" class="me-2" />
+						Россия, Подмосковье
+					</div>
+				</div>
 
-   <main role="main" class="flex-shrink-0 overflow-hidden">
-      <div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumb-item"><a href="portfolio.html">Объекты</a></li>
-            <li class="breadcrumb-item active">Частный дом в стиле хай-тек</li>
-         </ol>
+				<div class="position-relative mb-5 mb-sm-6">
+					<div class="main-slider-decor-1 position-absolute d-none d-sm-block anim anim-1-1"></div>
+					<div class="main-slider-decor-2 position-absolute anim anim-1-2"></div>
 
-         <div class="dashed-header anim slide-left mb-5 mb-lg-6">
-            <h1 class="ps-3 mb-3">Частный дом в стиле хай-тек</h1>
-            <div class="d-inline-flex align-items-center bg-dark fs-7 text-white px-4 py-2">
-               <img src="@img/map-marker-white-icon.svg" alt="" height="16px" class="me-2">
-               Россия, Подмосковье
-            </div>
-         </div>
+					<div class="position-relative anim anim-1-4">
+						<div class="swiper main-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-1.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-1.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
 
-         <div class="position-relative mb-5 mb-sm-6">
-            <div class="main-slider-decor-1 position-absolute d-none d-sm-block anim anim-1-1"></div>
-            <div class="main-slider-decor-2 position-absolute anim anim-1-2"></div>
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-2.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-2.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
 
-            <div class="position-relative anim anim-1-4">
-               <div class="swiper main-slider">
-                  <div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-3.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-3.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-1.jpg');">
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-4.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-4.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-1.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-5.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-5.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
 
-                        </div>
-                     </div>
+								<div class="swiper-slide">
+									<div class="position-relative ratio ratio-16x9 bg-img" style="background-image: url('@img/temp-img/portfolio-photo-md-6.jpg')">
+										<a class="stretched-link" href="@img/temp-img/portfolio-photo-6.jpg" data-caption="Описание изображения" data-fancybox></a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-2.jpg');">
+						<div class="d-flex justify-content-end align-items-center pt-3 pt-sm-4 anim slide-left">
+							<div class="swiper-pagination me-4"></div>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-2.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+							<div class="swiper-button-prev sbp-1 me-2">
+								<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
+									<path
+										d="M18.72,194.57l97.92,97.92c8.32,8.27,21.76,8.27,30.08,0,8.37-8.3,8.42-21.8,.12-30.17-.04-.04-.08-.08-.12-.12L48.58,164.49c-8.37-8.3-8.42-21.8-.12-30.17,.04-.04,.08-.08,.12-.12L146.72,36.49c8.37-8.31,8.41-21.82,.11-30.19-8.31-8.37-21.82-8.41-30.19-.11L18.72,104.12c-24.96,24.99-24.96,65.47,0,90.45Z"
+									/>
+								</svg>
+							</div>
 
-                        </div>
-                     </div>
+							<div class="swiper-button-next sbn-1">
+								<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
+									<path
+										d="M134.31,104.12L36.39,6.2C28.07-2.07,14.63-2.07,6.31,6.2c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12l98.13,97.71c8.37,8.3,8.42,21.8,.12,30.17-.04,.04-.08,.08-.12,.12L6.31,262.2c-8.37,8.31-8.41,21.82-.11,30.19,8.31,8.37,21.82,8.41,30.19,.11l97.92-97.92c24.96-24.99,24.96-65.47,0-90.45Z"
+									/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-3.jpg');">
+				<div class="article anim slide-up">
+					<p>
+						Перед нами была поставлена задача остекления частного дома в стиле хай-тек в подмосковном посёлке Павловская Слобода. Заказчик, пожелавший
+						остаться неизвестным, обратился к нашей фирме за нестандартным решением, поскольку таким образом он намеревался отойти от стандартных городских
+						интерьеров и придать загородному дому некое новое измерение, сделать его индивидуальным и уникальным.
+					</p>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-3.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+					<p>
+						По ходу работы были установлены алюминиевые оконные системы. Окна очень легкие, не нагружают конструкцию дома. При установке были использованы
+						специальные профили с высокой степенью тепло- и звукоизоляции. Для окон были выбраны алюминиевые конструкции с двухкамерным стеклопакетом и
+						энергосберегающим стеклом. На втором этаже установили остекленные балконы с теплыми алюминиевыми рамами. Балкон получился очень теплым и
+						привлекательным. Он прекрасно смотрится как внутри, так и снаружи. Благодаря большой площади остекления, дом приобретает современный вид.
+					</p>
+				</div>
+			</div>
 
-                        </div>
-                     </div>
+			<section class="bg-light py-5 py-md-6 py-lg-7">
+				<div class="container">
+					<h1 class="page-title anim slide-left mb-3">Другие объекты</h1>
+					<div class="row anim slide-up">
+						<div class="col-lg-8 col-xl-6">
+							<p class="text-muted mb-5 mb-lg-6">
+								Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+							</p>
+						</div>
+					</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-4.jpg');">
+					<div class="row gy-5 g-lg-6">
+						<div class="col-sm-6">
+							<div class="portfolio-card position-relative anim slide-up">
+								<div class="portfolio-card__decor position-absolute bg-primary"></div>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-4.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+								<div class="ratio ratio-16x9 overflow-hidden">
+									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-1.jpg')"></div>
+								</div>
 
-                        </div>
-                     </div>
+								<div class="portfolio-card__caption position-relative pt-2 pt-md-3">
+									<h6 class="mb-0 fw-semibold portfolio-card__title">Бизнес центр «Марьино»</h6>
+								</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-5.jpg');">
+								<a href="portfolio-item.html" class="stretched-link"></a>
+							</div>
+						</div>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-5.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+						<div class="col-sm-6">
+							<div class="portfolio-card position-relative anim slide-up">
+								<div class="portfolio-card__decor position-absolute bg-primary"></div>
 
-                        </div>
-                     </div>
+								<div class="ratio ratio-16x9 overflow-hidden">
+									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-2.jpg')"></div>
+								</div>
 
-                     <div class="swiper-slide">
-                        <div class="position-relative ratio ratio-16x9 bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-photo-md-6.jpg');">
+								<div class="portfolio-card__caption position-relative pt-2 pt-md-3">
+									<h6 class="mb-0 fw-semibold portfolio-card__title">Лофт-коворкинг «Vmeste»</h6>
+								</div>
 
-                           <a class="stretched-link" href="@img/temp-img/portfolio-photo-6.jpg"
-                              data-caption="Описание изображения" data-fancybox></a>
+								<a href="portfolio-item.html" class="stretched-link"></a>
+							</div>
+						</div>
 
-                        </div>
-                     </div>
+						<div class="col-sm-6">
+							<div class="portfolio-card position-relative anim slide-up">
+								<div class="portfolio-card__decor position-absolute bg-primary"></div>
 
-                  </div>
-               </div>
+								<div class="ratio ratio-16x9 overflow-hidden">
+									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-3.jpg')"></div>
+								</div>
 
-               <div class="d-flex justify-content-end align-items-center pt-3 pt-sm-4 anim slide-left">
-                  <div class="swiper-pagination me-4"></div>
+								<div class="portfolio-card__caption position-relative pt-2 pt-md-3">
+									<h6 class="mb-0 fw-semibold portfolio-card__title">Офисы IT-компании «101»</h6>
+								</div>
 
-                  <div class="swiper-button-prev sbp-1 me-2">
-                     <?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 153.03 298.7">
-                        <path
-                           d="M18.72,194.57l97.92,97.92c8.32,8.27,21.76,8.27,30.08,0,8.37-8.3,8.42-21.8,.12-30.17-.04-.04-.08-.08-.12-.12L48.58,164.49c-8.37-8.3-8.42-21.8-.12-30.17,.04-.04,.08-.08,.12-.12L146.72,36.49c8.37-8.31,8.41-21.82,.11-30.19-8.31-8.37-21.82-8.41-30.19-.11L18.72,104.12c-24.96,24.99-24.96,65.47,0,90.45Z" />
-                     </svg>
-                  </div>
+								<a href="portfolio-item.html" class="stretched-link"></a>
+							</div>
+						</div>
 
-                  <div class="swiper-button-next sbn-1">
-                     <?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 153.03 298.7">
-                        <path
-                           d="M134.31,104.12L36.39,6.2C28.07-2.07,14.63-2.07,6.31,6.2c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12l98.13,97.71c8.37,8.3,8.42,21.8,.12,30.17-.04,.04-.08,.08-.12,.12L6.31,262.2c-8.37,8.31-8.41,21.82-.11,30.19,8.31,8.37,21.82,8.41,30.19,.11l97.92-97.92c24.96-24.99,24.96-65.47,0-90.45Z" />
-                     </svg>
-                  </div>
-               </div>
+						<div class="col-sm-6">
+							<div class="portfolio-card position-relative anim slide-up">
+								<div class="portfolio-card__decor position-absolute bg-primary"></div>
 
-            </div>
-         </div>
+								<div class="ratio ratio-16x9 overflow-hidden">
+									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-4.jpg')"></div>
+								</div>
 
-         <div class="article anim slide-up">
-            <p>Перед нами была поставлена задача остекления частного дома в стиле хай-тек в подмосковном посёлке
-               Павловская Слобода. Заказчик, пожелавший остаться неизвестным, обратился к нашей фирме за нестандартным
-               решением, поскольку таким образом он намеревался отойти от стандартных городских интерьеров и придать
-               загородному дому некое новое измерение, сделать его индивидуальным и уникальным.</p>
+								<div class="portfolio-card__caption position-relative pt-2 pt-md-3">
+									<h6 class="mb-0 fw-semibold portfolio-card__title">Головной офис «Сбербанк» в Краснодаре</h6>
+								</div>
 
-            <p>По ходу работы были установлены алюминиевые оконные системы. Окна очень легкие, не нагружают конструкцию
-               дома.
-               При установке были использованы специальные профили с высокой степенью тепло- и звукоизоляции.
-               Для окон были выбраны алюминиевые конструкции с двухкамерным стеклопакетом и энергосберегающим стеклом.
-               На втором этаже установили остекленные балконы с теплыми алюминиевыми рамами.
-               Балкон получился очень теплым и привлекательным.
-               Он прекрасно смотрится как внутри, так и снаружи.
-               Благодаря большой площади остекления, дом приобретает современный вид.</p>
-         </div>
+								<a href="portfolio-item.html" class="stretched-link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-      </div>
+		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
 
-      <section class="bg-light py-5 py-md-6 py-lg-7">
-         <div class="container">
-
-            <h1 class="page-title anim slide-left mb-3">Другие объекты</h1>
-            <div class="row anim slide-up">
-               <div class="col-lg-8 col-xl-6">
-                  <p class="text-muted mb-5 mb-lg-6">Проснувшись однажды утром после беспокойного сна, Грегор Замза
-                     обнаружил,
-                     что он у
-                     себя в постели
-                     превратился в страшное насекомое.</p>
-               </div>
-            </div>
-
-            <div class="row gy-5 g-lg-6">
-               <div class="col-sm-6">
-                  <div class="portfolio-card position-relative anim slide-up">
-
-                     <div class="portfolio-card__decor position-absolute bg-primary"></div>
-
-                     <div class="ratio ratio-16x9 overflow-hidden">
-                        <div class="portfolio-card__img bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-card-1.jpg');"></div>
-                     </div>
-
-                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
-                        <h6 class="mb-0 fw-semibold portfolio-card__title">Бизнес центр «Марьино»</h6>
-                     </div>
-
-                     <a href="portfolio-item.html" class="stretched-link"></a>
-                  </div>
-               </div>
-
-               <div class="col-sm-6">
-                  <div class="portfolio-card position-relative anim slide-up">
-
-                     <div class="portfolio-card__decor position-absolute bg-primary"></div>
-
-                     <div class="ratio ratio-16x9 overflow-hidden">
-                        <div class="portfolio-card__img bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-card-2.jpg');"></div>
-                     </div>
-
-                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
-                        <h6 class="mb-0 fw-semibold portfolio-card__title">Лофт-коворкинг «Vmeste»</h6>
-                     </div>
-
-                     <a href="portfolio-item.html" class="stretched-link"></a>
-                  </div>
-               </div>
-
-               <div class="col-sm-6">
-                  <div class="portfolio-card position-relative anim slide-up">
-
-                     <div class="portfolio-card__decor position-absolute bg-primary"></div>
-
-                     <div class="ratio ratio-16x9 overflow-hidden">
-                        <div class="portfolio-card__img bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-card-3.jpg');"></div>
-                     </div>
-
-                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
-                        <h6 class="mb-0 fw-semibold portfolio-card__title">Офисы IT-компании «101»</h6>
-                     </div>
-
-                     <a href="portfolio-item.html" class="stretched-link"></a>
-                  </div>
-               </div>
-
-               <div class="col-sm-6">
-                  <div class="portfolio-card position-relative anim slide-up">
-
-                     <div class="portfolio-card__decor position-absolute bg-primary"></div>
-
-                     <div class="ratio ratio-16x9 overflow-hidden">
-                        <div class="portfolio-card__img bg-img"
-                           style="background-image: url('@img/temp-img/portfolio-card-4.jpg');"></div>
-                     </div>
-
-                     <div class="portfolio-card__caption position-relative pt-2 pt-md-3">
-                        <h6 class="mb-0 fw-semibold portfolio-card__title">Головной офис «Сбербанк» в Краснодаре</h6>
-                     </div>
-
-                     <a href="portfolio-item.html" class="stretched-link"></a>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </section>
-   </main>
-
-   @@include('html/footer.html', {})
-   @@include('html/scroll-to-top.html', {})
-   @@include('html/modal.html', {})
-
-   <script src="js/bootstrap.js"></script>
-   <script src="js/app.js"></script>
-</body>
-
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
