@@ -1,95 +1,120 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
+<!doctype html>
+<html lang="ru">
 	@@include('html/head.html', { "title": "Контакты" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {"page": "contacts"})
+		</div>
+		@@include('html/offcanvas.html', {"page": "contacts"})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item active">Контакты</li>
-				</ol>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item active">Контакты</li>
+					</ol>
+				</div>
+			</div>
 
-				<h1 class="page-title anim slide-left mb-5 mb-lg-6">Контакты</h1>
+			<section class="pt-4 pt-md-5 pb-5 pb-md-6 pb-lg-7">
+				<div class="container has-anims">
+					<div class="mb-4 mb-lg-5">
+						<h1 class="page-title anim fade-right mb-0">Контакты</h1>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о странице.</p>
+						</div>
+					</div>
 
-				<div class="row gy-6 align-items-center">
-					<div class="col-lg-6 col-xl-7 col-xxl-8">
-						<div class="row gy-3 g-sm-6">
-							<div class="col-sm-6">
-								<div class="d-flex flex-column align-items-start anim slide-up">
-									<div class="fs-8 text-muted mb-1">Адрес</div>
-									<div class="mb-1">350001, г. Краснодар, ул. Фурманова, 1/9</div>
+					<div class="row has-anims gy-5">
+						<div class="col-lg-8 col-xl-9">
+							<div class="row gx-md-5 gx-xl-6 gy-4 gy-md-5 gy-xl-6">
+								<div class="col-md-6 col-xl-4 anim fade-up">
+									<div class="d-flex flex-column align-items-start">
+										<div class="text-secondary mb-1">Адрес</div>
+										<div>350001, г. Краснодар, ул. Фурманова, 1/9</div>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-sm-6">
-								<div class="d-flex flex-column align-items-start anim slide-up">
-									<div class="fs-8 text-muted mb-1">Телефоны</div>
-									<a href="tel:+78612100212" class="link-dark mb-1">+7 (861) 210-02-12</a>
-									<a href="tel:+78612330289" class="link-dark mb-1">+7 (861) 233-02-89</a>
+								<div class="col-md-6 col-xl-4 anim fade-up">
+									<div class="d-flex flex-column align-items-start">
+										<div class="text-secondary mb-1">График работы</div>
+										<div>ПН-ПТ: 9:00 - 20:00</div>
+										<div>СБ-ВС: 10:00 - 18:00</div>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-sm-6">
-								<div class="d-flex flex-column align-items-start anim slide-up">
-									<div class="fs-8 text-muted mb-1">Электронная почта</div>
-									<a href="mailto:info@gornica.ru" class="link-dark mb-1">info@gornica.ru</a>
+								<div class="col-md-6 col-xl-4 anim fade-up">
+									<div class="d-flex flex-column align-items-start">
+										<div class="text-secondary mb-1">Телефоны</div>
+										<a href="tel:+78612100212" class="link-dark">+7 (861) 210-02-12</a>
+										<a href="tel:+78612330289" class="link-dark">+7 (861) 233-02-89</a>
+									</div>
 								</div>
-							</div>
 
-							<div class="col-sm-6">
-								<div class="d-flex flex-column anim slide-up">
-									<div class="fs-8 text-muted mb-1">Социальные сети</div>
-									<div class="d-flex mx-n1">
-										<a href="" class="social-link social-link__telegram mx-1"></a>
-										<a href="" class="social-link social-link__whatsapp mx-1"></a>
-										<a href="" class="social-link social-link__youtube mx-1"></a>
-										<a href="" class="social-link social-link__vk mx-1"></a>
+								<div class="col-md-6 col-xl-4 anim fade-up">
+									<div class="d-flex flex-column align-items-start">
+										<div class="text-secondary mb-1">Электронная почта</div>
+										<a href="mailto:info@gornica.ru" class="link-dark">info@gornica.ru</a>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-xl-4 anim fade-up">
+									<div class="d-flex flex-column">
+										<div class="text-secondary mb-1">Мессенджеры</div>
+										<div class="row gx-2">
+											<div class="col-auto">
+												<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/whatsapp-logo.svg" alt="" /></a>
+											</div>
+
+											<div class="col-auto">
+												<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/telegram-logo.svg" alt="" /></a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-lg-6 col-xl-5 col-xxl-4">
-						<div class="border-dark border anim slide-right p-3 p-sm-5 mb-3 mb-lg-0">
-							<h3 class="mb-4 mb-sm-5">У вас есть вопросы?</h3>
+						<div class="col">
+							<div class="row flex-column flex-sm-row flex-lg-column g-3">
+								<div class="col anim fade-up">
+									<a href="#CallbackModal" data-bs-toggle="modal" class="btn btn-outline-dark btn-icon d-flex justify-content-center">
+										<svg class="icon me-3">
+											<use href="@img/sprite.symbol.svg#call-bell"></use>
+										</svg>
 
-							<form action="thanks.html" class="mb-4">
-								<div class="mb-3">
-									<input type="text" class="form-control" placeholder="Ваше имя" required />
+										<span>Заказать звонок</span>
+									</a>
 								</div>
 
-								<div class="mb-3">
-									<input type="email" class="form-control" placeholder="Электронная почта" required />
+								<div class="col anim fade-up">
+									<a href="#FeedbackModal" data-bs-toggle="modal" class="btn btn-dark btn-icon d-flex justify-content-center">
+										<svg class="icon me-3">
+											<use href="@img/sprite.symbol.svg#message-question"></use>
+										</svg>
+
+										<span>Задать вопрос</span>
+									</a>
 								</div>
-
-								<div class="mb-4">
-									<textarea class="form-control" placeholder="Ваш вопрос" rows="3" required></textarea>
-								</div>
-
-								<button type="submit" class="btn btn-dark w-100">Отправить</button>
-							</form>
-
-							<p class="fs-10 text-muted lh-sm mb-0">
-								Нажимая кнопку «Отправить», вы соглашаетесь на <a target="_blank" href="content.html">обработку персональных данных</a>
-							</p>
-
-							<div class="alert alert-danger alert-dismissible fade fs-9 mt-4 show" role="alert">
-								<strong>Ошибка!</strong> Текст ошибки.
-								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<div class="map px-3 px-lg-0 pb-5 pb-lg-0" id="Map1"></div>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
+		@@include('html/modal-feedback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3b2b3d29-dd30-4d85-b6e8-eb15867d9469" type="text/javascript"></script>

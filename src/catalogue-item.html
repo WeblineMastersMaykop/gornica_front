@@ -1,32 +1,44 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
+<!doctype html>
+<html lang="ru">
 	@@include('html/head.html', { "title": "Оконно-дверная система с терморазрывом SMARTIA M11000" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {"page": "catalogue-item"})
+		</div>
+		@@include('html/offcanvas.html', {"page": "catalogue-item"})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-5 pt-lg-6">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item"><a href="catalogue.html">Продукция</a></li>
-					<li class="breadcrumb-item"><a href="catalogue-category.html">Окна и двери</a></li>
-					<li class="breadcrumb-item active">Оконно-дверная система с терморазрывом SMARTIA M11000</li>
-				</ol>
-
-				<h1 class="page-title mb-5 mb-lg-6">Оконно-дверная система с терморазрывом SMARTIA M11000</h1>
-
-				<div class="ratio ratio-21x9 bg-img anim slide-up" style="background-image: url('@img/temp-img/product-hero.jpg')"></div>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="catalogue.html">Каталог</a></li>
+						<li class="breadcrumb-item active">Оконно-дверная система с терморазрывом SMARTIA M11000</li>
+					</ol>
+				</div>
 			</div>
 
-			<section class="pb-7">
-				<div class="container position-relative">
-					<div class="row gx-0">
-						<div class="col-lg-8">
-							<div class="bg-white pe-lg-6 pt-5 pb-lg-6 mt-lg-n7">
-								<h2 class="page-title anim slide-left mb-3 mb-sm-4">Характеристики</h2>
+			<section class="pt-4 pt-md-5 pb-5 pb-md-6 pb-lg-7">
+				<div class="container">
+					<div class="has-anims mb-4 mb-lg-5">
+						<h1 class="page-title anim fade-right mb-0">Оконно-дверная система с терморазрывом SMARTIA M11000</h1>
+					</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+					<div class="has-anims">
+						<div class="ratio ratio-16x9 bg-img anim fade-up" style="background-image: url('@img/temp-imgs/product-hero.jpg')"></div>
+					</div>
+				</div>
+
+				<div class="container position-relative">
+					<div class="row gy-4 gx-0">
+						<div class="col-lg-8 has-anims">
+							<div class="bg-white pe-lg-6 pt-5 mt-lg-n7">
+								<h2 class="page-title anim fade-right mb-3 mb-sm-4">Характеристики</h2>
+
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Виды окон</div>
@@ -37,7 +49,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Терморазрыв</div>
@@ -48,7 +60,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Дизайн Профилей</div>
@@ -59,7 +71,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Глубина рамы</div>
@@ -70,7 +82,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Глубина створки</div>
@@ -81,7 +93,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Минимальная видимая высота профиля</div>
@@ -92,7 +104,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Минимальная видимая ширина профиля для штульпа</div>
@@ -103,7 +115,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Тип остекления</div>
@@ -114,7 +126,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Максимальная толщина остекления</div>
@@ -125,7 +137,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Механизм</div>
@@ -136,7 +148,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Система уплотнения</div>
@@ -147,7 +159,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Терморазрыв</div>
@@ -158,7 +170,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Водонепроницаемость</div>
@@ -169,7 +181,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Воздухопроницаемость</div>
@@ -180,7 +192,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Шумоизоляция</div>
@@ -191,7 +203,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Теплопроводность</div>
@@ -202,7 +214,7 @@
 									</div>
 								</div>
 
-								<div class="bb anim slide-up py-2 py-sm-3">
+								<div class="bb anim fade-up py-2 py-sm-3">
 									<div class="row">
 										<div class="col-sm">
 											<div class="fw-medium">Вес створки</div>
@@ -215,11 +227,11 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 pt-5">
-							<div class="product-text border-start border-primary anim slide-left ps-3 ps-sm-5 pb-3">
-								<p>
-									<span class="fw-medium">SMARTIA M11000</span> – система для изготовления поворотно-откидных окон и дверей, отвечающая большинству задач,
-									благодаря большому разнообразию конструктивных и дизайнерских решений.
+						<div class="col-lg-4 has-anims pt-lg-5">
+							<div class="product-text border-start border-primary anim fade-up ps-3 ps-sm-5 pb-lg-3">
+								<p class="mb-0">
+									<b>SMARTIA M11000</b> – система для изготовления поворотно-откидных окон и дверей, отвечающая большинству задач, благодаря большому
+									разнообразию конструктивных и дизайнерских решений.
 								</p>
 							</div>
 						</div>
@@ -228,184 +240,123 @@
 			</section>
 
 			<section class="bg-light py-5 py-md-6 py-lg-7">
-				<div class="container py-5 py-md-6 py-lg-7 position-relative">
-					<div class="product-features-decor position-absolute anim slide-down"></div>
+				<div class="container has-anims">
+					<div class="mb-5 mb-lg-6">
+						<h2 class="page-title anim fade-right">Оконно-дверная система с терморазрывом SMARTIA M11000 - это:</h2>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о секции.</p>
+						</div>
+					</div>
 
-					<h2 class="page-title anim slide-left mb-5 mb-md-7">Ключевые особенности</h2>
-					<div class="row g-5 g-md-7">
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0"><span class="fw-semibold">Высокое</span> соотношение цены и качества</p>
+					<div class="row product-features gy-4 g-lg-5 gx-xl-6 gx-xxl-7">
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Качество</h3>
+								<p class="product-feature-text">
+									Для соответствия качества выпускаемой продукции на предприятии организована лаборатория контроля качества, оснащенная современным
+									измерительным оборудованием, которая проводит проверку профиля на геометрию, белизну, ударопрочность и пластичность, а также осуществляет
+									проверку входного контроля сырья и текущий контроль производственного процесса, что гарантирует качество и долговечность продукции
+									«Горница»
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0">
-								<span class="fw-semibold">Высокая</span> экономия энергии благодаря высокой энергоэффективности системы
-							</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Экологичность</h3>
+								<p class="product-feature-text">
+									Завод «Горница» одним из первых в России приступил к выпуску продукции без свинца. В качестве основного компонента смеси в производстве
+									оконного профиля применяется кальций-цинковый стабилизатор. Это дает нам дополнительное преимущество, ведь забота о личном здоровье и
+									безопасности окружающей среды становится новым стандартом качества.
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0"><span class="fw-semibold">Повышенный</span> уровень безопасности</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Стабильность</h3>
+								<p class="product-feature-text">
+									Для соблюдения стабильного качества используется соверменная система подготовки смеси. Высокий уровень автоматизации производства
+									позволяет свести к минимуму «человеческий фактор», что влияет на стабильность качества оконного профиля «Горница»
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0"><span class="fw-semibold">Высокий</span> уровень звукоизоляции</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Превосходная звуко- и теплоизоляция</h3>
+								<p class="product-feature-text">
+									За счет выского уровня теплоизоляции окон «Горница» Вы сможете снизить затраты на отопление. Толщина стенки (3мм) обеспечивает высокий
+									уровень теплоизоляции, а также гарантирует звукоизоляцию в любом помещении.
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0">
-								<span class="fw-semibold">Улучшенный</span> естественный свет благодаря возможности использовать скрытый пояс
-							</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Универсальность</h3>
+								<p class="product-feature-text">
+									Профильных систем «Горница» позволяет комбинировать различные виды профилей и изготавливать окна практически любых форм и размеров.
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0"><span class="fw-semibold">Простота</span> использования и высокая функциональность</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Специальная формула</h3>
+								<p class="product-feature-text">
+									Разработанная по индивидуальному рецепту, навсегда сохранит исключительную белизну и глянцевый блеск вашего окна.
+								</p>
+							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0">
-								<span class="fw-semibold">Современный</span> дизайн для окон с плоской или изогнутой линией
-							</p>
-						</div>
-
-						<div class="col-md-6 col-lg-4 col-xl-3">
-							<p class="product-feature fs-7 anim slide-up mb-0">
-								<span class="fw-semibold">Высокое</span> качество с сертифицированными характеристиками
-							</p>
+						<div class="col-lg-6 col-xl-4 anim fade-up">
+							<div class="product-feature">
+								<h3 class="product-feature-title mb-2">Удобство</h3>
+								<p class="product-feature-text">В эксплуатации и уходе, благодаря идеально ровной, глянцевой поверхности профиля.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="py-5 py-md-6 py-lg-7">
-				<div class="container py-5 py-md-6 py-lg-7">
-					<div class="row align-items-end mb-5 mb-md-6">
-						<div class="col-7">
-							<h2 class="page-title anim slide-left mb-0">Фото</h2>
-						</div>
-
-						<div class="col">
-							<div class="d-none d-md-flex justify-content-end anim slide-right">
-								<div class="swiper-button-prev sbp-3 me-2">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-										<path
-											d="M18.72,194.57l97.92,97.92c8.32,8.27,21.76,8.27,30.08,0,8.37-8.3,8.42-21.8,.12-30.17-.04-.04-.08-.08-.12-.12L48.58,164.49c-8.37-8.3-8.42-21.8-.12-30.17,.04-.04,.08-.08,.12-.12L146.72,36.49c8.37-8.31,8.41-21.82,.11-30.19-8.31-8.37-21.82-8.41-30.19-.11L18.72,104.12c-24.96,24.99-24.96,65.47,0,90.45Z"
-										/>
-									</svg>
-								</div>
-
-								<div class="swiper-button-next sbn-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-										<path
-											d="M134.31,104.12L36.39,6.2C28.07-2.07,14.63-2.07,6.31,6.2c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12l98.13,97.71c8.37,8.3,8.42,21.8,.12,30.17-.04,.04-.08,.08-.12,.12L6.31,262.2c-8.37,8.31-8.41,21.82-.11,30.19,8.31,8.37,21.82,8.41,30.19,.11l97.92-97.92c24.96-24.99,24.96-65.47,0-90.45Z"
-										/>
-									</svg>
-								</div>
-							</div>
+				<div class="container has-anims">
+					<div class="mb-5 mb-lg-6">
+						<h2 class="page-title anim fade-right">Варианты профилей</h2>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о секции.</p>
 						</div>
 					</div>
 
-					<div class="position-relative">
-						<div class="swiper product-slider slider-dark">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-1.jpg')"></div>
-										</div>
+					<div class="row gy-5 gx-md-5">
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/profile-1.png" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-2">
+									<img src="@img/temp-imgs/profile-1.png" />
+								</a>
 
-										<a href="@img/temp-img/product-photo-1.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
+								<div class="text-center mt-3">Название изображения</div>
+							</div>
+						</div>
 
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-2.jpg')"></div>
-										</div>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/profile-2.png" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-2">
+									<img src="@img/temp-imgs/profile-2.png" />
+								</a>
 
-										<a href="@img/temp-img/product-photo-2.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
+								<div class="text-center mt-3">Название изображения</div>
+							</div>
+						</div>
 
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-3.jpg')"></div>
-										</div>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/profile-3.png" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-2">
+									<img src="@img/temp-imgs/profile-3.png" />
+								</a>
 
-										<a href="@img/temp-img/product-photo-3.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-4.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-4.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-5.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-5.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-6.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-6.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-7.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-7.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-8.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-8.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-9.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-9.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
-
-								<div class="swiper-slide">
-									<div class="product-photo position-relative anim slide-up">
-										<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
-											<div class="product-photo__img" style="background-image: url('@img/temp-img/product-photo-10.jpg')"></div>
-										</div>
-
-										<a href="@img/temp-img/product-photo-10.jpg" data-caption="Описание изображения" data-fancybox="gal-1" class="stretched-link"></a>
-									</div>
-								</div>
+								<div class="text-center mt-3">Название изображения</div>
 							</div>
 						</div>
 					</div>
@@ -413,74 +364,1642 @@
 			</section>
 
 			<section class="bg-light py-5 py-md-6 py-lg-7">
-				<div class="container py-5 py-md-6 py-lg-7">
-					<h2 class="page-title anim slide-left mb-6 mb-lg-7">Схемы открывания</h2>
-					<div class="row g-5 g-sm-6">
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-1.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидное</div>
+				<div class="container has-anims">
+					<div class="mb-5 mb-lg-6">
+						<h2 class="page-title anim fade-right">Варианты ламинации</h2>
+						<div class="page-caption article anim fade-up mt-3">
+							<p><b>Все профиля системы ELEX 58 производятся в четырёх вариантах:</b></p>
+
+							<ul>
+								<li>Белый</li>
+								<li>Односторонняя наружная ламинация</li>
+								<li>Односторонняя внутренняя ламинация</li>
+								<li>Двусторонняя ламинация — белый/коричневая основа/серая основа</li>
+							</ul>
+
+							<p><b>Ламинация может быть стандартых цветов:</b></p>
+						</div>
+					</div>
+
+					<div class="row gy-5 gx-md-5">
+						<div class="col-md-6 col-lg-2 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/color-1.jpg" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-13">
+									<img src="@img/temp-imgs/color-1.jpg" />
+								</a>
+
+								<div class="text-center mt-3">Махагон</div>
+							</div>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-2.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидное с глухой фрамугой</div>
+						<div class="col-md-6 col-lg-2 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/color-2.jpg" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-13">
+									<img src="@img/temp-imgs/color-2.jpg" />
+								</a>
+
+								<div class="text-center mt-3">Орех</div>
+							</div>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-3.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидное с открывающейся фрамугой</div>
+						<div class="col-md-6 col-lg-2 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/color-3.jpg" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-13">
+									<img src="@img/temp-imgs/color-3.jpg" />
+								</a>
+
+								<div class="text-center mt-3">Темный дуб</div>
+							</div>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-4.jpg')"></div>
-							<div class="text-center fs-8">Двустворчатое окно с поворотно-откидным открыванием</div>
+						<div class="col-md-6 col-lg-2 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/color-4.jpg" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-13">
+									<img src="@img/temp-imgs/color-4.jpg" />
+								</a>
+
+								<div class="text-center mt-3">Золотой дуб</div>
+							</div>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-5.png')"></div>
-							<div class="text-center fs-8">Окно с глухой и поворотно-откидной створкой</div>
+						<div class="col-md-6 col-lg-2 anim fade-up">
+							<div>
+								<a href="@img/temp-imgs/color-5.jpg" class="img img-contain ratio ratio-1x1 gall-img" data-gallery="gallery-13">
+									<img src="@img/temp-imgs/color-5.jpg" />
+								</a>
+
+								<div class="text-center mt-3">Антрацитово-серый</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-5 py-md-6 py-lg-7">
+				<div class="container has-anims">
+					<div class="mb-5 mb-lg-6">
+						<h2 class="page-title anim fade-right">Ключевые особенности</h2>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о секции.</p>
+						</div>
+					</div>
+
+					<div class="row product-features gy-4 g-lg-5 gx-xl-6 gx-xxl-7">
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Высокое</b> соотношение цены и качества</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-6.png')"></div>
-							<div class="text-center fs-8">Окно с горизонтальным осевым открыванием</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Высокая</b> экономия энергии благодаря высокой энергоэффективности системы</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-7.png')"></div>
-							<div class="text-center fs-8">Окно с вертикальным осевым открыванием</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Повышенный</b> уровень безопасности</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-8.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидные окна с импостом и верхней глухой частью</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Высокий</b> уровень звукоизоляции</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-9.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидные окна с импостом и верхней фрамугой</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Улучшенный</b> естественный свет благодаря возможности использовать скрытый пояс</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-10.png')"></div>
-							<div class="text-center fs-8">Двустворчатое поворотно-откидное окно с боковыми глухими элементами</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Простота</b> использования и высокая функциональность</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-11.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидное окно (Скрытая створка)</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Современный</b> дизайн для окон с плоской или изогнутой линией</p>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim slide-up">
-							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-img/open-12.png')"></div>
-							<div class="text-center fs-8">Поворотно-откидное окно с глухим блоком (Скрытая створка)</div>
+						<div class="col-lg-6 col-xl-4 col-xxl-3 anim fade-up">
+							<p class="product-feature mb-0"><b>Высокое</b> качество с сертифицированными характеристиками</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="bg-light overflow-hidden py-5 py-md-6 py-lg-7">
+				<div class="container">
+					<div class="product-slider slider-w100">
+						<div class="row align-items-center mb-5 mb-lg-6">
+							<div class="col has-anims">
+								<h2 class="page-title anim fade-right">Фото</h2>
+								<div class="page-caption article anim fade-up mt-3">
+									<p>Какое-то пояснение заголовка, или краткая информация о секции.</p>
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<div class="has-anims">
+									<div class="row align-items-center anim fade">
+										<div class="col-auto ms-auto">
+											<div class="swiper-pagination"></div>
+										</div>
+
+										<div class="col-auto d-none d-lg-block">
+											<div class="swiper-nav-center">
+												<div class="row gx-2">
+													<div class="col-auto">
+														<div class="swiper-button-prev">
+															<svg class="icon">
+																<use href="@img/sprite.symbol.svg#slider-prev"></use>
+															</svg>
+														</div>
+													</div>
+
+													<div class="col-auto">
+														<div class="swiper-button-next">
+															<svg class="icon">
+																<use href="@img/sprite.symbol.svg#slider-next"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="position-relative has-anims">
+							<div class="swiper anim fade-up">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-1.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-1.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-2.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-2.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-3.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-3.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-4.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-4.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-5.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-5.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-6.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-6.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-7.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-7.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-8.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-8.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-9.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-9.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="product-photo position-relative">
+											<div class="product-photo__img-container ratio ratio-16x9 overflow-hidden">
+												<div class="product-photo__img" style="background-image: url('@img/temp-imgs/product-photo-10.jpg')"></div>
+											</div>
+
+											<a href="@img/temp-imgs/product-photo-10.jpg" class="stretched-link gall-img" data-gallery="gallery-14"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-5 py-md-6 py-lg-7">
+				<div class="container">
+					<article class="article article-page">
+						<h2 class="page-title mb-5 mb-lg-6">О системе</h2>
+
+						<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</p>
+
+						<div class="article-component w-100">
+							<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom gall-img" data-gallery="gallery-1">
+								<img src="@img/temp-imgs/temp-content-img.jpg" />
+							</a>
+
+							<div class="caption">
+								Картинка с лайтбоксом на всю ширину. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот,
+							на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+						</p>
+
+						<div class="article-component">
+							<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom gall-img" data-gallery="gallery-2">
+								<img src="@img/temp-imgs/temp-content-img.jpg" />
+							</a>
+
+							<div class="caption">
+								Картинка с лайтбоксом на ширину текста. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось? » –
+							подумал он. Это не было сном.
+						</p>
+
+						<div class="article-component img-inline w-100 text-center">
+							<img src="@img/temp-imgs/temp-content-img-sm.jpg" />
+
+							<div class="caption">
+								Картинка без лайтбокса произвольного размера. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.</p>
+
+						<div class="article-component w-100">
+							<div class="ratio ratio-16x9">
+								<iframe
+									width="720"
+									height="405"
+									src="https://rutube.ru/play/embed/5c82e959c06265efeaf665ab56ce0075"
+									frameborder="0"
+									allow="clipboard-write; autoplay"
+									webkitAllowFullScreen
+									mozallowfullscreen
+									allowfullscreen
+								></iframe>
+							</div>
+
+							<div class="caption">
+								Видео на всю ширину. RuTube-канал
+								<a href="https://rutube.ru/channel/33685478/" target="_blank">Образовач</a>
+							</div>
+						</div>
+
+						<p>
+							Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+							иллюстрированного журнала и вставил в красивую золоченую рамку.
+						</p>
+
+						<div class="article-component">
+							<div class="ratio ratio-16x9">
+								<iframe
+									width="720"
+									height="405"
+									src="https://rutube.ru/play/embed/5c82e959c06265efeaf665ab56ce0075"
+									frameborder="0"
+									allow="clipboard-write; autoplay"
+									webkitAllowFullScreen
+									mozallowfullscreen
+									allowfullscreen
+								></iframe>
+							</div>
+
+							<div class="caption">
+								Видео на всю ширину. RuTube-канал
+								<a href="https://rutube.ru/channel/33685478/" target="_blank">Образовач</a>
+							</div>
+						</div>
+
+						<p>
+							На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком
+							исчезала ее рука.
+						</p>
+
+						<h2>Подзаголовок страницы h2</h2>
+
+						<p>
+							Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в
+							грустное настроение.
+						</p>
+
+						<ul>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+							<li>
+								Элемент списка с вложенностью
+								<ul>
+									<li>Элемент списка</li>
+									<li>Элемент списка</li>
+									<li>Элемент списка</li>
+								</ul>
+							</li>
+							<li>Элемент списка</li>
+						</ul>
+
+						<p>
+							«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку,
+							а в теперешнем своем состоянии он никак не мог принять этого положения.
+						</p>
+
+						<ol>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+							<li>Элемент списка</li>
+						</ol>
+
+						<p>
+							С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся
+							ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую
+							боль в боку.
+						</p>
+
+						<h3>Маленький подзаголовок страницы h3</h3>
+
+						<p>«Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах.</p>
+
+						<div class="article-component table-responsive w-100">
+							<table class="table table-striped table-bordered">
+								<caption class="caption">
+									Таблица на всю ширину
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Имя</th>
+										<th scope="col">Фамилия</th>
+										<th scope="col">Должность</th>
+										<th scope="col">Телефон</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Андрей</td>
+										<td>Петров</td>
+										<td>Менеджер</td>
+										<td><a href="tel:#">+7 (999) 888 77 66</a></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Виктор</td>
+										<td>Степанов</td>
+										<td>Бухгалтер</td>
+										<td><a href="tel:#">+7 (888) 777 66 55</a></td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Иван</td>
+										<td>Григорьев</td>
+										<td>Завхоз</td>
+										<td><a href="tel:#">+7 (777) 666 55 44</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>
+							Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с
+							плохим, нерегулярным питанием, завязывай со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения. Черт бы побрал все
+							это!»
+						</p>
+
+						<div class="article-component table-responsive">
+							<table class="table table-striped table-bordered">
+								<caption class="caption">
+									Таблица на ширину текста
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Имя</th>
+										<th scope="col">Фамилия</th>
+										<th scope="col">Должность</th>
+										<th scope="col">Телефон</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Андрей</td>
+										<td>Петров</td>
+										<td>Менеджер</td>
+										<td><a href="tel:#">+7 (999) 888 77 66</a></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Виктор</td>
+										<td>Степанов</td>
+										<td>Бухгалтер</td>
+										<td><a href="tel:#">+7 (888) 777 66 55</a></td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Иван</td>
+										<td>Григорьев</td>
+										<td>Завхоз</td>
+										<td><a href="tel:#">+7 (777) 666 55 44</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<p>
+							Он почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати, чтобы удобнее было поднять голову; нашел зудевшее
+							место, сплошь покрытое, как оказалось, белыми непонятными точечками; хотел было ощупать это место одной из ножек, но сразу отдернул ее, ибо
+							даже простое прикосновение вызвало у него, Грегора, озноб.
+						</p>
+
+						<div class="article-component w-100">
+							<div class="row gy-4 gx-lg-5">
+								<div class="col-lg-5">
+									<img src="@img/temp-imgs/catalogue-card-2.jpg" class="w-100" alt="" />
+								</div>
+
+								<div class="col">
+									<div class="h-100 d-flex flex-column">
+										<div class="my-auto inner-text">
+											<h2>Врезка с боковым изображением</h2>
+
+											<p>
+												Он почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати, чтобы удобнее было поднять голову; нашел
+												зудевшее место, сплошь покрытое, как оказалось, белыми непонятными точечками; хотел было ощупать это место одной из ножек, но сразу
+												отдернул ее, ибо даже простое прикосновение вызвало у него, Грегора, озноб.
+											</p>
+
+											<p>
+												Он соскользнул в прежнее свое положение. «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен
+												высыпаться. Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу, чтобы переписать
+												полученные заказы, эти господа только завтракают.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article-component w-100">
+							<div class="row gy-4 gx-lg-5">
+								<div class="col-lg-5">
+									<img src="@img/temp-imgs/catalogue-card-2.jpg" class="w-100" alt="" />
+								</div>
+
+								<div class="col">
+									<div class="h-100 d-flex flex-column">
+										<div class="my-auto inner-text">
+											<h2>Врезка с боковым изображением</h2>
+
+											<p>
+												Он почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати, чтобы удобнее было поднять голову; нашел
+												зудевшее место, сплошь покрытое, как оказалось, белыми непонятными точечками; хотел было ощупать это место одной из ножек, но сразу
+												отдернул ее, ибо даже простое прикосновение вызвало у него, Грегора, озноб.
+											</p>
+
+											<p>
+												Он соскользнул в прежнее свое положение. «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен
+												высыпаться. Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу, чтобы переписать
+												полученные заказы, эти господа только завтракают.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4>Очень мальнький подзаголовок h4</h4>
+
+						<p>
+							Он соскользнул в прежнее свое положение. «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен высыпаться.
+							Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу, чтобы переписать полученные заказы, эти
+							господа только завтракают.
+						</p>
+
+						<div class="article-component">
+							<div class="blockquote-container rounded bg-light p-3 p-sm-4 p-md-5">
+								<div class="blockquote-person d-flex mb-3 mb-md-4">
+									<div class="img ratio ratio-1x1 rounded-circle flex-shrink-0 me-3">
+										<img src="@img/temp-imgs/temp-blockquote-person-photo.jpg" alt="" />
+									</div>
+
+									<div class="my-auto me-auto">
+										<div class="blockquote-person-name fw-semibold">Филипп Филиппович Преображенский</div>
+										<div class="blockquote-person-info text-secondary">Учёный-медик, профессор, хирург-экспериментатор</div>
+									</div>
+
+									<svg class="icon blockquote-icon ms-3 ms-sm-4">
+										<use href="@img/sprite.symbol.svg#blockquote"></use>
+									</svg>
+								</div>
+
+								<blockquote class="blockquote" cite="">
+									<p>Следовательно, разруха не в клозетах, а в головах.</p>
+
+									<div class="blockquote-footer">
+										<cite title="Source Title">х/ф «Собачье сердце»</cite>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+
+						<p>
+							А осмелься я вести себя так, мои хозяин выгнал бы меня сразу. Кто знает, впрочем, может быть, это было бы даже очень хорошо для меня. Если бы
+							я не сдерживался ради родителей, я бы давно заявил об уходе, я бы подошел к своему хозяину и выложил ему все, что о нем думаю.
+						</p>
+
+						<div class="article-component">
+							<div class="row g-3">
+								<div class="col-sm-6">
+									<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+										<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+										<p class="link-card-caption">
+											Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.
+										</p>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+										<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+										<p class="link-card-caption">Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</p>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+										<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+										<p class="link-card-caption">Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.</p>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+										<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+										<p class="link-card-caption">Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p>
+							Он бы так и свалился с конторки! Странная у него манера – садиться на конторку и с ее высоты разговаривать со служащим, который вдобавок
+							вынужден подойти вплотную к конторке из-за того, что хозяин туг на ухо.
+						</p>
+
+						<div class="article-component">
+							<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+								<span class="me-auto">Ссылка на какую-то страницу</span>
+
+								<svg class="icon ms-3">
+									<use href="@img/sprite.symbol.svg#arrow-right"></use>
+								</svg>
+							</a>
+
+							<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+								<span class="me-auto">Ссылка на какую-то страницу</span>
+
+								<svg class="icon ms-3">
+									<use href="@img/sprite.symbol.svg#arrow-right"></use>
+								</svg>
+							</a>
+
+							<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+								<span class="me-auto">Ссылка на какую-то страницу</span>
+
+								<svg class="icon ms-3">
+									<use href="@img/sprite.symbol.svg#arrow-right"></use>
+								</svg>
+							</a>
+						</div>
+
+						<p>
+							Однако надежда еще не совсем потеряна: как только я накоплю денег, чтобы выплатить долг моих родителей – на это уйдет еще лет пять-шесть, – я
+							так и поступлю. Тут-то мы и распрощаемся раз и навсегда. А пока что надо подниматься, мой поезд отходит в пять».
+						</p>
+
+						<div class="article-component">
+							<div class="document">
+								<div class="row gx-0">
+									<div class="col-md position-relative p-3">
+										<a href="#" class="link-dark document-name stretched-link mb-2">
+											Отчёт о выполнении мероприятий по обеспечению социального благополучия населения за 2023 год (№ 23/О-458 от 15.01.2024)
+										</a>
+
+										<div class="row document-footer">
+											<div class="col-auto">
+												<div class="document-format text-icon">
+													<svg class="icon me-2">
+														<use href="@img/sprite.symbol.svg#document"></use>
+													</svg>
+
+													<span>XLS</span>
+												</div>
+											</div>
+
+											<div class="col-auto">1.25&nbsp;Мб</div>
+
+											<div class="col-auto">21.01.2025</div>
+										</div>
+									</div>
+
+									<div class="col-md-auto">
+										<div class="document-download p-3">
+											<a href="files/example.xlsx" download="example.xlsx" title="Скачать документ" class="link-icon link-dark stretched-link my-auto">
+												<svg class="icon">
+													<use href="@img/sprite.symbol.svg#download"></use>
+												</svg>
+
+												<span class="ms-2 d-md-none">Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="document">
+								<div class="row gx-0">
+									<div class="col-md position-relative p-3">
+										<a href="#" class="link-dark document-name stretched-link mb-2">
+											Справка о результатах мониторинга исполнения региональных программ по поддержке малого и среднего бизнеса (№ 56/СМ-213 от 12.03.2024)
+										</a>
+
+										<div class="row document-footer">
+											<div class="col-auto">
+												<div class="document-format text-icon">
+													<svg class="icon me-2">
+														<use href="@img/sprite.symbol.svg#document"></use>
+													</svg>
+
+													<span>XLS</span>
+												</div>
+											</div>
+
+											<div class="col-auto">1.44&nbsp;Мб</div>
+
+											<div class="col-auto">22.01.2025</div>
+										</div>
+									</div>
+
+									<div class="col-md-auto">
+										<div class="document-download p-3">
+											<a href="files/example.xlsx" download="example.xlsx" title="Скачать документ" class="link-icon link-dark stretched-link my-auto">
+												<svg class="icon">
+													<use href="@img/sprite.symbol.svg#download"></use>
+												</svg>
+
+												<span class="ms-2 d-md-none">Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="document">
+								<div class="row gx-0">
+									<div class="col-md position-relative p-3">
+										<a href="#" class="link-dark document-name stretched-link mb-2">
+											Заключение по результатам проверки эффективности реализации федеральных программ в сфере экологии (№ 78/Э-987 от 22.04.2024)
+										</a>
+
+										<div class="row document-footer">
+											<div class="col-auto">
+												<div class="document-format text-icon">
+													<svg class="icon me-2">
+														<use href="@img/sprite.symbol.svg#document"></use>
+													</svg>
+
+													<span>PDF</span>
+												</div>
+											</div>
+
+											<div class="col-auto">12.96&nbsp;Мб</div>
+
+											<div class="col-auto">20.01.2025</div>
+										</div>
+									</div>
+
+									<div class="col-md-auto">
+										<div class="document-download p-3">
+											<a href="files/example.xlsx" download="example.xlsx" title="Скачать документ" class="link-icon link-dark stretched-link my-auto">
+												<svg class="icon">
+													<use href="@img/sprite.symbol.svg#download"></use>
+												</svg>
+
+												<span class="ms-2 d-md-none">Скачать</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p>
+							И он взглянул на будильник, который тикал на сундуке. «Боже правый! » – подумал он. Было половина седьмого, и стрелки спокойно двигались
+							дальше, было даже больше половины, без малого уже три четверти. Неужели будильник не звонил?
+						</p>
+
+						<div class="article-component accordion">
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+										</p>
+
+										<h3>Маленький подзаголовок аккордиона h3</h3>
+
+										<p>
+											Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками
+											живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+										</p>
+
+										<div class="article-component w-100">
+											<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom gall-img" data-gallery="gallery-3">
+												<img src="@img/temp-imgs/temp-content-img.jpg" />
+											</a>
+
+											<div class="caption">
+												Картинка с лайтбоксом на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной
+											случилось? » – подумал он. Это не было сном.
+										</p>
+
+										<div class="article-component img-inline w-100 text-center">
+											<img src="@img/temp-imgs/temp-content-img-sm.jpg" />
+
+											<div class="caption">
+												Картинка без лайтбокса произвольного размера. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.</p>
+
+										<div class="article-component w-100">
+											<div class="ratio ratio-16x9">
+												<iframe
+													width="720"
+													height="405"
+													src="https://rutube.ru/play/embed/5c82e959c06265efeaf665ab56ce0075"
+													frameborder="0"
+													allow="clipboard-write; autoplay"
+													webkitAllowFullScreen
+													mozallowfullscreen
+													allowfullscreen
+												></iframe>
+											</div>
+
+											<div class="caption">
+												Видео на всю ширину. RuTube-канал
+												<a href="https://rutube.ru/channel/33685478/" target="_blank">Образовач</a>
+											</div>
+										</div>
+
+										<p>
+											Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+
+										<h4>Очень мальнький подзаголовок аккордиона h4</h4>
+
+										<p>
+											На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой
+											целиком исчезала ее рука.
+										</p>
+
+										<ul>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>
+												Элемент списка с вложенностью
+												<ul>
+													<li>Элемент списка</li>
+													<li>Элемент списка</li>
+													<li>Элемент списка</li>
+												</ul>
+											</li>
+											<li>Элемент списка</li>
+										</ul>
+
+										<p>
+											Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и
+											вовсе в грустное настроение.
+										</p>
+
+										<ol>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+										</ol>
+
+										<p>
+											«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на
+											правом боку, а в теперешнем своем состоянии он никак не мог принять этого положения.
+										</p>
+
+										<h5>Крохотный подзаголовок аккордиона h5</h5>
+
+										<p>
+											С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих
+											барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую
+											дотоле, тупую и слабую боль в боку.
+										</p>
+
+										<div class="article-component table-responsive w-100">
+											<table class="table table-striped table-bordered">
+												<caption class="caption">
+													Таблица на всю ширину
+												</caption>
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Имя</th>
+														<th scope="col">Фамилия</th>
+														<th scope="col">Должность</th>
+														<th scope="col">Телефон</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Андрей</td>
+														<td>Петров</td>
+														<td>Менеджер</td>
+														<td><a href="tel:#">+7 (999) 888 77 66</a></td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Виктор</td>
+														<td>Степанов</td>
+														<td>Бухгалтер</td>
+														<td><a href="tel:#">+7 (888) 777 66 55</a></td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Иван</td>
+														<td>Григорьев</td>
+														<td>Завхоз</td>
+														<td><a href="tel:#">+7 (777) 666 55 44</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>«Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах.</p>
+
+										<div class="article-component">
+											<div class="blockquote-container rounded bg-light p-3 p-sm-4 p-md-5">
+												<div class="blockquote-person d-flex mb-3 mb-md-4">
+													<div class="img ratio ratio-1x1 rounded-circle flex-shrink-0 me-3">
+														<img src="@img/temp-imgs/temp-blockquote-person-photo.jpg" alt="" />
+													</div>
+
+													<div class="my-auto me-auto">
+														<div class="blockquote-person-name fw-semibold">Филипп Филиппович Преображенский</div>
+														<div class="blockquote-person-info text-secondary">Учёный-медик, профессор, хирург-экспериментатор</div>
+													</div>
+
+													<svg class="icon blockquote-icon ms-3 ms-sm-4">
+														<use href="@img/sprite.symbol.svg#blockquote"></use>
+													</svg>
+												</div>
+
+												<blockquote class="blockquote" cite="">
+													<p>Следовательно, разруха не в клозетах, а в головах.</p>
+
+													<div class="blockquote-footer">
+														<cite title="Source Title">х/ф «Собачье сердце»</cite>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+
+										<p>
+											Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов,
+											мирись с плохим, нерегулярным питанием, завязывай со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения.
+											Черт бы побрал все это!»
+										</p>
+
+										<div class="article-component">
+											<div class="row g-3">
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.
+														</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+														</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>
+											Он почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати, чтобы удобнее было поднять голову; нашел
+											зудевшее место, сплошь покрытое, как оказалось, белыми непонятными точечками; хотел было ощупать это место одной из ножек, но сразу
+											отдернул ее, ибо даже простое прикосновение вызвало у него, Грегора, озноб.
+										</p>
+
+										<div class="article-component">
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+										</div>
+
+										<p>
+											Он соскользнул в прежнее свое положение. «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен
+											высыпаться. Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу, чтобы переписать
+											полученные заказы, эти господа только завтракают.
+										</p>
+
+										<div class="article-component">
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Отчёт о выполнении мероприятий по обеспечению социального благополучия населения за 2023 год (№ 23/О-458 от 15.01.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>XLS</span>
+																</div>
+															</div>
+
+															<div class="col-auto">1.25&nbsp;Мб</div>
+
+															<div class="col-auto">21.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Справка о результатах мониторинга исполнения региональных программ по поддержке малого и среднего бизнеса (№ 56/СМ-213 от
+															12.03.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>XLS</span>
+																</div>
+															</div>
+
+															<div class="col-auto">1.44&nbsp;Мб</div>
+
+															<div class="col-auto">22.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Заключение по результатам проверки эффективности реализации федеральных программ в сфере экологии (№ 78/Э-987 от 22.04.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>PDF</span>
+																</div>
+															</div>
+
+															<div class="col-auto">12.96&nbsp;Мб</div>
+
+															<div class="col-auto">20.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>
+											А осмелься я вести себя так, мои хозяин выгнал бы меня сразу. Кто знает, впрочем, может быть, это было бы даже очень хорошо для меня.
+											Если бы я не сдерживался ради родителей, я бы давно заявил об уходе, я бы подошел к своему хозяину и выложил ему все, что о нем
+											думаю.
+										</p>
+
+										<h6>Самый маленький подзаголовок аккордиона h6</h6>
+
+										<p>
+											Он бы так и свалился с конторки! Странная у него манера – садиться на конторку и с ее высоты разговаривать со служащим, который
+											вдобавок вынужден подойти вплотную к конторке из-за того, что хозяин туг на ухо.
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-6">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-4">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-4">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея только на 2 фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											Однако надежда еще не совсем потеряна: как только я накоплю денег, чтобы выплатить долг моих родителей – на это уйдет еще лет
+											пять-шесть, – я так и поступлю. Тут-то мы и распрощаемся раз и навсегда. А пока что надо подниматься, мой поезд отходит в пять».
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея только на 3 фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+										<p>
+											И он взглянул на будильник, который тикал на сундуке. «Боже правый! » – подумал он. Было половина седьмого, и стрелки спокойно
+											двигались дальше, было даже больше половины, без малого уже три четверти. Неужели будильник не звонил?
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея на 4 и более фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											С кровати было видно, что он поставлен правильно, на четыре часа; и он, несомненно, звонил. Но как можно было спокойно спать под этот
+											сотрясающий мебель трезвон? Ну, спал-то он неспокойно, но, видимо, крепко. Однако что делать теперь?
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над
+											столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над
+											столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<p>
+							С кровати было видно, что он поставлен правильно, на четыре часа; и он, несомненно, звонил. Но как можно было спокойно спать под этот
+							сотрясающий мебель трезвон? Ну, спал-то он неспокойно, но, видимо, крепко. Однако что делать теперь?
+						</p>
+
+						<h5>Крохотный подзаголовок h5</h5>
+
+						<p>
+							Следующий поезд уходит в семь часов; чтобы поспеть на него, он должен отчаянно торопиться, а набор образцов еще не упакован, да и сам он
+							отнюдь не чувствует себя свежим и легким на подъем.
+						</p>
+
+						<div class="article-component w-100">
+							<div class="row g-2 g-md-3">
+								<div class="col-6">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-7">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-7">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея только на 2 фото на всю ширину. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							И даже поспей он на поезд, хозяйского разноса ему все равно не избежать – ведь рассыльный торгового дома дежурил у пятичасового поезда и
+							давно доложил о его, Грегора, опоздании. Рассыльный, человек бесхарактерный и неумный, был ставленником хозяина. А что, если сказаться
+							больным?
+						</p>
+
+						<div class="article-component w-100">
+							<div class="row g-2 g-md-3">
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-8">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-8">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-8">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея только на 3 фото на всю ширину. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>Но это было бы крайне неприятно и показалось бы подозрительным, ибо за пятилетнюю свою службу Грегор ни разу еще не болел.</p>
+
+						<div class="article-component w-100">
+							<div class="row g-2 g-md-3">
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-9">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-9">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-9">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-9">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея на 4 и более фото на всю ширину. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							Хозяин, конечно, привел бы врача больничной кассы и стал попрекать родителей сыном-лентяем, отводя любые возражения ссылкой на этого врача,
+							по мнению которого все люди на свете совершенно здоровы и только не любят работать. И разве в данном случае он был бы так уж неправ?
+						</p>
+
+						<h6>Самый маленький подзаголовок h6</h6>
+
+						<p>
+							Если не считать сонливости, действительно странной после такого долгого сна, Грегор и в самом деле чувствовал себя превосходно и был даже
+							чертовски голоден. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное
+							насекомое.
+						</p>
+
+						<div class="article-component">
+							<div class="row g-2 g-md-3">
+								<div class="col-6">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-10">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-10">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея только на 2 фото на ширину текста. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот,
+							на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным
+							телом ножки беспомощно копошились у него перед глазами.
+						</p>
+
+						<div class="article-component">
+							<div class="row g-2 g-md-3">
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-11">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-11">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-4">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-11">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея только на 3 фото на ширину текста. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							«Что со мной случилось? » – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно
+							покоилась в своих четырех хорошо знакомых стенах.
+						</p>
+
+						<div class="article-component">
+							<div class="row g-2 g-md-3">
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-12">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-12">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-12">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+
+								<div class="col-6 col-sm-3">
+									<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-12">
+										<img src="@img/temp-imgs/temp-content-img.jpg" />
+									</a>
+								</div>
+							</div>
+
+							<div class="caption">
+								Галерея на 4 и более фото на ширину текста. Источник:
+								<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+							</div>
+						</div>
+
+						<p>
+							Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+							иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень
+							прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="bg-light py-5 py-md-6 py-lg-7">
+				<div class="container has-anims">
+					<div class="mb-5 mb-lg-6">
+						<h2 class="page-title anim fade-right">Схемы открывания</h2>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о секции.</p>
+						</div>
+					</div>
+
+					<div class="row gy-5 gx-lg-5 g-xl-6">
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-1.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидное</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-2.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидное с глухой фрамугой</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-3.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидное с открывающейся фрамугой</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-4.jpg')"></div>
+							<div class="scheme-name text-center">Двустворчатое окно с поворотно-откидным открыванием</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-5.png')"></div>
+							<div class="scheme-name text-center">Окно с глухой и поворотно-откидной створкой</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-6.png')"></div>
+							<div class="scheme-name text-center">Окно с горизонтальным осевым открыванием</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-7.png')"></div>
+							<div class="scheme-name text-center">Окно с вертикальным осевым открыванием</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-8.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидные окна с импостом и верхней глухой частью</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-9.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидные окна с импостом и верхней фрамугой</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-10.png')"></div>
+							<div class="scheme-name text-center">Двустворчатое поворотно-откидное окно с боковыми глухими элементами</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-11.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидное окно (Скрытая створка)</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 col-xl-2 anim fade-up">
+							<div class="scheme-img mx-auto mb-2 mb-sm-3" style="background-image: url('@img/temp-imgs/open-12.png')"></div>
+							<div class="scheme-name text-center">Поворотно-откидное окно с глухим блоком (Скрытая створка)</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {"page": "catalogue-item"})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="js/app.js"></script>

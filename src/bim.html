@@ -1,46 +1,74 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
+<!doctype html>
+<html lang="ru">
 	@@include('html/head.html', { "title": "Раздвижное окно трехстворчатое PremiSlide 76" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {"lk":true})
+		@@include('html/navbar.html', {})
+		</div>
+		@@include('html/offcanvas.html', {"lk":true})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-5 pt-md-6 pb-5 pb-md-7">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item"><a href="profile.html">Кабинет дилера</a></li>
-					<li class="breadcrumb-item active">Раздвижное окно трехстворчатое PremiSlide 76</li>
-				</ol>
-
-				<div class="row gy-3">
-					<div class="col-sm-4 col-lg-3 col-xl-2">
-						<div class="bim-item position-relative mb-3">
-							<div class="bim-item__img-container ratio ratio-1x1 overflow-hidden">
-								<div class="bim-item__img" style="background-image: url('@img/temp-img/bim-thumb-1.jpg')"></div>
-							</div>
-
-							<a href="@img/temp-img/bim-thumb-1.jpg" data-caption="Описание изображения" data-fancybox class="stretched-link"></a>
-						</div>
-
-						<a href="#" class="btn btn-dark w-100">Скачать</a>
-					</div>
-
-					<div class="col-sm-8 col-lg-9">
-						<div class="fs-9 text-muted pt-3 mb-1">BIM-проект</div>
-						<h1 class="fs-3 mb-4">Раздвижное окно трехстворчатое PremiSlide 76</h1>
-						<p class="mb-0">
-							Дверь трехстворчатая раздвижная PremiSlide 76. Модель имеет одну схему открывания: сдвиг боковых створок к центру. Максимальный размер
-							створок 2200х2200. В рамках семейства пользователь может изменять: - размеры конструкций (высота/ширина), - величину монтажных зазоров, -
-							марку фурнитуры и другие параметры. В семействе приведена необходимая информация для формирования спецификаций. Предусмотрено
-							условно-графическое обозначение.
-						</p>
-					</div>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="profile.html">Кабинет дилера</a></li>
+						<li class="breadcrumb-item active">Раздвижное окно трехстворчатое PremiSlide 76</li>
+					</ol>
 				</div>
 			</div>
+
+			<section class="pt-4 pt-md-5 pb-5 pb-md-6 pb-lg-7">
+				<div class="container">
+					<div class="row gy-3 gx-lg-5">
+						<div class="col-md-4 col-lg-4">
+							<div class="bim-item position-relative mb-3">
+								<div class="bim-item__img-container ratio ratio-1x1 overflow-hidden">
+									<div class="bim-item__img" style="background-image: url('@img/temp-imgs/bim-thumb-1.jpg')"></div>
+								</div>
+
+								<a href="@img/temp-imgs/bim-thumb-1.jpg" data-caption="Описание изображения" data-fancybox class="stretched-link"></a>
+							</div>
+
+							<a href="#" class="btn btn-dark btn-icon justify-content-center w-100">
+								<span>Скачать</span>
+
+								<svg class="icon ms-3">
+									<use href="@img/sprite.symbol.svg#download"></use>
+								</svg>
+							</a>
+						</div>
+
+						<div class="col-md">
+							<div class="article">
+								<div class="bim-sign text-secondary mb-1">BIM-проект</div>
+								<h1 class="bim-title">Раздвижное окно трехстворчатое PremiSlide 76</h1>
+								<p>
+									Дверь трехстворчатая раздвижная PremiSlide 76. Модель имеет одну схему открывания: сдвиг боковых створок к центру. Максимальный размер
+									створок 2200х2200.
+								</p>
+								<p>В рамках семейства пользователь может изменять:</p>
+								<ul>
+									<li>размеры конструкций (высота/ширина)</li>
+									<li>величину монтажных зазоров</li>
+									<li>марку фурнитуры и другие параметры</li>
+								</ul>
+								<p>В семействе приведена необходимая информация для формирования спецификаций. Предусмотрено условно-графическое обозначение.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="js/app.js"></script>

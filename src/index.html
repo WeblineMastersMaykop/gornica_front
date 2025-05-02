@@ -1,295 +1,110 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
+<!doctype html>
+<html lang="ru">
 	@@include('html/head.html', { "title": "Главная" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {})
+		</div>
+		@@include('html/offcanvas.html', {})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<section class="bg-dark pb-5 pb-md-6 pb-lg-7 pt-sm-3 pt-md-4">
-				<div class="container position-relative">
-					<div class="main-slider-decor-1 position-absolute anim anim-1-1"></div>
-					<div class="main-slider-decor-2 position-absolute anim anim-1-2"></div>
-
-					<div class="position-relative">
-						<div class="swiper main-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="main-slide d-lg-flex align-items-center justify-content-end">
-										<div class="main-slide__img bg-img anim anim-1-4" style="background-image: url('@img/temp-img/main-slide-1.jpg')"></div>
-
-										<div class="main-slide__caption px-3 px-sm-4 px-md-5 p-lg-4">
-											<div class="main-slide__body bg-white shadow anim anim-1-5 p-3 p-sm-4 p-md-5">
-												<h2 class="h1 main-slide__title anim anim-1-6 mb-3 mb-lg-4">Лидер рынка Краснодарского края</h2>
-												<p class="main-slide__text anim anim-1-7 mb-5 mb-lg-6">
-													Уже <b>более 20 лет</b> согреваем дома теплыми окнами собственного производства
-												</p>
-
-												<a href="" class="btn btn-dark anim anim-1-8">Каталог продукции</a>
-											</div>
-
-											<div class="main-slide__frame d-none d-lg-block anim anim-1-9"></div>
-										</div>
-									</div>
-								</div>
-							</div>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="overflow-hidden">
+				<section class="bg-dark pb-5 pb-md-6 pb-lg-7 pt-sm-3 pt-md-4">
+					<div class="container position-relative">
+						<div class="has-anims">
+							<div class="main-slider-decor-1 position-absolute anim fade-up"></div>
+							<div class="main-slider-decor-2 position-absolute anim fade-down"></div>
 						</div>
 
-						<div class="d-flex justify-content-end align-items-center pt-4 anim anim-1-3">
-							<div class="swiper-pagination me-4"></div>
-							<div class="swiper-button-prev sbp-1 me-2">
-								<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-									<path
-										d="M18.72,194.57l97.92,97.92c8.32,8.27,21.76,8.27,30.08,0,8.37-8.3,8.42-21.8,.12-30.17-.04-.04-.08-.08-.12-.12L48.58,164.49c-8.37-8.3-8.42-21.8-.12-30.17,.04-.04,.08-.08,.12-.12L146.72,36.49c8.37-8.31,8.41-21.82,.11-30.19-8.31-8.37-21.82-8.41-30.19-.11L18.72,104.12c-24.96,24.99-24.96,65.47,0,90.45Z"
-									/>
-								</svg>
-							</div>
-
-							<div class="swiper-button-next sbn-1">
-								<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-									<path
-										d="M134.31,104.12L36.39,6.2C28.07-2.07,14.63-2.07,6.31,6.2c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12l98.13,97.71c8.37,8.3,8.42,21.8,.12,30.17-.04,.04-.08,.08-.12,.12L6.31,262.2c-8.37,8.31-8.41,21.82-.11,30.19,8.31,8.37,21.82,8.41,30.19,.11l97.92-97.92c24.96-24.99,24.96-65.47,0-90.45Z"
-									/>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="bg-dark py-5 pb-md-6 py-lg-7">
-				<div class="container">
-					<div class="row gx-6 gy-6">
-						<div class="col-lg-4 col-md-6">
-							<div class="position-relative feature">
-								<div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden anim anim-2-1">
-									<div class="feature__img bg-img" style="background-image: url('@img/temp-img/feature-1.jpg')"></div>
-								</div>
-
-								<div class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
-									<h5 class="feature__title mb-2 mb-sm-3">Алюминиевые конструкции</h5>
-									<p class="text-muted fs-8 mb-0">
-										Выбор различных материалов для производства окон и дверей более чем достаточен. Но почему алюминий является лучшим вариантом?
-									</p>
-								</div>
-
-								<a href="content.html" class="stretched-link"></a>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="position-relative feature">
-								<div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden anim anim-2-1">
-									<div class="feature__img bg-img" style="background-image: url('@img/temp-img/feature-2.jpg')"></div>
-								</div>
-
-								<div class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
-									<h5 class="feature__title mb-2 mb-sm-3">Варианты покрытий</h5>
-									<p class="text-muted fs-8 mb-0">
-										Алюминиевый профиль дает широкие возможности архитекторам благодаря безграничным вариантам цветового исполнения и фактур поверхности
-									</p>
-								</div>
-
-								<a href="content.html" class="stretched-link"></a>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6">
-							<div class="position-relative feature">
-								<div class="feature__decor bg-primary position-absolute anim anim-2-3"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden anim anim-2-1">
-									<div class="feature__img bg-img" style="background-image: url('@img/temp-img/feature-3.jpg')"></div>
-								</div>
-
-								<div class="feature__caption position-relative bg-dark pt-2 pt-sm-3 pe-3 pe-sm-4 mt-n5 me-5 anim anim-2-2">
-									<h5 class="feature__title mb-2 mb-sm-3">База знаний</h5>
-									<p class="text-muted fs-8 mb-0">Скачайте информационный буклет или каталог по интересующей вас системе</p>
-								</div>
-
-								<a href="content.html" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="bg-dark py-5 py-md-6 py-lg-7">
-				<div class="container">
-					<div class="row gx-6">
-						<div class="col-xl-3 position-relative">
-							<div class="section-catalogue__side-img position-absolute pe-4 anim anim-3-1">
-								<img src="@img/side-img-1.jpg" alt="" height="100%" width="auto" />
-							</div>
-						</div>
-
-						<div class="col-xl-9 pt-lg-6">
-							<div class="row gx-6 align-items-end mb-5">
-								<div class="col-md col-xl-7">
-									<div class="section-catalogue__header position-relative bg-white shadow px-3 pb-3 pt-4 p-sm-5 anim anim-3-2">
-										<div class="section-catalogue__header-decor position-absolute bg-primary anim anim-3-5"></div>
-
-										<h2 class="mb-3 anim anim-3-3">Широкий выбор светопрозрачных конструкций</h2>
-										<p class="text-muted mb-0 anim anim-3-4">
-											Являясь производителем, мы имеем возможность поставлять качественную продукцию по низким ценам
-										</p>
-									</div>
-								</div>
-
-								<div class="col-md-auto col-xl">
-									<div class="d-none d-md-flex justify-content-end anim anim-3-7">
-										<div class="swiper-button-prev sbp-2 me-2">
-											<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-												<path
-													d="M18.72,194.57l97.92,97.92c8.32,8.27,21.76,8.27,30.08,0,8.37-8.3,8.42-21.8,.12-30.17-.04-.04-.08-.08-.12-.12L48.58,164.49c-8.37-8.3-8.42-21.8-.12-30.17,.04-.04,.08-.08,.12-.12L146.72,36.49c8.37-8.31,8.41-21.82,.11-30.19-8.31-8.37-21.82-8.41-30.19-.11L18.72,104.12c-24.96,24.99-24.96,65.47,0,90.45Z"
-												/>
-											</svg>
-										</div>
-
-										<div class="swiper-button-next sbn-2">
-											<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.03 298.7">
-												<path
-													d="M134.31,104.12L36.39,6.2C28.07-2.07,14.63-2.07,6.31,6.2c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12l98.13,97.71c8.37,8.3,8.42,21.8,.12,30.17-.04,.04-.08,.08-.12,.12L6.31,262.2c-8.37,8.31-8.41,21.82-.11,30.19,8.31,8.37,21.82,8.41,30.19,.11l97.92-97.92c24.96-24.99,24.96-65.47,0-90.45Z"
-												/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-
+						<div class="hero-slider">
 							<div class="position-relative">
-								<div class="swiper catalogue-slider slider-dark anim anim-3-6">
+								<div class="swiper">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-1.jpg')"></div>
-												</div>
+											<div class="main-slide d-lg-flex align-items-center justify-content-end has-anims">
+												<div class="main-slide__img bg-img anim fade-left" style="background-image: url('@img/temp-imgs/main-slide-1.jpg')"></div>
 
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Раздвижные и подъемно-раздвижные системы</h6>
-												</div>
+												<div class="main-slide__caption px-3 px-sm-4 px-md-5 p-lg-4">
+													<div class="main-slide__body bg-white shadow anim fade-up p-3 p-sm-4 p-md-5">
+														<h2 class="h1 main-slide__title anim fade-up mb-3 mb-lg-4">Лидер рынка Краснодарского края</h2>
+														<p class="main-slide__text anim fade-up mb-4 mb-md-5 mb-lg-6">
+															Уже <b>более 20 лет</b> согреваем дома теплыми окнами собственного производства
+														</p>
 
-												<a href="catalogue-category.html" class="stretched-link"></a>
+														<a href="" class="btn btn-dark anim fade-up">Каталог продукции</a>
+													</div>
+
+													<div class="main-slide__frame d-none d-lg-block anim fade"></div>
+												</div>
 											</div>
 										</div>
 
 										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-2.jpg')"></div>
-												</div>
+											<div class="main-slide d-lg-flex align-items-center justify-content-end has-anims">
+												<div class="main-slide__img bg-img anim fade-left" style="background-image: url('@img/temp-imgs/main-slide-2.jpg')"></div>
 
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Окна и двери</h6>
-												</div>
+												<div class="main-slide__caption px-3 px-sm-4 px-md-5 p-lg-4">
+													<div class="main-slide__body bg-white shadow anim fade-up p-3 p-sm-4 p-md-5">
+														<h2 class="h1 main-slide__title anim fade-up mb-3 mb-lg-4">Создаём тепло и уют в&nbsp;вашем доме</h2>
+														<p class="main-slide__text anim fade-up mb-4 mb-md-5 mb-lg-6">
+															Уже <b>более 20 лет</b> согреваем дома теплыми окнами собственного производства
+														</p>
 
-												<a href="catalogue-category.html" class="stretched-link"></a>
+														<a href="" class="btn btn-dark anim fade-up">Каталог продукции</a>
+													</div>
+
+													<div class="main-slide__frame d-none d-lg-block anim fade"></div>
+												</div>
 											</div>
 										</div>
 
 										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-3.jpg')"></div>
-												</div>
+											<div class="main-slide d-lg-flex align-items-center justify-content-end has-anims">
+												<div class="main-slide__img bg-img anim fade-left" style="background-image: url('@img/temp-imgs/main-slide-3.jpg')"></div>
 
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Фасадные системы остекления</h6>
-												</div>
+												<div class="main-slide__caption px-3 px-sm-4 px-md-5 p-lg-4">
+													<div class="main-slide__body bg-white shadow anim fade-up p-3 p-sm-4 p-md-5">
+														<h2 class="h1 main-slide__title anim fade-up mb-3 mb-lg-4">Решения под любой бюджет и интерьер</h2>
+														<p class="main-slide__text anim fade-up mb-4 mb-md-5 mb-lg-6">
+															Уже <b>более 20 лет</b> согреваем дома теплыми окнами собственного производства
+														</p>
 
-												<a href="catalogue-category.html" class="stretched-link"></a>
+														<a href="" class="btn btn-dark anim fade-up">Каталог продукции</a>
+													</div>
+
+													<div class="main-slide__frame d-none d-lg-block anim fade"></div>
+												</div>
 											</div>
 										</div>
+									</div>
+								</div>
 
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-4.jpg')"></div>
-												</div>
-
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Системы солнцезащиты, перголы</h6>
-												</div>
-
-												<a href="catalogue-category.html" class="stretched-link"></a>
-											</div>
+								<div class="has-anims mt-3 mt-lg-4">
+									<div class="row align-items-center anim fade">
+										<div class="col-auto ms-auto">
+											<div class="swiper-pagination"></div>
 										</div>
 
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-5.jpg')"></div>
-												</div>
+										<div class="col-auto d-none d-lg-block">
+											<div class="swiper-nav-center">
+												<div class="row gx-2">
+													<div class="col-auto">
+														<div class="swiper-button-prev">
+															<svg class="icon">
+																<use href="@img/sprite.symbol.svg#slider-prev"></use>
+															</svg>
+														</div>
+													</div>
 
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Складывающаяся дверь-гармошка</h6>
-												</div>
-
-												<a href="catalogue-category.html" class="stretched-link"></a>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-6.jpg')"></div>
-												</div>
-
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Системы ограждений, перила</h6>
-												</div>
-
-												<a href="catalogue-category.html" class="stretched-link"></a>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-7.jpg')"></div>
-												</div>
-
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Офисные перегородки</h6>
-												</div>
-
-												<a href="catalogue-category.html" class="stretched-link"></a>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16 overflow-hidden">
-													<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-img/catalogue-card-8.jpg')"></div>
-												</div>
-
-												<div class="catalogue-card__caption position-relative pt-4">
-													<div class="catalogue-card__decor position-absolute bg-primary"></div>
-													<h6 class="mb-0 fw-semibold catalogue-card__title">Входные двери</h6>
-												</div>
-
-												<a href="catalogue-category.html" class="stretched-link"></a>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="catalogue-card position-relative">
-												<div class="ratio ratio-11x16">
-													<div class="frame d-flex flex-column align-items-center justify-content-center p-3 p-md-4 p-lg-5">
-														<h5 class="text-white text-center mb-5">Больше категорий в нашем каталоге</h5>
-														<a href="catalogue.html" class="btn btn-outline-light">Перейти в каталог</a>
+													<div class="col-auto">
+														<div class="swiper-button-next">
+															<svg class="icon">
+																<use href="@img/sprite.symbol.svg#slider-next"></use>
+															</svg>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -299,331 +114,736 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="bg-dark py-5 py-md-6 py-lg-7">
-				<div class="container">
-					<div class="row gx-6 gy-sm-7 gy-6 stats">
-						<div class="col-lg-3 col-sm-6">
-							<div class="h-100 border-start border-white ps-4">
-								<div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">25</div>
-								<p class="text-white mb-0 anim anim-4-2">Лет на рынке</p>
+				<section class="bg-dark has-anims py-5 py-md-6 py-xl-7 py-xxl-8">
+					<div class="container">
+						<div class="row gx-md-5 gx-lg-6 gx-xxl-7 gy-4 gy-sm-5 gy-md-6 gy-lg-7 gy-xxl-8">
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-1.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Окна без свинца</div>
+										<div class="text-feature__caption p mt-2">Профиль ELEX категории А, изготовлен по технологии Ca-Zn, без свинцового стабилизатора</div>
+									</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-lg-3 col-sm-6">
-							<div class="h-100 border-start border-white ps-4">
-								<div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">1 000</div>
-								<p class="text-white mb-0 anim anim-4-2">Сотрудников</p>
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-2.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Собственные цеха</div>
+										<div class="text-feature__caption mt-2">
+											<ul>
+												<li>Ламинация ПВХ-профилей</li>
+												<li>Покраска алюминиевых конструкций</li>
+												<li>Производство стеклопакетов</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-lg-3 col-sm-6">
-							<div class="h-100 border-start border-white ps-4">
-								<div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">5</div>
-								<p class="text-white mb-0 anim anim-4-2">Собсвенных заводов</p>
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-3.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Малые сроки изготовления</div>
+										<div class="text-feature__caption mt-2">
+											Благодаря собственному производству срок изготовления нестандартных заказов может составлять до 5-10 рабочих дней
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-lg-3 col-sm-6">
-							<div class="h-100 border-start border-white ps-4">
-								<div class="d-inline-block bg-primary text-white fw-medium px-2 mb-2 anim anim-4-1">8</div>
-								<p class="text-white mb-0 anim anim-4-2">Производственных линий</p>
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-4.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Логистика</div>
+										<div class="text-feature__caption mt-2">
+											Большой логистическим парк, обеспечивающий оперативную доставку продукции по широкой географии
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-5.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Ассортимент</div>
+										<div class="text-feature__caption mt-2">
+											Широкий ассортимент металлопластиковых и алюминиевых конструкций, включая стеклопакеты, что охватывает разнообразные потребности
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-xl-4 anim fade-up">
+								<div class="text-feature h-100">
+									<div class="text-feature__left me-3">
+										<div class="text-feature__icon p-2">
+											<div class="img img-conatain ratio ratio-1x1">
+												<img src="@img/temp-imgs/text-feature-img-6.svg" alt="" />
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="text-feature__title">Доступные цены</div>
+										<div class="text-feature__caption mt-2">Конкурентоспособные цены на готовые изделия, сохраняя высокое качество продукции</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="bg-dark py-5 py-md-6 py-lg-7">
-				<div class="container pb-5 pb-md-6 pb-lg-7">
-					<div class="text-center mb-2 anim anim-5-1">
-						<img src="@img/partner-check-icon.svg" alt="" height="24px" />
-						<h2 class="text-white fs-4 mb-6">Только проверенные партнёры</h2>
-					</div>
-
-					<div class="row gx-6 gx-sm-7 gy-md-6 gy-7 justify-content-center align-items-center">
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-1.svg" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-2.png" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-3.png" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-4.gif" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-5.svg" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-
-						<div class="col-6 col-md-3 col-lg-2 text-center">
-							<img src="@img/temp-img/partner-logo-6.svg" alt="" class="partner-logo anim anim-5-2" />
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="bg-gray-dark py-5 py-md-6 py-lg-7">
-				<div class="container position-relative py-5 py-md-6 py-lg-7">
-					<div class="about__decor-1 bg-primary position-absolute anim anim-6-1"></div>
-
-					<div class="row gx-7 gy-5 gy-md-6 align-items-xxl-center">
-						<div class="col-lg-6">
-							<div class="ratio ratio-4x3 position-relative bg-img anim anim-6-2" style="background-image: url('@img/about-img.jpg')">
-								<div class="about__decor-2 bg-primary position-absolute anim anim-6-4"></div>
-							</div>
-						</div>
-
-						<div class="col-lg-6 anim anim-6-3">
-							<h1 class="text-white mb-3">Компания «Горница»</h1>
-							<div class="text-light mb-md-6 mb-5">
-								<p>
-									Завод «Горница» известен на рынке уже более 25 лет. На сегодняшний день это самый крупнейший производитель пластиковых конструкций в Юге
-									России. На заводе установлены автоматические сборочные линии Rotox и Schirmer на которых работают высококвалифицированные специалисты с
-									многолетним опытом.
-								</p>
-
-								<p>
-									Мы контролируем качество выпускаемой продукции на всех этапах производства, поэтому окна от производителя завода Горница — это надежные и
-									долговечные металлопластиковые изделия. На каждом предприятии холдинга есть свой отдел контроля качества.
-								</p>
+				<section class="catalogue-slider bg-dark has-anims py-5 py-md-6 py-xl-7 py-xxl-8">
+					<div class="container">
+						<div class="row gx-xl-6">
+							<div class="col-xl-3 position-relative anim fade-right">
+								<div class="section-catalogue__side-img position-absolute pe-4">
+									<img src="@img/side-img-1.jpg" alt="" height="100%" width="auto" />
+								</div>
 							</div>
 
-							<div class="btn btn-outline-light">Узнайте больше</div>
+							<div class="col-xl-9 pt-lg-6">
+								<div class="row gx-lg-6 align-items-end mb-md-5">
+									<div class="col-md col-xl-7">
+										<div class="section-catalogue__header position-relative bg-white shadow anim fade px-3 pb-3 pt-4 p-sm-5 mb-4 mb-md-0">
+											<div class="section-catalogue__header-decor position-absolute bg-primary anim fade-left"></div>
+
+											<h2 class="section-title anim fade-up mb-3">Широкий выбор светопрозрачных конструкций</h2>
+											<p class="text-secondary anim fade-up mb-0">
+												Являясь производителем, мы имеем возможность поставлять качественную продукцию по низким ценам
+											</p>
+										</div>
+									</div>
+
+									<div class="col-md-auto col-xl">
+										<div class="row align-items-center anim fade mb-2 mb-md-0">
+											<div class="col-auto ms-auto">
+												<div class="swiper-pagination"></div>
+											</div>
+
+											<div class="col-auto d-none d-lg-block">
+												<div class="swiper-nav-center">
+													<div class="row gx-2">
+														<div class="col-auto">
+															<div class="swiper-button-prev">
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#slider-prev"></use>
+																</svg>
+															</div>
+														</div>
+
+														<div class="col-auto">
+															<div class="swiper-button-next">
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#slider-next"></use>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="position-relative anim fade-up">
+									<div class="swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-1.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Раздвижные и подъемно-раздвижные системы</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-2.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Окна и двери</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-3.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Фасадные системы остекления</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-4.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Системы солнцезащиты, перголы</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-5.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Складывающаяся дверь-гармошка</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-6.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Системы ограждений, перила</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-7.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Офисные перегородки</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16 overflow-hidden">
+														<div class="catalogue-card__img bg-img" style="background-image: url('@img/temp-imgs/catalogue-card-8.jpg')"></div>
+													</div>
+
+													<div class="catalogue-card__caption position-relative pt-4">
+														<div class="catalogue-card__decor position-absolute"></div>
+														<h6 class="mb-0 catalogue-card__title">Входные двери</h6>
+													</div>
+
+													<a href="catalogue-category.html" class="stretched-link"></a>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="catalogue-card position-relative">
+													<div class="ratio ratio-11x16">
+														<div class="frame d-flex flex-column align-items-center justify-content-center p-3 p-md-4 p-lg-5">
+															<h5 class="text-white text-center fw-medium mb-5">Больше категорий в нашем каталоге</h5>
+															<a href="catalogue.html" class="btn btn-primary">Перейти в каталог</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="bg-dark py-5 py-md-6 py-lg-7">
-				<div class="container py-5 py-md-6 py-lg-7">
-					<div class="row gy-4 align-items-center mb-6">
-						<div class="col-lg-6">
-							<div class="d-flex">
-								<img src="@img/portfolio-section-icon.svg" alt="" height="60px" class="d-none d-lg-block me-4 anim anim-7-1" />
+				<section class="bg-dark has-anims py-5 py-md-6 py-xl-7 py-xxl-8">
+					<div class="container position-relative">
+						<div class="about__decor-1 bg-primary position-absolute anim fade-down"></div>
 
-								<div>
-									<h2 class="text-white mb-3 anim anim-7-2">Завершённые объекты</h2>
-									<p class="text-muted mb-0 anim anim-7-3">
-										Наши системы находят применение как в частном домостроении, так и в коммерческом строительстве многих значимых объектов. Предлагаем
-										посмотреть на некоторые из них
+						<div class="row gx-lg-5 gx-xl-7 gy-5 gy-md-6">
+							<div class="col-lg-6">
+								<div class="article text-white-secondary">
+									<h1 class="section-title">Компания «Горница»</h1>
+
+									<p>
+										Компания ООО «Данко-Диалог» - торговая марка «Горница» была основана 2 сентября 1999 года в г. Краснодар, которая является крупнейшим
+										производителем металлопластиковых и алюминиевых конструкций на Юге России. Динамично развивающееся предприятие существует уже 25 лет и
+										является лидером оконного рынка Краснодарского края.
+									</p>
+
+									<p>
+										Производственные мощности компании позволяют выпускать порядка 75&nbsp;000&nbsp;м² современных металлопластиковых конструкций в месяц
+										на автоматическом оборудовании Schirmer и Rotox(Германия).
+									</p>
+
+									<p>
+										Компания входит в состав холдинга, имеющего собственный экструзионный завод подоконной доски и профильной системы «ЕLEX» ООО
+										«Юг-Профиль-Системс». Профиль ELEX категории А, изготовлен по технологии Ca-Zn, без свинцового стабилизатора. С характеристиками
+										профиля вы можете ознакомиться на этом сайте <a href="https://www.elexprof.ru/" target="blank">elexprof.ru</a>.
+									</p>
+
+									<p>
+										С 2016 года в состав холдинга входит еще один завод-переработчик компания «Горница-Крым» г. Севастополь, который выпускает более
+										20&nbsp;000&nbsp;м² качественных оконных конструкций в месяц.
+									</p>
+
+									<p>
+										В 2019 году компания «Горница» открывает для себя новые горизонты в оконном рынке! Запущено масштабное производство алюминиевых
+										светопрозрачных конструкций.
+									</p>
+
+									<p>
+										Главным преимуществом холдинга являются - цех по нанесению ламинационной пленки на ПВХ профиля, цех по покраске алюминиевых конструкций
+										и цех по производству стеклопакетов, что позволяет сократить срок изготовления нестандартных заказов до 5-10 рабочих дней.
+									</p>
+
+									<p>
+										Персонал холдинга состоит из высококвалифицированных специалистов и находится в состоянии полной комплектации. Общая планируемая
+										численность работающих (с учетом увеличения объемов производства) – более 1&nbsp;000&nbsp;человек.
+									</p>
+
+									<p>
+										Конкурентоспособность компании обеспечивается качеством готовой продукции, современными технологиями по производству, большим
+										логистическим парком, широким ассортиментом, а также доступными ценами на готовые изделия.
+									</p>
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div
+									class="ratio ratio-4x3 position-relative bg-img anim fade-left mb-5 mb-md-6 mb-xl-8"
+									style="background-image: url('@img/about-img.jpg')"
+								>
+									<div class="about__decor-2 bg-primary-2 position-absolute anim fade-right"></div>
+								</div>
+
+								<div class="row g-3 g-md-4 g-lg-3 g-xxl-4">
+									<div class="col-sm-6 anim fade-up">
+										<div class="feature-count h-100 p-4">
+											<div class="feature-count__title"><span class="number">1999 </span>год -</div>
+
+											<div class="feature-count__caption">начало работы компании</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 anim fade-up">
+										<div class="feature-count h-100 p-4">
+											<div class="feature-count__title"><span class="number">75 000 </span>м²</div>
+
+											<div class="feature-count__caption">металлопластиковых конструкций ежемесячно</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 anim fade-up">
+										<div class="feature-count h-100 p-4">
+											<div class="feature-count__title"><span class="number">20 000 </span>м²</div>
+
+											<div class="feature-count__caption">оконных конструкций в месяц с завода «Горница-Крым»</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 anim fade-up">
+										<div class="feature-count h-100 p-4">
+											<div class="feature-count__title"><span class="number">> 1 000</span></div>
+
+											<div class="feature-count__caption">сотрудников в штате</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-dark-secondary py-5 py-md-6 py-xl-7 py-xxl-8">
+					<div class="container">
+						<div class="row align-items-end has-anims gy-3 gx-lg-6 mb-5 mb-md-6">
+							<div class="col-12 col-lg-8 col-xl-7 me-auto">
+								<div class="section-header">
+									<h2 class="section-title anim fade-right">Работаем только с проверенными партнёрами</h2>
+									<p class="section-header__caption anim fade-up mt-3 mb-0">
+										Мы тщательно отбираем партнеров, гарантируя надежность и качество каждого сотрудничества
 									</p>
 								</div>
 							</div>
 						</div>
 
-						<div class="col text-lg-end">
-							<a href="portfolio.html" class="btn btn-outline-light anim anim-7-4">Все объекты</a>
-						</div>
-					</div>
-
-					<div class="row g-6">
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-0.jpg')"></div>
+						<div class="row has-anims g-3 g-sm-4 g-lg-5 g-xl-6">
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-1.svg" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">Частный дом в стиле хай-тек</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
-						</div>
 
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-1.jpg')"></div>
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-2.png" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">Бизнес центр «Марьино»</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
-						</div>
 
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-2.jpg')"></div>
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-3.png" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">Лофт-коворкинг «Vmeste»</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
-						</div>
 
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-3.jpg')"></div>
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-4.gif" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">Офисы IT-компании «101»</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
-						</div>
 
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-4.jpg')"></div>
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-5.svg" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">Головной офис «Сбербанк» в Краснодаре</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
-						</div>
 
-						<div class="col-md-6 col-lg-4">
-							<div class="portfolio-card position-relative anim anim-7-5">
-								<div class="portfolio-card__decor position-absolute bg-primary anim anim-7-6"></div>
-
-								<div class="ratio ratio-16x9 overflow-hidden">
-									<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-img/portfolio-card-5.jpg')"></div>
+							<div class="col-4 col-sm-3 col-md-2 anim fade-up">
+								<div class="partner px-1">
+									<div class="img img-contain ratio ratio-16x9">
+										<img src="@img/temp-imgs/partner-logo-6.svg" alt="" />
+									</div>
 								</div>
-
-								<div class="portfolio-card__caption position-relative pt-3">
-									<h6 class="mb-0 fw-semibold portfolio-card__title">ЖК «Сити 17»</h6>
-								</div>
-
-								<a href="portfolio-item.html" class="stretched-link"></a>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<section class="bg-gray-dark py-5 py-md-6 py-lg-7">
-				<div class="container position-relative py-5 py-md-6 py-lg-7">
-					<div class="news__decor bg-primary position-absolute anim anim-8-1"></div>
-
-					<div class="row gy-4 align-items-center mb-6">
-						<div class="col-md-6">
-							<h2 class="text-white mb-0 anim anim-8-2">Новости компании</h2>
-						</div>
-
-						<div class="col text-md-end">
-							<a href="news.html" class="btn btn-outline-light anim anim-8-3">Все новости</a>
-						</div>
-					</div>
-
-					<div class="row gx-7 gy-6">
-						<div class="col-xl-6">
-							<div class="news-card d-sm-flex align-items-center position-relative">
-								<div class="news-card__img-container ratio ratio-1x1 overflow-hidden me-4 anim anim-8-4">
-									<div class="news-card__img bg-img" style="background-image: url('@img/temp-img/news-item-1.jpg')"></div>
-								</div>
-
-								<div class="news-card__caption position-relative">
-									<div class="news-card__decor bg-primary mb-2 mb-sm-3 anim anim-8-7"></div>
-									<div class="text-muted fs-8 mb-2 anim anim-8-5">24 декабря 2022</div>
-									<h5 class="mb-0 fw-semibold news-card__title anim anim-8-6">SUPREME S700: подъемно-раздвижная система, устойчивая к ураганам.</h5>
-								</div>
-
-								<a href="news-item.html" class="stretched-link"></a>
-							</div>
-						</div>
-
-						<div class="col-xl-6">
-							<div class="news-card d-sm-flex align-items-center position-relative">
-								<div class="news-card__img-container ratio ratio-1x1 overflow-hidden me-4 anim anim-8-4">
-									<div class="news-card__img bg-img" style="background-image: url('@img/temp-img/news-item-2.jpg')"></div>
-								</div>
-
-								<div class="news-card__caption position-relative">
-									<div class="news-card__decor bg-primary mb-2 mb-sm-3 anim anim-8-7"></div>
-									<div class="text-muted fs-8 mb-2 anim anim-8-5">20 декабря 2022</div>
-									<h5 class="mb-0 fw-semibold news-card__title anim anim-8-6">
-										SMARTIA S67 URBAN: Индустриальный стиль лофт и высочайшие характеристики!
-									</h5>
-								</div>
-
-								<a href="news-item.html" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<div class="section map-section bg-dark position-relative">
-				<div class="map-section__wrapper d-flex align-items-center">
+				<section class="bg-dark py-5 py-md-6 py-xl-7 py-xxl-8">
 					<div class="container">
-						<div class="row">
-							<div class="col-lg-5 col-xl-4">
-								<div class="contacts-island bg-dark position-relative pt-7 pb-5 p-lg-5 anim anim-9-1">
-									<div class="contacts-island__decor position-absolute bg-primary anim anim-9-2"></div>
+						<div class="row align-items-end has-anims gy-3 gx-lg-6 mb-5 mb-md-6">
+							<div class="col-12 col-lg-8 col-xl-7 me-auto">
+								<div class="section-header">
+									<h2 class="section-title anim fade-right">Завершённые объекты</h2>
+									<p class="section-header__caption anim fade-up mt-3 mb-0">
+										Наши системы находят применение как в частном домостроении, так и в коммерческом строительстве многих значимых объектов. Предлагаем
+										посмотреть на некоторые из них
+									</p>
+								</div>
+							</div>
 
-									<h2 class="text-white mb-4">Контакты</h2>
+							<div class="col-auto anim fade">
+								<a href="portfolio.html" class="btn btn-outline-light">Все объекты</a>
+							</div>
+						</div>
 
-									<div class="d-flex flex-column mb-3">
-										<div class="fs-8 text-muted mb-1">Адрес</div>
-										<div class="text-white mb-1">350001, г. Краснодар, ул. Фурманова, 1/9</div>
+						<div class="row has-anims gy-5 g-xl-5 g-xxl-6">
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-0.jpg')"></div>
 									</div>
 
-									<div class="d-flex flex-column mb-3">
-										<div class="fs-8 text-muted mb-1">Телефоны</div>
-										<a href="tel:+78612100212" class="link-white mb-1">+7 (861) 210-02-12</a>
-										<a href="tel:+78612330289" class="link-white mb-1">+7 (861) 233-02-89</a>
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">Частный дом в стиле хай-тек</h6>
 									</div>
 
-									<div class="d-flex flex-column mb-3">
-										<div class="fs-8 text-muted mb-1">Электронная почта</div>
-										<a href="mailto:info@gornica.ru" class="link-white mb-1">info@gornica.ru</a>
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-1.jpg')"></div>
 									</div>
 
-									<div class="d-flex mx-n1">
-										<a href="" class="social-link social-link__telegram mx-1"></a>
-										<a href="" class="social-link social-link__whatsapp mx-1"></a>
-										<a href="" class="social-link social-link__youtube mx-1"></a>
-										<a href="" class="social-link social-link__vk mx-1"></a>
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">Бизнес центр «Марьино»</h6>
+									</div>
+
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-2.jpg')"></div>
+									</div>
+
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">Лофт-коворкинг «Vmeste»</h6>
+									</div>
+
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-3.jpg')"></div>
+									</div>
+
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">Офисы IT-компании «101»</h6>
+									</div>
+
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-4.jpg')"></div>
+									</div>
+
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">Головной офис «Сбербанк» в Краснодаре</h6>
+									</div>
+
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4 anim fade-up">
+								<div class="portfolio-card position-relative">
+									<div class="portfolio-card__decor position-absolute"></div>
+
+									<div class="ratio ratio-16x9 overflow-hidden">
+										<div class="portfolio-card__img bg-img" style="background-image: url('@img/temp-imgs/portfolio-card-5.jpg')"></div>
+									</div>
+
+									<div class="portfolio-card__caption position-relative pt-3">
+										<h6 class="mb-0 portfolio-card__title">ЖК «Сити 17»</h6>
+									</div>
+
+									<a href="portfolio-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-dark-secondary py-5 py-md-6 py-xl-7 py-xxl-8 has-anims">
+					<div class="container position-relative">
+						<div class="news__decor bg-primary-2 position-absolute anim fade-up"></div>
+
+						<div class="row align-items-end has-anims gy-3 gx-lg-6 mb-5 mb-md-6">
+							<div class="col-12 col-lg-8 col-xl-7 me-auto">
+								<div class="section-header">
+									<h2 class="section-title anim fade-right">Новости компании</h2>
+									<p class="section-header__caption anim fade-up mt-3 mb-0">
+										Здесь вы найдете актуальные новости нашей компании: важные объявления, события и достижения
+									</p>
+								</div>
+							</div>
+
+							<div class="col-auto anim fade">
+								<a href="news.html" class="btn btn-outline-light">Все новости</a>
+							</div>
+						</div>
+
+						<div class="row gy-5 gy-xl-6 gx-xl-7">
+							<div class="col-xl-6 anim fade-up">
+								<div class="news-card position-relative">
+									<div class="row gy-3 gy-sm-0">
+										<div class="col-sm-auto">
+											<div class="news-card__img-container ratio overflow-hidden">
+												<div class="news-card__img bg-img" style="background-image: url('@img/temp-imgs/news-item-1.jpg')"></div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="h-100 d-flex flex-column">
+												<div class="news-card__caption position-relative my-auto">
+													<div class="news-card__decor mb-2 mb-md-3"></div>
+													<div class="news-card__date text-secondary mb-2">24 декабря 2022</div>
+													<h5 class="mb-0 fw-semibold news-card__title">SUPREME S700: подъемно-раздвижная система, устойчивая к ураганам</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="news-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+
+							<div class="col-xl-6 anim fade-up">
+								<div class="news-card position-relative">
+									<div class="row gy-3 gy-sm-0">
+										<div class="col-sm-auto">
+											<div class="news-card__img-container ratio overflow-hidden">
+												<div class="news-card__img bg-img" style="background-image: url('@img/temp-imgs/news-item-2.jpg')"></div>
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="h-100 d-flex flex-column">
+												<div class="news-card__caption position-relative my-auto">
+													<div class="news-card__decor mb-2 mb-md-3"></div>
+													<div class="news-card__date text-secondary mb-2">20 декабря 2022</div>
+													<h5 class="mb-0 fw-semibold news-card__title">SMARTIA S67 URBAN: Индустриальный стиль лофт и высочайшие характеристики!</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="news-item.html" class="stretched-link"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="section map-section bg-dark position-relative has-anims">
+					<div class="map-section__wrapper d-flex align-items-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-5 col-xl-4">
+									<div class="contacts-island bg-dark position-relative anim fade-left pt-7 pb-5 p-lg-5">
+										<div class="contacts-island__decor position-absolute bg-primary anim fade-right"></div>
+
+										<h2 class="section-title">Контакты</h2>
+
+										<div class="contact-item d-flex flex-column">
+											<div class="title text-secondary mb-1">Адрес</div>
+											<div class="text-white mb-1">350001, г. Краснодар, ул. Фурманова, 1/9</div>
+										</div>
+
+										<div class="contact-item d-flex flex-column">
+											<div class="title text-secondary mb-1">Телефоны</div>
+											<a href="tel:+78612100212" class="link-white mb-1">+7 (861) 210-02-12</a>
+											<a href="tel:+78612330289" class="link-white mb-1">+7 (861) 233-02-89</a>
+										</div>
+
+										<div class="contact-item d-flex flex-column">
+											<div class="title text-secondary mb-1">Электронная почта</div>
+											<a href="mailto:info@gornica.ru" class="link-white mb-1">info@gornica.ru</a>
+										</div>
+
+										<div class="contact-item d-flex flex-column">
+											<div class="title text-secondary mb-1">Мессенджеры</div>
+
+											<div class="row gx-3 mt-2">
+												<div class="col-auto">
+													<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/whatsapp-logo.svg" alt="" /></a>
+												</div>
+
+												<div class="col-auto">
+													<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/telegram-logo.svg" alt="" /></a>
+												</div>
+											</div>
+										</div>
+
+										<div class="mt-5">
+											<a href="#CallbackModal" data-bs-toggle="modal" class="btn btn-outline-light btn-icon d-flex justify-content-center mb-3">
+												<svg class="icon me-3">
+													<use href="@img/sprite.symbol.svg#call-bell"></use>
+												</svg>
+
+												<span>Заказать звонок</span>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="map px-3 px-lg-0" id="Map1"></div>
+					<div class="map px-3 px-lg-0" id="Map1"></div>
+				</div>
 			</div>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3b2b3d29-dd30-4d85-b6e8-eb15867d9469" type="text/javascript"></script>
 		<script src="js/map.js"></script>
-		<script src="js/app.js"></script>
 	</body>
 </html>

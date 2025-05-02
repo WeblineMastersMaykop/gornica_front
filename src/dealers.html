@@ -1,27 +1,44 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
-	@@include('html/head.html', { "title": "Где купить" })
+<!doctype html>
+<html lang="ru">
+	@@include('html/head.html', { "title": "Наши дилеры" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {"page": "dealers"})
+		</div>
+		@@include('html/offcanvas.html', {"page": "dealers"})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-5 pt-lg-6">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item active">Наши дилеры</li>
-				</ol>
-
-				<div class="mb-5">
-					<h1 class="page-title anim slide-left mb-3">Наши дилеры</h1>
-					<p class="anim slide-up mb-3">Это наши официальные партнёры. У них вы сможете приобрести оригинальную продукцию торговой марки «Горница»</p>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item active">Наши дилеры</li>
+					</ol>
 				</div>
 			</div>
 
-			<div class="dealers-map px-3 px-lg-0 pb-5 pb-lg-0" id="dealersMap"></div>
+			<section class="pt-4 pt-md-5">
+				<div class="container">
+					<div class="has-anims mb-4 mb-lg-5">
+						<h1 class="page-title anim fade-right mb-0">Наши дилеры</h1>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Это наши официальные партнёры. У них вы сможете приобрести оригинальную продукцию торговой марки «Горница»</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="dealers-map px-3 px-lg-0 pb-5 pb-lg-0" id="dealersMap"></div>
+			</section>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3b2b3d29-dd30-4d85-b6e8-eb15867d9469" type="text/javascript"></script>

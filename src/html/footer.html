@@ -1,64 +1,110 @@
 <footer class="footer mt-auto bg-dark py-5 py-md-6 py-lg-7">
 	<div class="container">
-		<div class="row gy-3 gy-sm-5">
-			<div class="col-md-4 col-xl">
-				<div class="d-flex flex-column align-items-start">
-					<div class="fs-8 text-muted mb-1">Адрес</div>
-					<div class="text-light mb-1">350001, г. Краснодар, ул. Фурманова, 1/9</div>
-				</div>
-			</div>
+		<div class="row gy-5 gy-lg-6 gy-xl-0">
+			<div class="col-xl-4">
+				<div class="row align-items-sm-center align-items-xl-start justify-content-sm-between justify-content-xl-start gy-3 gy-sm-4 gy-md-3">
+					<div class="col-sm-6 col-lg-auto col-xl-12">
+						<a href="index.html" class="d-inline-block footer-logo mb-2"><img src="@img/logo.svg" alt="" class="footer-logo" /></a>
+					</div>
 
-			<div class="col-sm-6 col-md-4 col-xl">
-				<div class="d-flex flex-column align-items-start">
-					<div class="fs-8 text-muted mb-1">Телефоны</div>
-					<a href="tel:+78612100212" class="link-white mb-1">+7 (861) 210-02-12</a>
-					<a href="tel:+78612330289" class="link-white mb-1">+7 (861) 233-02-89</a>
-				</div>
-			</div>
+					<div class="col-sm-6 col-lg-auto col-xl-12">
+						<div class="d-flex flex-column">
+							<a href="tel:+78612100212" class="link-white-secondary footer-phone">+7 (861) 210-02-12</a>
+							<a href="tel:+78612330289" class="link-white-secondary footer-phone">+7 (861) 233-02-89</a>
+						</div>
+					</div>
 
-			<div class="col-sm-6 col-md-4 col-xl">
-				<div class="d-flex flex-column align-items-start mb-1">
-					<div class="fs-8 text-muted mb-1">Электронная почта</div>
-					<a href="mailto:info@gornica.ru" class="link-white mb-1">info@gornica.ru</a>
-				</div>
+					<div class="col-sm-6 col-lg-auto col-xl-12">
+						<a href="mailto:info@gornica.ru" class="link-icon link-white-secondary spaced-link">
+							<svg class="icon me-2">
+								<use href="@img/sprite.symbol.svg#envelope"></use>
+							</svg>
 
-				<div class="d-flex mx-n1">
-					<a href="" class="social-link social-link__telegram mx-1"></a>
-					<a href="" class="social-link social-link__whatsapp mx-1"></a>
-					<a href="" class="social-link social-link__youtube mx-1"></a>
-					<a href="" class="social-link social-link__vk mx-1"></a>
+							<span>info@gornica.ru</span>
+						</a>
+
+						<div class="row justify-content-center justify-content-sm-start gx-3 mt-2">
+							<div class="col-auto">
+								<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/whatsapp-logo.svg" alt="" /></a>
+							</div>
+
+							<div class="col-auto">
+								<a href="" target="_blank" class="messenger-link spaced-link"><img src="@img/telegram-logo.svg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-lg-auto col-xl-12">
+						<a href="#CallbackModal" data-bs-toggle="modal" class="btn btn-outline-light btn-icon justify-content-center mt-xl-3">
+							<svg class="icon me-3">
+								<use href="@img/sprite.symbol.svg#call-bell"></use>
+							</svg>
+
+							<span>Заказать звонок</span>
+						</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-xl">
-				<ul class="footer-nav list-unstyled mb-0">
-					<li class="mb-1"><a href="content.html" class="link-white">О нас</a></li>
-					<li class="mb-1"><a href="news.html" class="link-white">Новости</a></li>
-					<li class="mb-1"><a href="docs.html" class="link-white">Документация</a></li>
-					<li class="mb-1"><a href="vacancies.html" class="link-white">Вакансии</a></li>
-					<li class="mb-1"><a href="faq.html" class="link-white">Вопрос-ответ</a></li>
-					<li class="mb-1"><a href="catalogue.html" class="link-white">Продукция</a></li>
-					<li class="mb-1"><a href="portfolio.html" class="link-white">Объекты</a></li>
-					<li class="mb-1"><a href="dealers.html" class="link-white">Где купить</a></li>
-					<li class="mb-1"><a href="contacts.html" class="link-white">Контакты</a></li>
-				</ul>
+				<div class="footer-nav">
+					<div class="footer-list">
+						<ul class="list-unstyled mb-0">
+							<li><a class="link-white-secondary" href="content.html">Дилерам</a></li>
+							<li><a class="link-white-secondary" href="content.html">Строителям</a></li>
+							<li><a class="link-white-secondary" href="content.html">Поставщикам</a></li>
+							<li><a class="link-white-secondary" href="content.html">Наши заводы</a></li>
+							<li><a class="link-white-secondary" href="vacancies.html">Работа в компании</a></li>
+							<li><a class="link-white-secondary" href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-list">
+						<a href="dropdown.html" class="footer-list-title link-white-secondary">Компания</a>
+
+						<ul class="list-unstyled mb-0">
+							<li><a class="link-white-secondary" href="content.html">О нас</a></li>
+							<li><a class="link-white-secondary" href="portfolio.html">Завершённые объекты</a></li>
+							<li><a class="link-white-secondary" href="dealers.html">Официальные дилеры</a></li>
+							<li><a class="link-white-secondary" href="news.html">Новости компании</a></li>
+							<li><a class="link-white-secondary" href="docs.html">Документация</a></li>
+							<li><a class="link-white-secondary" href="faq.html">Частые вопросы</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-list">
+						<a href=".html" class="footer-list-title link-white-secondary">Каталог</a>
+
+						<ul class="list-unstyled mb-0">
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection1">Окна ПВХ</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection2">Алюминиевые окна</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection3">Нестандартные решения</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection4">Входные группы (ПВХ и алюминий)</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection5">Раздвижные, складные системы (ПВХ и алюминий)</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection6">Фасадные конструкции</a></li>
+							<li><a class="link-white-secondary" href="catalogue.html#catalogueSection7">Офисные перегородки</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<hr class="footer-hr my-5 my-md-6" />
+		<hr class="border-white border-opacity-25 my-5 my-md-6" />
 
-		<div class="row gy-5 justify-content-between align-items-center">
-			<div class="col-auto">
-				<a href="index.html" class="d-inline-block mb-2"><img src="@img/logo-white.svg" alt="" height="48px" /></a>
-				<div class="text-muted fs-10">ООО «Данко-Диалог» © 2022</div>
+		<div class="row gy-4 justify-content-between align-items-center">
+			<div class="col-sm-auto">
+				<div class="copyright text-secondary">ООО «Данко-Диалог» © 2025 г. Все права защищены</div>
+				<a href="content.html" class="copyright link-secondary">Политика конфиденциальности</a>
 			</div>
 
-			<div class="col-auto">
-				<div class="position-relative d-inline-flex align-items-center devlogo">
-					<img src="img/devlogo.svg" alt="Webline Masters" class="me-2" />
+			<div class="col-auto mx-auto mx-sm-0">
+				<div class="devlogo position-relative d-flex align-items-center">
+					<img src="img/devlogo.svg" alt="Webline Masters" class="devlogo-img me-2" />
 					<div>
-						<span class="d-block text-white">Webline Masters</span>
-						<a href="http://wlms.info" target="_blank" class="stretched-link d-block text-muted" title="Webline Masters">создание и продвижение сайтов</a>
+						<div class="devlogo-name d-block">Webline Masters</div>
+						<a href="http://wlms.info" target="_blank" class="devlogo-caption stretched-link d-block" title="Webline Masters"
+							>создание и продвижение сайтов
+						</a>
 					</div>
 				</div>
 			</div>

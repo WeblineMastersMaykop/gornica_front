@@ -1,117 +1,93 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
+<!doctype html>
+<html lang="ru">
 	@@include('html/head.html', { "title": "Вакансии" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {"page": "vacancies"})
+		</div>
+		@@include('html/offcanvas.html', {"page": "vacancies"})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-6 pb-7">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
-					<li class="breadcrumb-item active">Вакансии</li>
-				</ol>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
+						<li class="breadcrumb-item active">Вакансии</li>
+					</ol>
+				</div>
+			</div>
 
-				<h1 class="page-title anim slide-left mb-5 mb-md-6">Вакансии</h1>
-
-				<div class="row g-5">
-					<div class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="vacancy-card h-100 d-flex flex-column position-relative anim slide-up p-3 p-sm-5">
-							<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 fw-medium text-dark">Контролер ОТК на производство окон ПВХ</a>
-
-							<div class="d-flex align-items-center lh-1 fs-7 mt-auto">
-								Подробнее
-
-								<div class="ms-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.68 269.26" height="7px">
-										<path
-											d="M493.23,89.72L410.67,6.31c-8.3-8.37-21.8-8.42-30.17-.12-.04,.04-.08,.08-.12,.12h0c-8.27,8.32-8.27,21.76,0,30.08l75.95,76.59H21.33c-11.78,0-21.33,9.55-21.33,21.33H0c0,11.78,9.55,21.33,21.33,21.33H457.6l-77.23,77.01c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12h0c8.3,8.37,21.8,8.42,30.17,.12,.04-.04,.08-.08,.12-.12l82.56-82.77c24.7-24.94,24.5-65.32,0-90.45Z"
-										/>
-									</svg>
-								</div>
-							</div>
+			<section class="pt-4 pt-md-5 pb-5 pb-md-6 pb-lg-7">
+				<div class="container">
+					<div class="has-anims mb-4 mb-lg-5">
+						<h1 class="page-title anim fade-right mb-0">Вакансии</h1>
+						<div class="page-caption article anim fade-up mt-3">
+							<p>Какое-то пояснение заголовка, или краткая информация о странице.</p>
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="vacancy-card h-100 d-flex flex-column position-relative anim slide-up p-3 p-sm-5">
-							<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 fw-medium text-dark"
-								>Наладчик оборудования для производства окон ПВХ</a
-							>
+					<div class="row has-anims gy-3 g-sm-4 g-xl-5">
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Контролер ОТК на производство окон ПВХ</a>
 
-							<div class="d-flex align-items-center lh-1 fs-7 mt-auto">
-								Подробнее
-
-								<div class="ms-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.68 269.26" height="7px">
-										<path
-											d="M493.23,89.72L410.67,6.31c-8.3-8.37-21.8-8.42-30.17-.12-.04,.04-.08,.08-.12,.12h0c-8.27,8.32-8.27,21.76,0,30.08l75.95,76.59H21.33c-11.78,0-21.33,9.55-21.33,21.33H0c0,11.78,9.55,21.33,21.33,21.33H457.6l-77.23,77.01c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12h0c8.3,8.37,21.8,8.42,30.17,.12,.04-.04,.08-.08,.12-.12l82.56-82.77c24.7-24.94,24.5-65.32,0-90.45Z"
-										/>
-									</svg>
-								</div>
+								<div class="vacancy-card-salary">от 40 000 ₽/мес</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="vacancy-card h-100 d-flex flex-column position-relative anim slide-up p-3 p-sm-5">
-							<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 fw-medium text-dark">Сборщик окон ПВХ</a>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Наладчик оборудования для производства окон ПВХ</a>
 
-							<div class="d-flex align-items-center lh-1 fs-7 mt-auto">
-								Подробнее
-
-								<div class="ms-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.68 269.26" height="7px">
-										<path
-											d="M493.23,89.72L410.67,6.31c-8.3-8.37-21.8-8.42-30.17-.12-.04,.04-.08,.08-.12,.12h0c-8.27,8.32-8.27,21.76,0,30.08l75.95,76.59H21.33c-11.78,0-21.33,9.55-21.33,21.33H0c0,11.78,9.55,21.33,21.33,21.33H457.6l-77.23,77.01c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12h0c8.3,8.37,21.8,8.42,30.17,.12,.04-.04,.08-.08,.12-.12l82.56-82.77c24.7-24.94,24.5-65.32,0-90.45Z"
-										/>
-									</svg>
-								</div>
+								<div class="vacancy-card-salary">40 000 - 70 000 ₽/мес</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="vacancy-card h-100 d-flex flex-column position-relative anim slide-up p-3 p-sm-5">
-							<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 fw-medium text-dark">Кладовщик-комплектовщик</a>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Мессенджер по продажам</a>
 
-							<div class="d-flex align-items-center lh-1 fs-7 mt-auto">
-								Подробнее
-
-								<div class="ms-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.68 269.26" height="7px">
-										<path
-											d="M493.23,89.72L410.67,6.31c-8.3-8.37-21.8-8.42-30.17-.12-.04,.04-.08,.08-.12,.12h0c-8.27,8.32-8.27,21.76,0,30.08l75.95,76.59H21.33c-11.78,0-21.33,9.55-21.33,21.33H0c0,11.78,9.55,21.33,21.33,21.33H457.6l-77.23,77.01c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12h0c8.3,8.37,21.8,8.42,30.17,.12,.04-.04,.08-.08,.12-.12l82.56-82.77c24.7-24.94,24.5-65.32,0-90.45Z"
-										/>
-									</svg>
-								</div>
+								<div class="vacancy-card-salary">10% от продажи</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col-md-6 col-lg-4 col-xxl-3">
-						<div class="vacancy-card h-100 d-flex flex-column position-relative anim slide-up p-3 p-sm-5">
-							<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 fw-medium text-dark">Бухгалтер</a>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Сборщик окон ПВХ</a>
 
-							<div class="d-flex align-items-center lh-1 fs-7 mt-auto">
-								Подробнее
+								<div class="vacancy-card-salary">до 70 000 ₽/мес</div>
+							</div>
+						</div>
 
-								<div class="ms-3">
-									<?xml version="1.0" encoding="UTF-8"?><svg id="Outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.68 269.26" height="7px">
-										<path
-											d="M493.23,89.72L410.67,6.31c-8.3-8.37-21.8-8.42-30.17-.12-.04,.04-.08,.08-.12,.12h0c-8.27,8.32-8.27,21.76,0,30.08l75.95,76.59H21.33c-11.78,0-21.33,9.55-21.33,21.33H0c0,11.78,9.55,21.33,21.33,21.33H457.6l-77.23,77.01c-8.37,8.3-8.42,21.8-.12,30.17,.04,.04,.08,.08,.12,.12h0c8.3,8.37,21.8,8.42,30.17,.12,.04-.04,.08-.08,.12-.12l82.56-82.77c24.7-24.94,24.5-65.32,0-90.45Z"
-										/>
-									</svg>
-								</div>
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Кладовщик-комплектовщик</a>
+
+								<div class="vacancy-card-salary">50 000 ₽/мес</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 anim fade-up">
+							<div class="vacancy-card h-100 d-flex flex-column position-relative p-3 p-sm-4 p-md-5">
+								<a href="vacancy.html" class="stretched-link d-inline-block mb-4 mb-sm-5 link-dark">Бухгалтер</a>
+
+								<div class="vacancy-card-salary">90 000 ₽/мес</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="js/app.js"></script>

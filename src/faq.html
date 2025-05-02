@@ -1,221 +1,647 @@
-<!DOCTYPE html>
-<html lang="ru" class="h-100">
-	@@include('html/head.html', { "title": "Вопрос-ответ" })
+<!doctype html>
+<html lang="ru">
+	@@include('html/head.html', { "title": "Частые вопросы" })
 
-	<body class="d-flex flex-column h-100">
-		@@include('html/topbar.html', {}) @@include('html/navbar.html', {}) @@include('html/offcanvas.html', {})
+	<body>
+		<!-- prettier-ignore -->
+		<div class="bg-dark">
+		@@include('html/topbar.html', {})
+		@@include('html/navbar.html', {"page": "faq"})
+		</div>
+		@@include('html/offcanvas.html', {"page": "faq"})
 
-		<main role="main" class="flex-shrink-0 overflow-hidden">
-			<div class="container pt-5 pt-lg-6 pb-5 pb-lg-7">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-					<li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
-					<li class="breadcrumb-item active">Вопрос-ответ</li>
-				</ol>
-
-				<h1 class="page-title anim slide-left mb-5 mb-md-6">Вопрос-ответ</h1>
-
-				<div class="accordion accordion-flush mb-5 mb-md-6 mb-lg-7 mt-n3" id="accordionFlushExample">
-					<div class="accordion-item anim slide-up">
-						<h2 class="accordion-header" id="flush-headingOne">
-							<button
-								class="accordion-button fs-5 collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#flush-collapseOne"
-								aria-expanded="false"
-								aria-controls="flush-collapseOne"
-							>
-								Какие системы применяются для остекления балконов и лоджий с металлическим парапетом?
-							</button>
-						</h2>
-						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body pt-0">
-								<p>
-									Действительно, работы по остеклению балконов и лоджий с металлическим парапетом осложнены тем, что на него невозможно монтировать тяжелые
-									пластиковые конструкций. Вот почему для этих целей мы обычно применяем остекление PROVEDAL из легкого алюминия.
-								</p>
-								<p>
-									Кроме того, нами используется специальная система SLIDORS (Слайдорс). Несмотря на то, что она сделана из поливинилхлорида, ее можно
-									применить для остекления балконов и лоджий. Это достигается за счет инновационных технологий и оригинальности конструкции. В результате,
-									значительно снижается вес системы и возможна установка даже на металлический парапет. Приятным достоинством системы является наличие
-									раздвижного механизма открывания створок.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-item anim slide-up">
-						<h2 class="accordion-header" id="flush-headingTwo">
-							<button
-								class="accordion-button fs-5 collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#flush-collapseTwo"
-								aria-expanded="false"
-								aria-controls="flush-collapseTwo"
-							>
-								Если возникло желание сделать заказ пластиковых окон по телефону, что для этого требуется?
-							</button>
-						</h2>
-						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body pt-0">
-								<p>
-									Мы можем обозначить приблизительную стоимость пластиковых окон по телефону. Для этого от заказчика потребуется замерить габаритные
-									размеры конструкций и высказать пожелания относительно интересующей вариации. Наш специалист проконсультирует по этому поводу, окажет
-									помощь в выборе разновидности конструкции и профиля. Он быстро рассчитает примерную стоимость, в том числе на несколько типовых решений.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-item anim slide-up">
-						<h2 class="accordion-header" id="flush-headingThree">
-							<button
-								class="accordion-button fs-5 collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#flush-collapseThree"
-								aria-expanded="false"
-								aria-controls="flush-collapseThree"
-							>
-								Что понимается под термином «стеклопакет»?
-							</button>
-						</h2>
-						<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body pt-0">
-								<p>
-									Особая конструкция, состоящая из нескольких стекол (минимум двух) называется стеклопакетом. За счет их герметичного соединения между
-									собой посредством рамки образуются замкнутые внутренние пространства. Их называют воздушными камерами. Количество воздушных камер
-									напрямую влияет на увеличение звуковых и тепловых изоляционных свойств пластикового окна. Для остекления оконных проемов зданий в
-									европейской части нашей страны достаточно использовать однокамерные или двухкамерные стеклопакеты.
-								</p>
-								<p>
-									Существует путаница, так как некоторые люди называют стеклопакеты пластиковыми окнами. Это в корне неверно, потому что стеклопакет
-									является лишь составной частью пластикового окна.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-item anim slide-up">
-						<h2 class="accordion-header" id="flush-headingFour">
-							<button
-								class="accordion-button fs-5 collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#flush-collapseFour"
-								aria-expanded="false"
-								aria-controls="flush-collapseFour"
-							>
-								Какую фурнитуру вы применяете в своих пластиковых окнах?
-							</button>
-						</h2>
-						<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body pt-0">
-								<p>
-									Нами производятся пластиковые окна, снабженные немецкой фурнитурой Siegenia Aubi. На рынке предложений нашей страны она является одной из
-									самых популярных и востребованных. Siegenia Aubi – это фурнитура элит-класса, ей стоит полностью доверять. Это подтверждает большой опыт
-									в ее использовании. Многие потребители и специалисты оценили такие достоинства этой фурнитуры, как надежность, долговечность и
-									функциональность.
-								</p>
-								<p>
-									На фурнитуре не стоит экономить, так как от ее качества и прочности зависит правильное и долговременное функционирование створок и
-									дверей. С помощью фурнитуры создается достаточное усилие прижима створок для обеспечения влагонепроницаемости и звукоизоляции окон. Она
-									защищает дом от злоумышленников, желающих проникнуть в помещение посредством окна.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="accordion-item anim slide-up">
-						<h2 class="accordion-header" id="flush-headingFive">
-							<button
-								class="accordion-button fs-5 collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#flush-collapseFive"
-								aria-expanded="false"
-								aria-controls="flush-collapseFive"
-							>
-								Как выбрать управление для рольставен?
-							</button>
-						</h2>
-						<div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body pt-0">
-								<p>
-									Автоматические (как с клавиши на стене, так и с дистанционного пульта управления). При выборе электроуправления обратите внимание на
-									возможность отсутствия электричества у Вас на даче. Если возможны перебои, то рекомендуем заказывать аварийную систему подъема (вручную).
-									Важно! - при использовании автоматических рольставен на окнах или дверях - необходимо требовать от продавца установку БЛОКИРОВКИ подъема
-									(ригель). Без этого механизма электрические ролеты в закрытом положении можно легко вскрыть! Поскольку данный механизм стоит денег, то
-									некоторые недобросовестные продавцы для удешевления конструкции могут просто его не установить. А без этого механизма функция ЗАЩИТЫ
-									фактически не будет выполняться!!!
-								</p>
-								<p>
-									Карданное управление. Для установки кардана в доме просверливается сквозное отверстие и изнутри присоединяется кардан. Вспомните машины
-									60-х годов, которые можно было завести от ручки - механизм примерно тот же самый. Крутите ручку и опускаете или поднимаете ролл ставни
-									вручную. Данный механизм требует Очень качественного монтажа, очень прихотлив при эксплуатации, а самое главное, что сегодня он дороже
-									чем ролставни с электроприводом. Почему некоторые клиенты выбирают этот механизм управления ? - вопрос сложный. Возможно по старой
-									привычке или "доброй"рекомендации от соседа....
-								</p>
-								<p>
-									Пружинный механизм (ПИМ - пружинно инерционный механизм) - самый дешевый вариант управления. Если Вы редко используете ролл ставни
-									(например, на летней даче), то Вам для их подъема или опускания достаточно открыть окно изнутри дома и рукой поднять или опустить жалюзи
-									за ручку. В качестве блокирующего устройства используют либо замок с оригинальным ключом, либо щеколды (изнутри).
-								</p>
-							</div>
-						</div>
-					</div>
+		<main role="main" class="flex-shrink-0 flex-grow-1 mb-auto">
+			<div class="bg-light py-2 py-md-3">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+						<li class="breadcrumb-item"><a href="startpoint.html">Компания</a></li>
+						<li class="breadcrumb-item active">Частые вопросы</li>
+					</ol>
 				</div>
+			</div>
 
-				<section class="py-5 py-lg-6">
-					<div class="ask-form position-relative border border-dark anim slide-up px-3 pt-5 pb-3 p-sm-6">
+			<section class="pt-4 pt-md-5 pb-5 pb-md-6 pb-lg-7">
+				<div class="container">
+					<article class="article">
+						<div class="mb-4 mb-lg-5">
+							<h1 class="page-title mb-0">Частые вопросы</h1>
+						</div>
+
+						<div class="article-component accordion">
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+										</p>
+
+										<h3>Маленький подзаголовок аккордиона h3</h3>
+
+										<p>
+											Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками
+											живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+										</p>
+
+										<div class="article-component w-100">
+											<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom gall-img" data-gallery="gallery-3">
+												<img src="@img/temp-imgs/temp-content-img.jpg" />
+											</a>
+
+											<div class="caption">
+												Картинка с лайтбоксом на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной
+											случилось? » – подумал он. Это не было сном.
+										</p>
+
+										<div class="article-component img-inline w-100 text-center">
+											<img src="@img/temp-imgs/temp-content-img-sm.jpg" />
+
+											<div class="caption">
+												Картинка без лайтбокса произвольного размера. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.</p>
+
+										<div class="article-component w-100">
+											<div class="ratio ratio-16x9">
+												<iframe
+													width="720"
+													height="405"
+													src="https://rutube.ru/play/embed/5c82e959c06265efeaf665ab56ce0075"
+													frameborder="0"
+													allow="clipboard-write; autoplay"
+													webkitAllowFullScreen
+													mozallowfullscreen
+													allowfullscreen
+												></iframe>
+											</div>
+
+											<div class="caption">
+												Видео на всю ширину. RuTube-канал
+												<a href="https://rutube.ru/channel/33685478/" target="_blank">Образовач</a>
+											</div>
+										</div>
+
+										<p>
+											Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+
+										<h4>Очень мальнький подзаголовок аккордиона h4</h4>
+
+										<p>
+											На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой
+											целиком исчезала ее рука.
+										</p>
+
+										<ul>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>
+												Элемент списка с вложенностью
+												<ul>
+													<li>Элемент списка</li>
+													<li>Элемент списка</li>
+													<li>Элемент списка</li>
+												</ul>
+											</li>
+											<li>Элемент списка</li>
+										</ul>
+
+										<p>
+											Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и
+											вовсе в грустное настроение.
+										</p>
+
+										<ol>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+											<li>Элемент списка</li>
+										</ol>
+
+										<p>
+											«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на
+											правом боку, а в теперешнем своем состоянии он никак не мог принять этого положения.
+										</p>
+
+										<h5>Крохотный подзаголовок аккордиона h5</h5>
+
+										<p>
+											С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих
+											барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую
+											дотоле, тупую и слабую боль в боку.
+										</p>
+
+										<div class="article-component table-responsive w-100">
+											<table class="table table-striped table-bordered">
+												<caption class="caption">
+													Таблица на всю ширину
+												</caption>
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Имя</th>
+														<th scope="col">Фамилия</th>
+														<th scope="col">Должность</th>
+														<th scope="col">Телефон</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Андрей</td>
+														<td>Петров</td>
+														<td>Менеджер</td>
+														<td><a href="tel:#">+7 (999) 888 77 66</a></td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Виктор</td>
+														<td>Степанов</td>
+														<td>Бухгалтер</td>
+														<td><a href="tel:#">+7 (888) 777 66 55</a></td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Иван</td>
+														<td>Григорьев</td>
+														<td>Завхоз</td>
+														<td><a href="tel:#">+7 (777) 666 55 44</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>«Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах.</p>
+
+										<div class="article-component">
+											<div class="blockquote-container rounded bg-light p-3 p-sm-4 p-md-5">
+												<div class="blockquote-person d-flex mb-3 mb-md-4">
+													<div class="img ratio ratio-1x1 rounded-circle flex-shrink-0 me-3">
+														<img src="@img/temp-imgs/temp-blockquote-person-photo.jpg" alt="" />
+													</div>
+
+													<div class="my-auto me-auto">
+														<div class="blockquote-person-name fw-semibold">Филипп Филиппович Преображенский</div>
+														<div class="blockquote-person-info text-secondary">Учёный-медик, профессор, хирург-экспериментатор</div>
+													</div>
+
+													<svg class="icon blockquote-icon ms-3 ms-sm-4">
+														<use href="@img/sprite.symbol.svg#blockquote"></use>
+													</svg>
+												</div>
+
+												<blockquote class="blockquote" cite="">
+													<p>Следовательно, разруха не в клозетах, а в головах.</p>
+
+													<div class="blockquote-footer">
+														<cite title="Source Title">х/ф «Собачье сердце»</cite>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+
+										<p>
+											Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов,
+											мирись с плохим, нерегулярным питанием, завязывай со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения.
+											Черт бы побрал все это!»
+										</p>
+
+										<div class="article-component">
+											<div class="row g-3">
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.
+														</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+														</p>
+													</div>
+												</div>
+
+												<div class="col-sm-6">
+													<div class="link-card d-flex flex-column position-relative h-100 border p-3">
+														<a href="#" class="stretched-link link-dark fw-medium mb-2 mb-xxl-3">Ссылка с пояснением</a>
+														<p class="link-card-caption mt-auto">
+															Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>
+											Он почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати, чтобы удобнее было поднять голову; нашел
+											зудевшее место, сплошь покрытое, как оказалось, белыми непонятными точечками; хотел было ощупать это место одной из ножек, но сразу
+											отдернул ее, ибо даже простое прикосновение вызвало у него, Грегора, озноб.
+										</p>
+
+										<div class="article-component">
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+
+											<a href="#" class="link-list d-flex align-items-center link-dark link-icon fw-medium border p-3">
+												<span class="me-auto">Ссылка на какую-то страницу</span>
+
+												<svg class="icon ms-3">
+													<use href="@img/sprite.symbol.svg#arrow-right"></use>
+												</svg>
+											</a>
+										</div>
+
+										<p>
+											Он соскользнул в прежнее свое положение. «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен
+											высыпаться. Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу, чтобы переписать
+											полученные заказы, эти господа только завтракают.
+										</p>
+
+										<div class="article-component">
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Отчёт о выполнении мероприятий по обеспечению социального благополучия населения за 2023 год (№ 23/О-458 от 15.01.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>XLS</span>
+																</div>
+															</div>
+
+															<div class="col-auto">1.25&nbsp;Мб</div>
+
+															<div class="col-auto">21.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Справка о результатах мониторинга исполнения региональных программ по поддержке малого и среднего бизнеса (№ 56/СМ-213 от
+															12.03.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>XLS</span>
+																</div>
+															</div>
+
+															<div class="col-auto">1.44&nbsp;Мб</div>
+
+															<div class="col-auto">22.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="document">
+												<div class="row gx-0">
+													<div class="col-md position-relative p-3">
+														<a href="#" class="link-dark document-name stretched-link mb-2">
+															Заключение по результатам проверки эффективности реализации федеральных программ в сфере экологии (№ 78/Э-987 от 22.04.2024)
+														</a>
+
+														<div class="row document-footer">
+															<div class="col-auto">
+																<div class="document-format text-icon">
+																	<svg class="icon me-2">
+																		<use href="@img/sprite.symbol.svg#document"></use>
+																	</svg>
+
+																	<span>PDF</span>
+																</div>
+															</div>
+
+															<div class="col-auto">12.96&nbsp;Мб</div>
+
+															<div class="col-auto">20.01.2025</div>
+														</div>
+													</div>
+
+													<div class="col-md-auto">
+														<div class="document-download p-3">
+															<a
+																href="files/example.xlsx"
+																download="example.xlsx"
+																title="Скачать документ"
+																class="link-icon link-dark stretched-link my-auto"
+															>
+																<svg class="icon">
+																	<use href="@img/sprite.symbol.svg#download"></use>
+																</svg>
+
+																<span class="ms-2 d-md-none">Скачать</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<p>
+											А осмелься я вести себя так, мои хозяин выгнал бы меня сразу. Кто знает, впрочем, может быть, это было бы даже очень хорошо для меня.
+											Если бы я не сдерживался ради родителей, я бы давно заявил об уходе, я бы подошел к своему хозяину и выложил ему все, что о нем
+											думаю.
+										</p>
+
+										<h6>Самый маленький подзаголовок аккордиона h6</h6>
+
+										<p>
+											Он бы так и свалился с конторки! Странная у него манера – садиться на конторку и с ее высоты разговаривать со служащим, который
+											вдобавок вынужден подойти вплотную к конторке из-за того, что хозяин туг на ухо.
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-6">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-4">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-4">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея только на 2 фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											Однако надежда еще не совсем потеряна: как только я накоплю денег, чтобы выплатить долг моих родителей – на это уйдет еще лет
+											пять-шесть, – я так и поступлю. Тут-то мы и распрощаемся раз и навсегда. А пока что надо подниматься, мой поезд отходит в пять».
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-4">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-5">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея только на 3 фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+										<p>
+											И он взглянул на будильник, который тикал на сундуке. «Боже правый! » – подумал он. Было половина седьмого, и стрелки спокойно
+											двигались дальше, было даже больше половины, без малого уже три четверти. Неужели будильник не звонил?
+										</p>
+
+										<div class="article-component w-100">
+											<div class="row g-2 g-md-3">
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+
+												<div class="col-6 col-sm-3">
+													<a href="@img/temp-imgs/temp-content-img.jpg" class="img img-zoom ratio ratio-4x3 gall-img" data-gallery="gallery-6">
+														<img src="@img/temp-imgs/temp-content-img.jpg" />
+													</a>
+												</div>
+											</div>
+
+											<div class="caption">
+												Галерея на 4 и более фото на всю ширину. Источник:
+												<a href="https://unsplash.com" target="_blank">unsplash.com</a>
+											</div>
+										</div>
+
+										<p>
+											С кровати было видно, что он поставлен правильно, на четыре часа; и он, несомненно, звонил. Но как можно было спокойно спать под этот
+											сотрясающий мебель трезвон? Ну, спал-то он неспокойно, но, видимо, крепко. Однако что делать теперь?
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над
+											столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item rounded overflow-hidden">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed fw-medium" type="button">
+										<h2>Заголовок аккордиона, можно ставить только теги h2-h6</h2>
+									</button>
+								</div>
+								<div class="accordion-collapse collapse">
+									<div class="accordion-body pt-0">
+										<p>
+											Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над
+											столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из
+											иллюстрированного журнала и вставил в красивую золоченую рамку.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="py-5 py-md-6 py-lg-7">
+				<div class="container">
+					<div class="ask-form position-relative border border-dark p-3 p-sm-4 p-md-5 p-xxl-6">
 						<div class="ask-form__decor-1 position-absolute bg-primary"></div>
 
-						<div class="row gy-5 align-items-start">
+						<div class="row gy-4 gy-md-5">
 							<div class="col-lg-6">
-								<img src="@img/ask-icon.svg" alt="" height="64px" class="mb-3 mb-sm-4" />
+								<img src="@img/ask-icon.svg" alt="" class="ask-form-img mb-2 mb-md-3" />
 								<h2 class="mb-2 mb-md-3">Не нашли нужный ответ?</h2>
 								<p class="mb-0">Задайте вопрос напрямую менеджеру</p>
 							</div>
 
 							<div class="col-lg-6">
-								<form action="thanks.html">
-									<div class="row g-sm-4">
-										<div class="col-sm-6">
-											<div class="mb-4">
-												<input type="text" class="form-control" placeholder="Ваше имя" required />
+								<div class="position-relative">
+									<form>
+										<div class="row align-items-center g-3">
+											<div class="col-md-6"><input type="text" class="form-control" placeholder="Ваше имя" name="name" required /></div>
+
+											<div class="col-md-6"><input type="email" class="form-control" placeholder="Электронная почта" name="email" required /></div>
+
+											<div class="col-12"><textarea class="form-control" placeholder="Ваш вопрос" rows="3" name="message" required></textarea></div>
+
+											<div class="col-lg-4"><button type="submit" class="btn btn-dark w-100">Отправить</button></div>
+
+											<div class="col-lg-8">
+												<p class="form-agree-text text-secondary mb-0">
+													Нажимая кнопку «Отправить», вы соглашаетесь на <a target="_blank" href="content.html">обработку персональных данных</a>
+												</p>
 											</div>
 										</div>
 
-										<div class="col-sm-6">
-											<div class="mb-4">
-												<input type="email" class="form-control" placeholder="Электронная почта" required />
-											</div>
-										</div>
-									</div>
+										<!-- <div class="alert alert-danger alert-dismissible form-error fade show" role="alert">
+											<strong>Произошла ошибка!</strong> Подробный текст ошибки
+											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+										</div> -->
+									</form>
 
-									<div class="mb-4">
-										<textarea class="form-control" placeholder="Ваш вопрос" rows="3" required></textarea>
-									</div>
+									<!-- <div class="form-success d-flex align-items-center justify-content-center p-3 p-sm-5 bg-white">
+					<div class="text-center">
+						<svg class="icon form-success-img mb-3">
+							<use href="@img/sprite.symbol.svg#check-circle"></use>
+						</svg>
 
-									<div class="d-sm-flex align-items-center">
-										<button type="submit" class="btn btn-dark px-5 mb-4 mb-sm-0">Отправить</button>
-
-										<p class="fs-10 text-muted lh-sm mb-0 ms-sm-5 ms-md-6">
-											Нажимая кнопку «Отправить», вы соглашаетесь на
-											<a target="_blank" href="content.html">обработку персональных данных</a>
-										</p>
-									</div>
-								</form>
+						<div class="form-success-title fw-bold mb-3">Спасибо за обращение!</div>
+						<p class="form-success-caption mb-0">
+							Елена, мы скоро вышлем ответ на почту: <span class="d-block fw-medium mt-2">elena@mail.ru</span>
+						</p>
+					</div>
+				</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</main>
 
-		@@include('html/footer.html', {}) @@include('html/scroll-to-top.html', {}) @@include('html/modal.html', {})
+		<!-- prettier-ignore -->
+		@@include('html/footer.html', {})
+		@@include('html/scroll-to-top.html', {})
+		@@include('html/catalogue-dropdown-menu.html', {})
+		@@include('html/modal-callback.html', {})
 
 		<script src="js/bootstrap.js"></script>
 		<script src="js/app.js"></script>
