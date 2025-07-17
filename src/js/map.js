@@ -4,8 +4,17 @@ let map1 = document.getElementById('Map1')
 
 if (map1) {
 	ymaps.ready(function () {
+		const locationAttribute = map1.getAttribute("data-location");
+		const center = locationAttribute ? locationAttribute.replaceAll(',', '.').split(";").map(x => parseFloat(x, 10)) : [45.005322, 39.009197];
+
+		let placemarkUrl = 'img/map-marker.svg';
+
+		if (window.django && window.django.placemark) {
+			placemarkUrl = window.django.placemark;
+		}
+
 		var myMap = new ymaps.Map(map1, {
-				center: [45.005322, 39.009197],
+				center: center,
 				zoom: 16,
 				controls: ['zoomControl'],
 			}),
@@ -17,7 +26,7 @@ if (map1) {
 					// Необходимо указать данный тип макета.
 					iconLayout: 'default#image',
 					// Своё изображение иконки метки.
-					iconImageHref: 'img/map-marker.svg',
+					iconImageHref: placemarkUrl,
 					// Размеры метки.
 					iconImageSize: [40, 57],
 					// Смещение левого верхнего угла иконки относительно
